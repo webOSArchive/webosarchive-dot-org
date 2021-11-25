@@ -214,7 +214,7 @@ body {
         echo "<li><a href=\"http://sdk.webosarchive.com\" target=\"_top\">SDK</a></li></li>";
       ?>
       <?php
-      if (strpos( $_SERVER['REQUEST_URI'], "/docs" ) !== false)
+      if (isset($_GET['content']) && $_GET['content'] == 'community')
         echo "<li style='background-color: #2980B9'><a href=\"http://www.webosarchive.com/docs/?community\" target=\"_top\">Community</a></li>";
       else
         echo "<li><a href=\"http://www.webosarchive.com/docs/?community\" target=\"_top\">Community</a></li></li>";
