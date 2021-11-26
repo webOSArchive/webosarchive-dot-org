@@ -149,31 +149,39 @@ body {
 <script>
   var menuOpen = false;
   var resizeTimer;
+  var oldSize = 0;
   function toggleMenu() {
-    if (document.activeElement.nodeName != "INPUT") {  //Workaround TouchPad keyboard throwing resize event
-      clearTimeout(resizeTimer);
-      resizeTimer = setTimeout(function() {
-        var menuElement = document.getElementById("menu-ul");
-        var menuCheckbox = document.getElementById("menu-btn");
-        if (window.innerWidth < 815) {
-            if (!menuOpen) {
-                menuElement.style.maxHeight = "340px";
-                menuCheckbox.checked = true;
-                menuOpen = true;
-            }
-            else {
-                menuElement.style.maxHeight = "2px";
-                menuCheckbox.checked = false;
-                menuOpen = false;
-            }
-        } else {
-            menuElement.style.maxHeight = "340px";
-            menuOpen = true;
-        }
-      }, 350);
-    }
+      var menuElement = document.getElementById("menu-ul");
+      var menuCheckbox = document.getElementById("menu-btn");
+      if (window.innerWidth < 815) {
+          if (!menuOpen) {
+              menuElement.style.maxHeight = "340px";
+              menuCheckbox.checked = true;
+              menuOpen = true;
+          }
+          else {
+              menuElement.style.maxHeight = "2px";
+              menuCheckbox.checked = false;
+              menuOpen = false;
+          }
+      } else {
+          menuElement.style.maxHeight = "340px";
+          menuOpen = true;
+      }
   }
-  //window.addEventListener('resize', toggleMenu);
+  function redrawMenu() {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function() {
+      if (window.innerWidth > oldSize) {
+        oldSize = window.innerWidth;
+        if (window.innerWidth > 815) {
+          menuElement.style.maxHeight = "340px";
+        }
+      }
+    }, 350);
+    //if (document.activeElement.nodeName != "INPUT") {  //Workaround TouchPad keyboard throwing resize event
+  }
+  window.addEventListener('resize', redrawMenu);
 </script>
 <div class="menu-wrapper">
   <header class="wosaMenu">
