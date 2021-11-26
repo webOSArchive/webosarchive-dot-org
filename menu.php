@@ -173,19 +173,25 @@ body {
       }, 350);
     }
   }
-
   window.addEventListener('resize', toggleMenu);
 </script>
 <div class="menu-wrapper">
   <header class="wosaMenu">
-    <a href="http://www.webosarchive.com" class="logo" target="_top"><img src="http://www.webosarchive.com/webOSLogo.png" height="18" style="height:18px"> Archive</a>
+    <?php
+      //Figure out what protocol the client wanted
+      if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')
+      $protocol = "https://";
+      else
+      $protocol = "http://";
+    ?>
+    <a href="http://www.webosarchive.com" class="logo" target="_top"><img src="<?php echo $protocol ?>www.webosarchive.com/webOSLogo.png" height="18" style="height:18px"> Archive</a>
     <input class="menu-btn" type="checkbox" id="menu-btn" onclick="javascript:toggleMenu();"/>
     <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
     <ul class="menu" id="menu-ul">
 
-      <?php
+      <?php      
       if (strpos( $_SERVER['REQUEST_URI'], "/news.php" ) !== false)
-        echo "<li style='background-color: darkorange'><a href=\"http://www.webosarchive.com/news.php\" target=\"_top\">News</a></li>";
+        echo "<li style='background-color: darkorange'><a href=\"www.webosarchive.com/news.php\" target=\"_top\">News</a></li>";
       else
         echo "<li><a href=\"http://www.webosarchive.com/news.php\" target=\"_top\">News</a></li>";
       ?>
