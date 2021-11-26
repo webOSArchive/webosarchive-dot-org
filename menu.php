@@ -169,7 +169,7 @@ body {
           menuOpen = true;
       }
   }
-  function redrawMenu() {
+  function redrawMenu() { // Touchpads sometimes need help
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout(function() {
       if (window.innerWidth > oldSize) {
@@ -179,7 +179,6 @@ body {
         }
       }
     }, 350);
-    //if (document.activeElement.nodeName != "INPUT") {  //Workaround TouchPad keyboard throwing resize event
   }
   window.addEventListener('resize', redrawMenu);
 </script>
