@@ -173,7 +173,7 @@ body {
       }, 350);
     }
   }
-  window.addEventListener('resize', toggleMenu);
+  //window.addEventListener('resize', toggleMenu);
 </script>
 <div class="menu-wrapper">
   <header class="wosaMenu">
