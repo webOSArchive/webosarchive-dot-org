@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>webOS Archive</title>
@@ -22,7 +20,7 @@
 <div id="container">
 
 <div class="wosaTitle">
-  <img src="museum.png">
+  webOS Archive News
 </div>
 
 <?php
@@ -37,4 +35,3 @@ This archival project serves the public interest in preservation, access and res
 </footer>
 </div>
 </body>
-</html>
