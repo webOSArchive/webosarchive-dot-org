@@ -54,8 +54,9 @@ if (isset($rssFeedURI) && $rssFeedURI != "") {
     $feed = new SimpleXMLElement($content);
 
     foreach($feed->channel->item as $entry) {
-        $date = new DateTime($entry->pubDate);
         $tzDate = new DateTimeZone($rssTimeZone);
+        date_default_timezone_set($rssTimeZone);
+        $date = new DateTime($entry->pubDate);
         $date->setTimeZone($tzDate);
         echo "<tr><td class='rss-widget-cell'>\n";
         echo "   <p><b><a href='" . $feed->channel->link . "'>@" . $entry->author . "</a></b> <small> ". $date->format('Y-m-d g:i:sa') . " ET</small></p>\n";

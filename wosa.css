@@ -21,6 +21,32 @@
     padding-bottom: 2px;
     text-align:center; color:black;
   }
+  .wosaIntro {
+    padding-top: 0px;
+    margin-top: -10px;
+    padding-bottom: 0px;
+    margin-bottom: -5px;
+  }
+  .wosaIntro h2 {
+    text-align: right !important;
+    padding-top: -10px;
+    font-size: 14px;
+    margin-top: 0px;
+    color: white;
+  }
+  .wosaIntro p {
+    text-align: left;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+  .circle-image {
+    background-color: rgb(255,175,88);
+    border: 1px solid white;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
   footer {
     position: fixed;
     padding: 10px 10px 10px 10px;

@@ -172,6 +172,7 @@ body {
   function redrawMenu() { // Touchpads sometimes need help
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout(function() {
+      var menuElement = document.getElementById("menu-ul");
       if (window.innerWidth > oldSize) {
         oldSize = window.innerWidth;
         if (window.innerWidth > 815) {
