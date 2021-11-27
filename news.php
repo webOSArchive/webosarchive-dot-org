@@ -35,7 +35,7 @@
 </div>
 
 <?php
-    $rssFeedURI="http://twitter.webosarchive.com/?MTQ2MzI2MjQ3NTM2MTUzMzk1Mg";
+    $rssFeedURI="http://twitter.webosarchive.com/?twitterid=MTQ2MzI2MjQ3NTM2MTUzMzk1Mg";
 ?>
 
 <div>
