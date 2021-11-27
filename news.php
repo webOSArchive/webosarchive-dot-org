@@ -26,7 +26,7 @@
 </div>
 
 <?php
-    $rssFeedURI="http://twitter.webosarchive.com/?1463262475361533952";
+    $rssFeedURI="http://twitter.webosarchive.com/?MTQ2MzI2MjQ3NTM2MTUzMzk1Mg";
 ?>
 <div>
     <?php include("rssWidget.php") ?>
