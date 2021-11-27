@@ -68,7 +68,7 @@ if (isset($rssFeedURI) && $rssFeedURI != "") {
         //Main Entry with hashtag lists moved to footer
         $description = $entry->description;
         $hashtags = getHashtags($description);
-        if (isset($hashtags)) {
+        if (isset($hashtags) && $hashtags != "") {
             $searchString = implode(" ", $hashtags);
             $description = str_replace($searchString, "", $description);
         }
@@ -78,7 +78,7 @@ if (isset($rssFeedURI) && $rssFeedURI != "") {
         //Entry Footer
         echo "   <div class='rss-widget-footer'>\n";
         echo "      <span style='float:right'><a href='$entry->link' title='$entry->title'>Link</a>";
-        if (isset($hashtags)) {
+        if (isset($hashtags) && $hashtags != "") {
             echo " | Tags: ";
             foreach($hashtags as $hashtag) {
                 $linkTag = str_replace("#", "", $hashtag);
