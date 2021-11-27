@@ -12,6 +12,9 @@
 
   gtag('config', 'G-D78HQSPL8V');
 </script>
+<style>
+  body,table,tr,td,* { font-size: 12px;  }
+</style>
 </head>
 <body style="margin:0px;" height="100%">
 
@@ -39,7 +42,7 @@
     <?php include("rssWidget.php") ?>
 </div>
 
-<div class="wosaIntro" style="margin-top: 14px; margin-bottom: 40px; padding-bottom: 10px; border-top: 2px solid NavajoWhite">
+<div class="wosaIntro" style="margin-top: 14px; margin-bottom: 40px; padding-bottom: 10px;">
   <p style="font-size:smaller">The material on this site has been collected from private archives, the Internet Archive's wayback machine, and historical forum and blog posts and is preserved here for public interest under Fair Use provisions of United States' copyright law. The curator will respond promptly to formal and legally authorized take-down requests from rights holders who can demonstrate clear harm that results from having their historical material preserved.</p>
 </div>
 

@@ -78,8 +78,8 @@ if (isset($rssFeedURI) && $rssFeedURI != "") {
 
         //Entry Footer
         echo "   <div class='rss-widget-footer'>\n";
-        echo "      <span style='float:right'><a href='$entry->link' title='$entry->title'>Link</a>";
-        if (isset($hashtags) && $hashtags != "") {
+        echo "      <span style='float:right; margin-right: 10px;'><a href='$entry->link' title='$entry->title'>Permalink</a>";
+        if (isset($hashtags) && !empty($hashtags)) {
             echo " | Tags: ";
             foreach($hashtags as $hashtag) {
                 $linkTag = str_replace("#", "", $hashtag);
