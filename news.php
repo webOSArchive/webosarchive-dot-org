@@ -13,7 +13,7 @@
   gtag('config', 'G-D78HQSPL8V');
 </script>
 <style>
-  container { font-size: 13px; }
+  container,td { font-size: 13px; }
 </style>
 </head>
 <body style="margin:0px;" height="100%">
