@@ -13,6 +13,9 @@
   gtag('config', 'G-D78HQSPL8V');
 </script>
 </head>
+<style>
+td { font-size: 13px; }
+</style>
 <body style="margin:0px;" height="100%">
 
 <?php include('menu.php')?>
