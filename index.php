@@ -45,7 +45,7 @@
    <div class="content" style="align-content: center;  text-align: center;">
    <h3>Help &amp; Documentation</h3><br>
    <a href="http://www.webosarchive.com/docs/"><img src="help.png" style="margin-top:-10px"/></a>
-   <p style="margin:30px;">Instructions on activating a device, now that its servers are offline, as well as an ongoing project to <a href="http://help.webosarchive.com">restore on-device Help</a> and User documentation.</p>
+   <p style="margin:30px;">Instructions on activating a device, now that its servers are offline, as well as an ongoing project to <a href="http://help.webosarchive.com/HowToUse.php">restore on-device Help</a> and User documentation.</p>
    </div>
   </div>
 </div>
