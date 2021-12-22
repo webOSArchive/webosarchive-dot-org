@@ -219,7 +219,7 @@ body {
       if (isset($_GET['content']) && $_GET['content'] == 'maps')
         echo "<li style='background-color: green'><a href=\"http://maps.webosarchive.com\" target=\"_top\">Maps Beta</a></li>";
       else
-        echo "<li><a href=\"http://maps.webosarchive.com\" target=\"_top\">Maps Beta</a></li></li>";
+        echo "<li><a href=\"http://maps.webosarchive.com\" target=\"_top\">Maps</a></li></li>";
       ?>
       <?php
       if (isset($_GET['content']) && $_GET['content'] == 'sdk')
