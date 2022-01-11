@@ -43,7 +43,7 @@
   .circle-image {
     background-color: rgb(255,175,88);
     border: 1px solid white;
-    -webkit-border-radius: 5px;
+    -webkit-border-radius: 100px;
     border-radius: 50%;
     -moz-border-radius: 50%;
     -o-border-radius: 50%;
