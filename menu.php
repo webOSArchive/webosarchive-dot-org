@@ -192,7 +192,7 @@ body {
       else
       $protocol = "http";
     ?>
-    <a href="http://www.webosarchive.com" class="logo" target="_top"><img src="<?php echo $protocol ?>://www.webosarchive.com/webOSLogo.png" height="18" style="height:18px"> Archive</a>
+    <a href="<?php echo $protocol ?>://www.webosarchive.com" class="logo" target="_top"><img src="<?php echo $protocol ?>://www.webosarchive.com/webOSLogo.png" height="18" style="height:18px"> Archive</a>
     <input class="menu-btn" type="checkbox" id="menu-btn" onclick="javascript:toggleMenu();"/>
     <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
     <ul class="menu" id="menu-ul">
