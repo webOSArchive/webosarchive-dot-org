@@ -188,9 +188,9 @@ body {
     <?php
       //Figure out what protocol the client wanted
       if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')
-      $protocol = "https";
+        $protocol = "https";
       else
-      $protocol = "http";
+        $protocol = "http";
     ?>
     <a href="<?php echo $protocol ?>://www.webosarchive.com" class="logo" target="_top"><img src="<?php echo $protocol ?>://www.webosarchive.com/webOSLogo.png" height="18" style="height:18px"> Archive</a>
     <input class="menu-btn" type="checkbox" id="menu-btn" onclick="javascript:toggleMenu();"/>
