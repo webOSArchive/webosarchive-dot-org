@@ -5,6 +5,7 @@
 <title>webOS Archive</title>
 
 <link rel="stylesheet" href="wosa.css">
+<link rel="shortcut icon" href="favicon.ico">
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-D78HQSPL8V"></script>
 <script>
