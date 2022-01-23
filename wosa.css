@@ -11,6 +11,18 @@
      position:relative;
 
   }
+  a {
+    color:#3E0BF9;
+  }
+  a:hover {
+    color: darkorange;
+  }
+  a:active {
+    color:darkorange;
+  }
+  a:visited {
+    color:#3E0BF9;
+  }
   .wosaTitle {
     background-color: NavajoWhite;
     background-color: rgb(255,175,88);
