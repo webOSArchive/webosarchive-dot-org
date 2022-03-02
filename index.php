@@ -6,14 +6,6 @@
 
 <link rel="stylesheet" href="wosa.css">
 <link rel="shortcut icon" href="favicon.ico">
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-D78HQSPL8V"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-D78HQSPL8V');
-</script>
 </head>
 <body style="margin:0px;" height="100%">
 
