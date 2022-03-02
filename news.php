@@ -3,15 +3,6 @@
 <title>webOS Archive</title>
 
 <link rel="stylesheet" href="wosa.css">
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-D78HQSPL8V"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-D78HQSPL8V');
-</script>
 </head>
 <style>
 td { font-size: 14px; }
