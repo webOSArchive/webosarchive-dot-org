@@ -3,10 +3,10 @@
 <title>webOS Archive</title>
 
 <link rel="stylesheet" href="wosa.css">
-</head>
 <style>
 td { font-size: 14px; }
 </style>
+</head>
 <body style="margin:0px;" height="100%">
 
 <?php include('menu.php')?>
