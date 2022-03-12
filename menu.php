@@ -241,7 +241,7 @@ body {
       echo "<li";
       if (isset($_GET['content']) && $_GET['content'] == 'community')
         echo " style='background-color: #2980B9'";
-      echo "><a href=\"$protocol://www.webosarchive.com/docs?community\" target=\"_top\">Community</a></li>";
+      echo "><a href=\"$protocol://www.webosarchive.com/docs/community\" target=\"_top\">Community</a></li>";
       ?>
     </ul>
   </header>
