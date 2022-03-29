@@ -52,7 +52,7 @@ else
 &nbsp;<br>
 &nbsp;<br>
 <footer>
-This archival project serves the public interest in preservation, access and research, and is protected by Fair Use doctrine of US copyright law.
+This archival project serves the public interest in preservation, access and research, and is protected by Fair Use provisions of US copyright law.
 </footer>
 </div>
 </body>
