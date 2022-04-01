@@ -28,21 +28,21 @@ else
   <div class="column" style="background-color:#aaa;">
    <div class="content" style="align-content: center;  text-align: center;">
    <h3>webOS SDK/PDK</h3><br>
-   <a href="<?php echo $protocol; ?>://sdk.webosarchive.com"><img src="sdk.png"/></a>
+   <a href="<?php echo $protocol; ?>://sdk.webosarchive.com"><img src="sdk.png" alt="SDK" title="SDK"/></a>
    <p style="margin:30px;">The restored SDK includes documentation, tools and emulators for developing in the Palm/HP webOS Javascript frameworks and platform services.</p>
    </div>
   </div>
   <div class="column" style="background-color:#bbb;">
    <div class="content" style="align-content: center;  text-align: center;">
    <h3>App Catalog Museum</h3><br>
-   <a href="<?php echo $protocol; ?>://appcatalog.webosarchive.com"><img src="catalog.png" style="margin-top:-10px"></a>
+   <a href="<?php echo $protocol; ?>://appcatalog.webosarchive.com"><img src="catalog.png" style="margin-top:-10px" alt="App Catalog" title="App Catalog"></a>
    <p style="margin:30px;">The partially restored App Catalog contains metadata, images and packages for apps released for the platform as part of a historical digital archive.</p>
    </div>
   </div>
   <div class="column" style="background-color:#ccc;">
    <div class="content" style="align-content: center;  text-align: center;">
    <h3>Help &amp; Documentation</h3><br>
-   <a href="<?php echo $protocol; ?>://www.webosarchive.com/docs/"><img src="help.png" style="margin-top:-10px"/></a>
+   <a href="<?php echo $protocol; ?>://www.webosarchive.com/docs/"><img src="help.png" style="margin-top:-10px" alt="Help and Docs" title="Help and Docs"/></a>
    <p style="margin:30px;">Instructions on activating a device, now that its servers are offline, as well as an ongoing project to <a href="http://help.webosarchive.com/HowToUse.php">restore on-device Help</a> and User documentation.</p>
    </div>
   </div>
