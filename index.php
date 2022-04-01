@@ -14,7 +14,7 @@
 <div id="container">
 
 <div class="wosaTitle">
-  <img src="museum.png">
+  <img src="museum.png" alt="webOS Archive" title="webOS Archive">
 </div>
 <?php
 //Figure out what protocol the client wanted
@@ -52,7 +52,7 @@ else
 &nbsp;<br>
 &nbsp;<br>
 <footer>
-This archival project serves the public interest in preservation, access and research, and is protected by Fair Use provisions of US copyright law.
+webOS Archive is an archival project that serves the public interest in preservation, access and research, and is protected by Fair Use provisions of US copyright law.
 </footer>
 </div>
 </body>
