@@ -71,7 +71,7 @@ if (isset($rssFeedURI) && $rssFeedURI != "") {
         $hashtags = getHashtags($description);
         if (isset($hashtags) && $hashtags != "") {
             $searchString = implode(" ", $hashtags);
-            $description = str_replace($searchString, "", $description);
+            //$description = str_replace($searchString, "", $description);
         }
         echo $description . "\n";
         echo "   </p>\n";
