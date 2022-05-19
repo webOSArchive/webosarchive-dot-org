@@ -6,6 +6,7 @@
 
 <link rel="stylesheet" href="wosa.css">
 <link rel="shortcut icon" href="favicon.ico">
+<meta name="description" content="webOS Archive is the unofficially official home of legacy webOS for the defunct Palm/HP mobile platform. Find community, and community-restored apps, docs and guides.">
 </head>
 <body style="margin:0px;" height="100%">
 
