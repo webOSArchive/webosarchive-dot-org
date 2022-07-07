@@ -229,11 +229,6 @@ body {
       echo "><a href=\"$protocol://podcasts.webosarchive.com\" target=\"_top\">Podcasts</a></li>";
 
       echo "<li";
-      if (isset($_GET['content']) && $_GET['content'] == 'maps')
-        echo " style='background-color: green'";
-      echo "><a href=\"$protocol://maps.webosarchive.com\" target=\"_top\">Maps</a></li>";
-
-      echo "<li";
       if (isset($_GET['content']) && $_GET['content'] == 'sdk')
         echo " style='background-color: #f38325'";
       echo "><a href=\"$protocol://sdk.webosarchive.com\" target=\"_top\">SDK</a></li>";
@@ -242,6 +237,11 @@ body {
       if (isset($_GET['content']) && $_GET['content'] == 'community')
         echo " style='background-color: #2980B9'";
       echo "><a href=\"$protocol://www.webosarchive.com/docs/community\" target=\"_top\">Community</a></li>";
+
+      echo "<li";
+      if (isset($_GET['content']) && $_GET['content'] == 'docs')
+        echo " style='background-color: #2980B9'";
+      echo "><a href=\"$protocol://www.webosarchive.com/docs\" target=\"_top\">Docs</a></li>";
       ?>
     </ul>
   </header>
