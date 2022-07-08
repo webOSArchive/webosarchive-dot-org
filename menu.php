@@ -237,7 +237,6 @@ body {
       if (isset($_GET['content']) && $_GET['content'] == 'community')
         echo " style='background-color: #5f72b5'";
       echo "><a href=\"$protocol://www.webosarchive.com/docs/community\" target=\"_top\">Community</a></li>";
-      echo "<style>.wy-side-nav-search { background-color: #5f72b5 !important }</style>";
 
       echo "<li";
       if (isset($_GET['content']) && $_GET['content'] == 'docs')
