@@ -221,7 +221,7 @@ body {
       echo "<li";
       if (isset($_GET['content']) && $_GET['content'] == 'appcatalog')
         echo " style='background-color: #3E0BF9'";
-      echo "><a href=\"$protocol://appcatalog.webosarchive.com\" target=\"_top\">App Catalog</a></li>";
+      echo "><a href=\"$protocol://appcatalog.webosarchive.com\" target=\"_top\">App Museum</a></li>";
 
       echo "<li";
       if (isset($_GET['content']) && $_GET['content'] == 'podcasts')
