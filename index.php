@@ -53,7 +53,7 @@ else
 &nbsp;<br>
 &nbsp;<br>
 <footer>
-webOS Archive is an archival project that serves the public interest in preservation, access and research, and is protected by Fair Use provisions of US copyright law.
+webOS Archive is an not-for-profit archival project that serves the public interest in preservation, access and research, and is protected by Fair Use provisions of US copyright law.
 </footer>
 </div>
 </body>
