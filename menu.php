@@ -246,3 +246,6 @@ body {
     </ul>
   </header>
 </div>
+<?php
+echo "content:" . $_GET['content'];
+?>
