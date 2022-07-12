@@ -29,7 +29,7 @@ else
   <div class="column" style="background-color:#aaa;">
    <div class="content" style="align-content: center;  text-align: center;">
    <h3>webOS SDK/PDK</h3><br>
-   <a href="<?php echo $protocol; ?>://sdk.webosarchive.com"><img src="sdk.png" alt="SDK" title="SDK"/></a>
+   <a href="<?php echo $protocol; ?>://sdk.webosarchive.com"><img src="webos-sdk.png" alt="SDK" title="SDK"/></a>
    <p style="margin:30px;">The restored SDK includes documentation, tools and emulators for developing in the Palm/HP webOS Javascript frameworks and platform services.</p>
    </div>
   </div>
