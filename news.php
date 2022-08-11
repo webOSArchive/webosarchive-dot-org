@@ -38,7 +38,7 @@ td { font-size: 14px; }
 </div>
 
 <footer>
-This archival project serves the public interest in preservation, access and research, and is protected by Fair Use doctrine of US copyright law.
+webOS Archive is a not-for-profit archival project that serves the public interest in preservation, access and research, and is protected by Fair Use provisions of US copyright law.
 </footer>
 </div>
 </body>
