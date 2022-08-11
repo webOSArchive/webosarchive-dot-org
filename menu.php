@@ -207,7 +207,7 @@ body {
       else
         $protocol = "http";
     ?>
-    <a href="<?php echo $protocol ?>://www.webosarchive.com" class="logo" target="_top"><img src="<?php echo $protocol ?>://www.webosarchive.com/webOSLogo.png" height="18" style="height:18px" alt="webOS Archive Home" title="webOS Archive Home"> Archive</a>
+    <a href="<?php echo $protocol ?>://www.webosarchive.org" class="logo" target="_top"><img src="<?php echo $protocol ?>://www.webosarchive.org/webOSLogo.png" height="18" style="height:18px" alt="webOS Archive Home" title="webOS Archive Home"> Archive</a>
     <input class="menu-btn" type="checkbox" id="menu-btn" onclick="javascript:toggleMenu();"/>
     <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
     <ul class="menu" id="menu-ul">
@@ -216,32 +216,32 @@ body {
       echo "<li";
       if (strpos( $_SERVER['REQUEST_URI'], "/news.php" ) !== false)
         echo " style='background-color: darkorange'";
-      echo "><a href=\"$protocol://www.webosarchive.com/news.php\" target=\"_top\">News</a></li>";
+      echo "><a href=\"$protocol://www.webosarchive.org/news.php\" target=\"_top\">News</a></li>";
 
       echo "<li";
       if (isset($_GET['content']) && $_GET['content'] == 'appcatalog')
         echo " style='background-color: #3E0BF9'";
-      echo "><a href=\"$protocol://appcatalog.webosarchive.com\" target=\"_top\">App Museum</a></li>";
+      echo "><a href=\"$protocol://appcatalog.webosarchive.org\" target=\"_top\">App Museum</a></li>";
 
       echo "<li";
       if (isset($_GET['content']) && $_GET['content'] == 'podcasts')
         echo " style='background-color: #EA7819'";
-      echo "><a href=\"$protocol://podcasts.webosarchive.com\" target=\"_top\">Podcasts</a></li>";
+      echo "><a href=\"$protocol://podcasts.webosarchive.org\" target=\"_top\">Podcasts</a></li>";
 
       echo "<li";
       if (isset($_GET['content']) && $_GET['content'] == 'sdk')
         echo " style='background-color: #f38325'";
-      echo "><a href=\"$protocol://sdk.webosarchive.com\" target=\"_top\">SDK</a></li>";
+      echo "><a href=\"$protocol://sdk.webosarchive.org\" target=\"_top\">SDK</a></li>";
 
       echo "<li";
       if (isset($_GET['content']) && $_GET['content'] == 'community')
         echo " style='background-color: #5f72b5'";
-      echo "><a href=\"$protocol://www.webosarchive.com/docs/community\" target=\"_top\">Community</a></li>";
+      echo "><a href=\"$protocol://www.webosarchive.org/docs/community\" target=\"_top\">Community</a></li>";
 
       echo "<li";
       if (isset($_GET['content']) && $_GET['content'] == 'docs')
         echo " style='background-color: #2980B9'";
-      echo "><a href=\"$protocol://www.webosarchive.com/docs\" target=\"_top\">Docs</a></li>";
+      echo "><a href=\"$protocol://www.webosarchive.org/docs\" target=\"_top\">Docs</a></li>";
       ?>
     </ul>
   </header>
