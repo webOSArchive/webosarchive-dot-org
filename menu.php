@@ -179,10 +179,7 @@ function notifyTLDChange() {
       //oh well
   }
 }
-document.body.addEventListener(
-  "load",
-  notifyTLDChange
-);
+document.body.addEventListener("load", notifyTLDChange());
 </script>
 <!-- End Notification Code -->
 <script>
