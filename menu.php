@@ -176,6 +176,7 @@ function notifyTLDChange() {
   try {
       if (window.location.href.indexOf("webosarchive.com") != -1) {
           var myNotification = window.createNotification({});
+          modernURL = window.location.href.replace("webosarchive.com", "webosarchive.org");
           myNotification({ 
               title: 'webOS Archive is evolving!',
               displayCloseButton: true,
