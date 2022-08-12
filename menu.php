@@ -1,3 +1,10 @@
+<?php
+  //Figure out what protocol the client wanted
+  if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')
+    $protocol = "https";
+  else
+    $protocol = "http";
+?>
 <style>
 body {
     margin:0px;
@@ -162,7 +169,8 @@ body {
 </script>
 <!-- End Matomo Code -->
 <!-- Notification Code -->
-<script src="notifications/notifications.js"></script>
+<link rel="stylesheet" href="<?php echo $protocol ?>://www.webosarchive.org/notifications/notifications.css">
+<script src="<?php echo $protocol ?>://www.webosarchive.org/notifications/notifications.js"></script>
 <script>
 function notifyTLDChange() {
   try {
@@ -221,13 +229,7 @@ document.body.addEventListener("load", notifyTLDChange());
 </script>
 <div class="menu-wrapper">
   <header class="wosaMenu">
-    <?php
-      //Figure out what protocol the client wanted
-      if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')
-        $protocol = "https";
-      else
-        $protocol = "http";
-    ?>
+
     <a href="<?php echo $protocol ?>://www.webosarchive.org" class="logo" target="_top"><img src="<?php echo $protocol ?>://www.webosarchive.org/webOSLogo.png" height="18" style="height:18px" alt="webOS Archive Home" title="webOS Archive Home"> Archive</a>
     <input class="menu-btn" type="checkbox" id="menu-btn" onclick="javascript:toggleMenu();"/>
     <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
