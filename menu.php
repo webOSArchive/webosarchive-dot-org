@@ -180,7 +180,7 @@ function notifyTLDChange() {
   }
 }
 document.body.addEventListener(
-  "onload",
+  "load",
   notifyTLDChange
 );
 </script>
