@@ -4,16 +4,14 @@
     box-sizing: border-box;
     position: fixed;
     z-index: 999999;
-    margin-top: 50px;
-    margin-right: 10px;
 }
 .ncf-container.nfc-top-left {
     top: 12px;
     left: 12px;
 }
 .ncf-container.nfc-top-right {
-    top: 12px;
-    right: 12px;
+    top: 62px;
+    right: 32px;
 }
 .ncf-container.nfc-bottom-right {
     bottom: 12px;
