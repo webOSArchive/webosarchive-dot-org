@@ -161,6 +161,30 @@ body {
   })();
 </script>
 <!-- End Matomo Code -->
+<!-- Notification Code -->
+<script src="notifications/notifications.js"></script>
+<script>
+function notifyTLDChange() {
+  try {
+      if (window.location.href.indexOf("webosarchive.com") != -1) {
+          var myNotification = window.createNotification({});
+          myNotification({ 
+              title: 'webOS Archive is evolving!',
+              displayCloseButton: true,
+              theme: 'info',
+              message: 'webOSArchive.com is now webOSArchive.org! Please update your bookmarks to use the new URL.' 
+          });
+      }
+  } catch (e) {
+      //oh well
+  }
+}
+document.body.addEventListener(
+  "onload",
+  notifyTLDChange
+);
+</script>
+<!-- End Notification Code -->
 <script>
   var menuOpen = false;
   var resizeTimer;
