@@ -3,9 +3,25 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>webOS Archive</title>
-
 <link rel="stylesheet" href="wosa.css">
 <link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="notifications/notifications.css">
+<script src="notifications/notifications.js"></script>
+<script>
+try {
+    if (window.location.href.indexOf("webosarchive.com") != -1) {
+        var myNotification = window.createNotification({});
+        myNotification({ 
+            title: 'webOS Archive is evolving!',
+            displayCloseButton: true,
+            theme: 'info',
+            message: 'webOSArchive.com is now webOSArchive.org! Please update your bookmarks to use the new URL.' 
+        });
+    }
+} catch (e) {
+    //oh well
+}
+</script>
 <meta name="description" content="webOS Archive is the unofficially official home of legacy webOS for the defunct Palm/HP mobile platform. Find community, and community-restored apps, docs and guides.">
 </head>
 <body style="margin:0px;" height="100%">
