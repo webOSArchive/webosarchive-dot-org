@@ -5,6 +5,7 @@
     position: fixed;
     z-index: 999999;
     margin-top: 50px;
+    margin-right: 25px;
 }
 .ncf-container.nfc-top-left {
     top: 12px;
