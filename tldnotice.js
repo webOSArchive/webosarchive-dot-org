@@ -14,4 +14,4 @@ function notifyTLDChange() {
       console.log("Could not notify user of new TLD (.org): ", e);
   }
 }
-window.addEventListener("load", function() {this.document.body.addEventListener("load", notifyTLDChange);})
+window.addEventListener("load", function() {this.document.body.addEventListener("load", notifyTLDChange() );})
