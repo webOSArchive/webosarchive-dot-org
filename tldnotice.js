@@ -3,10 +3,10 @@ function notifyTLDChange() {
       if (window.location.href.indexOf("?redir=tld") != -1 || window.location.href.indexOf("&redir=tld") != -1) {
           var myNotification = window.createNotification({});
           myNotification({ 
-              title: 'Redirecting to webOSArchive.org!',
+              title: 'You visited an old URL!',
               displayCloseButton: true,
               theme: 'info',
-              message: 'webOSArchive.com is now webOSArchive.org! Please update your bookmarks to use the new URL.' 
+              message: 'webOSArchive.com is now webOSArchive.org! Please update your bookmarks to use the new URL. The old domain will stop working soon!' 
           });
       }
   } catch (e) {
