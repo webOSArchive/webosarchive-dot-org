@@ -1,6 +1,6 @@
 function notifyTLDChange() {
   try {
-      if (window.location.href.indexOf("webosarchive.com") != -1) {
+      if (window.location.href.indexOf("?redir=tld") != -1 || window.location.href.indexOf("&redir=tld") != -1) {
           var myNotification = window.createNotification({});
           modernURL = window.location.href.replace("webosarchive.com", "webosarchive.org");
           myNotification({ 
