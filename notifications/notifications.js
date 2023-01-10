@@ -109,7 +109,7 @@
                 var n = document.querySelector("." + t);
                 return n || ((n = (0, o.createElement)("div", "ncf-container", t)), (0, o.append)(document.body, n)), n;
             }
-            var c = { closeOnClick: !0, displayCloseButton: !0, positionClass: "nfc-top-right", onclick: !1, showDuration: 8500, theme: "info" };
+            var c = { closeOnClick: !0, displayCloseButton: !0, positionClass: "nfc-top-right", onclick: !1, showDuration: 15000, theme: "info" };
             t.createNotification ? console.warn("Window already contains a create notification function. Have you included the script twice?") : (t.createNotification = e);
         })(window);
     },
