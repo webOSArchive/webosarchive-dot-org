@@ -69,12 +69,10 @@
                         if (
                             (!0 === t.closeOnClick &&
                                 a.addEventListener("click", function () {
-                                    console.log("here 1");
                                     return c.removeChild(a);
                                 }),
                             t.onclick &&
                                 a.addEventListener("click", function (n) {
-                                    console.log("here 2");
                                     return t.onclick(n);
                                 }),
                             t.displayCloseButton)
@@ -83,7 +81,6 @@
                             (s.innerText = "X"),
                                 !1 === t.closeOnClick &&
                                     s.addEventListener("click", function () {
-                                        console.log("here 3");
                                         return c.removeChild(a);
                                         
                                     }),
