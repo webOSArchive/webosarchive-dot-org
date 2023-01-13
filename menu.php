@@ -238,6 +238,11 @@ body {
       if (isset($_GET['content']) && $_GET['content'] == 'sdk')
         echo " style='background-color: #f38325'";
       echo "><a href=\"$protocol://sdk.webosarchive.org\" target=\"_top\">SDK</a></li>";
+      
+      echo "<li";
+      if (isset($_GET['content']) && $_GET['content'] == 'forums')
+        echo " style='background-color: #5f72b5'";
+      echo "><a href=\"$protocol://forums.webosarchive.org\" target=\"_top\">Forums</a></li>";
 
       echo "<li";
       if (isset($_GET['content']) && $_GET['content'] == 'community')
