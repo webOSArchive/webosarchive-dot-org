@@ -115,7 +115,7 @@ body {
 }
 
 /* Responsive */
-@media only screen and (max-width: 815px){
+@media only screen and (max-width: 865px){
   .wosaMenu ul{
       background-color: lightgray;
   }
@@ -125,7 +125,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 815px) {
+@media only screen and (min-width: 865px) {
   .menu-wrapper{
         background: #414141;
         height: 45px;
