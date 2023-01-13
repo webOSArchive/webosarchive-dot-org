@@ -241,7 +241,7 @@ body {
       
       echo "<li";
       if (isset($_GET['content']) && $_GET['content'] == 'forums')
-        echo " style='background-color: #5f72b5'";
+        echo " style='background-color: #28aae1'";
       echo "><a href=\"$protocol://forums.webosarchive.org\" target=\"_top\">Forums</a></li>";
 
       echo "<li";
