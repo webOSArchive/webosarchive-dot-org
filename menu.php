@@ -176,6 +176,11 @@ body {
         echo "><a href=\"$protocol://appcatalog.webosarchive.org\" target=\"_top\">App Museum</a></li>";
 
         echo "<li";
+        if (isset($_GET['content']) && $_GET['content'] == 'docs')
+          echo " style='background-color: #2980B9'";
+        echo "><a href=\"$protocol://www.webosarchive.org/docs\" target=\"_top\">Docs</a></li>";  
+
+        echo "<li";
         if (isset($_GET['content']) && $_GET['content'] == 'sdk')
           echo " style='background-color: #f38325'";
         echo "><a href=\"$protocol://sdk.webosarchive.org\" target=\"_top\">SDK</a></li>";
