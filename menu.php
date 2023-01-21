@@ -11,7 +11,7 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
-/* new */
+/* Dropdown, responsive CSS menus from here: https://webcodeflow.com/responsive-navbar-with-dropdown/ */
 :root {
   --primary-color: pink;
   --secondary-color: #fff;
