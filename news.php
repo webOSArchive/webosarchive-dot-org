@@ -10,7 +10,7 @@ td { font-size: 14px; }
 <body style="margin:0px;" height="100%">
 
 <?php include('social-meta.php') ?>
-<?php include('menu.php')?>
+<?php include('menu-new.php')?>
 
 <div id="container">
 
