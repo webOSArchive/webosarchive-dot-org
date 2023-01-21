@@ -163,7 +163,7 @@ body {
     <a href="<?php echo $protocol ?>://www.webosarchive.org" class="logo" target="_top"><img src="<?php echo $protocol ?>://www.webosarchive.org/webOSLogo.png" height="18" style="height:18px" alt="webOS Archive Home" title="webOS Archive Home"> Archive</a>
     <nav id="navbar">
       <ul>
-        <li><a href="https://www.webosarchive.org">Home</a></li>
+        <li><a href="http://www.webosarchive.org">Home</a></li>
         <?php 
         echo "<li";
         if (strpos( $_SERVER['REQUEST_URI'], "/news.php" ) !== false)
@@ -188,19 +188,21 @@ body {
         <li>
           Services</i>
           <ul>
-            <li><a href="#">Podcasts</a></li>
-            <li><a href="#">Calendars</a></li>
-            <li><a href="#">Maps</a></li>
+            <?php
+              echo "<li><a href=\"$protocol://podcasts.webosarchive.org\" target=\"_top\">Podcasts</a></li>";
+              echo "<li><a href=\"$protocol://cdav.webosarchive.org\" target=\"_top\">Calendars</a></li>";
+              echo "<li><a href=\"$protocol://maps.webosarchive.org\" target=\"_top\">Maps</a></li>";
+            ?>
           </ul>
         </li>
         <li>
           Community</i>
           <ul>
-            <li><a href="https://www.webosarchive.org/docs/community">Discord</a></li>  
-            <li><a href="https://forums.webosarchive.org">Forums (Archive)</a></li>
-            <li><a href="#">Forums (New)</a></li>
-            <li><a href="#">Reddit</a></li>
-            <li><a href="https://pivotce.com/">PivotCE</a></li>
+            <li><a href="http://www.webosarchive.org/docs/community">Discord</a></li>  
+            <li><a href="http://forums.webosarchive.org">Forums (Archive)</a></li>
+            <li><a href="https://www.lgwebos.com/forum/6-hp-webos/">Forums (New)</a></li>
+            <li><a href="https://old.reddit.com/r/webos">Reddit</a></li>
+            <li><a href="http://pivotce.com/">PivotCE</a></li>
           </ul>
         </li>
       </ul>
