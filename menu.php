@@ -72,9 +72,9 @@
         <a>Community</a>
           <ul>
             <li><a href="http://www.webosarchive.org/docs/community">Discord</a></li>  
-            <li><a href="http://forums.webosarchive.org">Forums (Archive)</a></li>
-            <li><a href="https://www.lgwebos.com/forum/6-hp-webos/">Forums (New)</a></li>
-            <li><a href="https://old.reddit.com/r/webos">Reddit</a></li>
+            <li><a href="http://forums.webosarchive.org">Forums (Archived)</a></li>
+            <li><a href="https://www.lgwebos.com/forum/6-hp-webos/">LG Forums (Current)</a></li>
+            <li><a href="https://old.reddit.com/r/webos">WebOS Sub-Reddit</a></li>
             <li><a href="http://pivotce.com/">PivotCE</a></li>
           </ul>
         </li>
