@@ -1,0 +1,197 @@
+body {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wosaMenu {
+  font-family: Verdana,sans-serif;
+  font-size: 12px;
+  background-color: #414141;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: relative;
+  width: 100%;
+  z-index: 3;
+}
+.wosaMenu .logo {
+  color: #fff;
+  display: block;
+  float: right;
+  font-size: 1.3em;
+  padding: 12px 20px;
+  text-decoration: none;
+}
+.menu-wrapper{
+  background: #414141;
+  height: 45px;
+  line-height: 45px;
+  width: 100%;
+}
+.wosaMenu .logo{
+  line-height: 1;
+}
+/* menu icon */
+.wosaMenu .menu-icon {
+  float: right;
+  padding: 22px 22px;
+  position: relative;
+  user-select: none;
+}
+.wosaMenu .menu-icon .navicon {
+  background: #fff;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+.wosaMenu .menu-icon .navicon:before,
+.wosaMenu .menu-icon .navicon:after {
+  background: #fff;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+.wosaMenu .menu-icon .navicon:before {
+  top: 5px;
+}
+.wosaMenu .menu-icon .navicon:after {
+  top: -5px;
+}
+/* menu btn */
+.wosaMenu .menu-btn {
+  display: none;
+}
+.wosaMenu .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+.wosaMenu .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+.wosaMenu .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+.wosaMenu .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.wosaMenu .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+/* Dropdown CSS menus from: https://webcodeflow.com/responsive-navbar-with-dropdown/ */
+#navbar {
+  float:left;
+  clear:none;
+  position: absolute;
+  z-index: 100;
+  padding-left: 5px;
+  line-height: 1;
+  visibility: visible;
+  color: #fff
+}
+#navbar ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+#navbar ul li {
+  color: inherit;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 0px;
+}
+#navbar ul li a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  padding: 1rem;
+}
+/* Hide Nested ul By Default */
+#navbar ul li ul {
+  display: none;
+}
+#navbar ul li:hover {
+  background-color: dimgray;
+  color: #fff;
+}
+#navbar ul li:hover a {
+  color: #fff;
+}
+/* Nested Dropdown Show */
+#navbar ul li:hover ul {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 200px;
+  off-margin-top: 1rem;
+}
+#navbar ul li:hover ul li {
+  display: block;
+  background-color: #414141;
+}
+#navbar ul li:hover ul li a {
+  color: #fff;
+}
+#navbar ul li:hover ul li:hover {
+  background-color: dimgray;
+  color: inherit;
+}
+#navbar ul li:hover ul li span {
+  float: right;
+  color: #fff;
+  background: blue;
+  text-align: center;
+  font-size: 0.8rem;
+  border-radius: 5px;
+}
+#navbar ul li:hover ul li:hover span {
+  background: #fff;
+}
+
+/* responsive: small */
+@media only screen and (max-width: 800px){
+  #navbar {
+    display:block;
+    width: 100%;
+    border-top: 1px solid dimgray;
+    position: absolute;
+    margin-top: 45px;
+    float:left;
+    padding-left: 0px;
+    visibility: hidden;
+    color: black;
+  }
+  #navbar ul li {
+    display: block;
+  }
+  #navbar ul li:hover ul {
+    width: 100%;
+    position: relative;
+  }
+  .wosaMenu .logo{
+    line-height: 1;
+    float:left; 
+  }
+  #navbar ul{
+    background-color: lightgray;
+    line-height: 1;
+    display: block;
+  }
+  #navbar li {
+    border-bottom: 1px solid dimgray;
+  }
+  #navbar li a {
+    color: #000;
+    display: inline-block;
+  }
+}
+/* responsive: big */
+@media only screen and (min-width: 800px) {
+  .wosaMenu .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .wosaMenu .menu-icon {
+    display: none;
+  }
+}
