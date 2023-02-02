@@ -52,7 +52,7 @@ else
 &nbsp;<br>
 &nbsp;<br>
 <footer>
-webOS Archive is a not-for-profit archival project that serves the public interest in preservation, access and research, and is protected by Fair Use provisions of US copyright law.
+webOS Archive is a not-for-profit archival project of <a href="https://codepoetry.app">codepoetry inc.</a> which serves the public interest in preservation, access and research, and is protected by Fair Use provisions of US copyright law.
 </footer>
 </div>
 </body>
