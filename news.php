@@ -39,7 +39,7 @@ td { font-size: 14px; }
 </div>
 
 <footer>
-webOS Archive is a not-for-profit archival project that serves the public interest in preservation, access and research, and is protected by Fair Use provisions of US copyright law.
+<?php include("legalese.php"); ?>
 </footer>
 </div>
 </body>
