@@ -68,7 +68,6 @@
           <ul>
             <li><a href="http://www.webosarchive.org/docs/community">Discord</a></li>  
             <li><a href="http://forums.webosarchive.org">Forums (Archived)</a></li>
-            <li><a href="https://www.lgwebos.com/forum/6-hp-webos/">LG Forums (Current)</a></li>
             <li><a href="https://old.reddit.com/r/webos">WebOS Sub-Reddit</a></li>
             <li><a href="https://twitter.com/webOSArchive">Twitter</a></li>
             <li><a href="https://palm.weboslives.eu/users/webosarchive">Mastodon</a></li>
