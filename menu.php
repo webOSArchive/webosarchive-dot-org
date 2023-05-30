@@ -12,7 +12,6 @@
 <!-- Matomo -->
 <script name="matomo">
   var _paq = window._paq = window._paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
   _paq.push(['trackPageView']);
   _paq.push(['enableLinkTracking']);
   (function() {
@@ -41,12 +40,7 @@
         echo "<li";
         if (strpos( $_SERVER['REQUEST_URI'], "/news.php" ) !== false)
           echo " style='background-color: darkorange'";
-        echo "><a href=\"$protocol://www.webosarchive.org/news.php\" target=\"_top\">News</a></li>";
-
-        echo "<li";
-        if (isset($_GET['content']) && $_GET['content'] == 'appcatalog')
-          echo " style='background-color: #3E0BF9'";
-        echo "><a href=\"$protocol://appcatalog.webosarchive.org\" target=\"_top\">App Museum</a></li>";
+        echo "><a href=\"$protocol://www.webosarchive.org/news\" target=\"_top\">News</a></li>";
 
         echo "<li";
         if (isset($_GET['content']) && $_GET['content'] == 'docs')
@@ -62,6 +56,7 @@
           <a>Services</a>
           <ul>
             <?php
+              echo "<li><a href=\"$protocol://appcatalog.webosarchive.org\" target=\"_top\">App Museum</a></li>";
               echo "<li><a href=\"$protocol://podcasts.webosarchive.org\" target=\"_top\">Podcasts</a></li>";
               echo "<li><a href=\"$protocol://cdav.webosarchive.org\" target=\"_top\">Calendars</a></li>";
               echo "<li><a href=\"$protocol://maps.webosarchive.org\" target=\"_top\">Maps</a></li>";
@@ -80,6 +75,13 @@
             <li><a href="http://pivotce.com/">PivotCE</a></li>
           </ul>
         </li>
+        
+        <?php
+        echo "<li";
+        if (strpos( $_SERVER['REQUEST_URI'], "/support.php" ) !== false)
+          echo " style='background-color: darkorange'";
+        echo "><a href=\"$protocol://www.webosarchive.org/support\" target=\"_top\">Support Us!</a></li>";
+        ?>        
       </ul>
     </nav>
   </header>
