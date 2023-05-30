@@ -16,7 +16,7 @@ td { font-size: 14px; }
 
 <div class="wosaTitle">
   <div class="wosaIntro">
-    <h2>Support</h2>
+    <h2>Support Us!</h2>
   </div>
 </div>
 <div class="wosaIntro">
