@@ -11,6 +11,10 @@ td { font-size: 14px; }
 
 <?php include('social-meta.php') ?>
 <?php include('menu.php')?>
+<?php
+    //$rssFeedURI="http://twitter.webosarchive.org/?twitterid=MTQ2MzI2MjQ3NTM2MTUzMzk1Mg";
+    $rssFeedURI="https://palm.weboslives.eu/users/webosarchive.rss";
+?>
 
 <div id="container">
 
@@ -23,13 +27,13 @@ td { font-size: 14px; }
     <img class="circle-image" style="margin: -12px 14px 14px 14px; float:left" src="museum.png">
     <p style="padding-top: 16px;">webOSArchive (WOSA) is the unofficial repository of information, restoration efforts, and archives for Palm/HP's mobile webOS operating system. This site does not provide material or information about the spin-off operating systems, webOS Open Source Edition (wOSE) or LG's webOS for TVs.</p>
     <p>Its the position of the curator, and the remaining webOS community, that Palm and HP's webOS devices, including the Pre series phones, the Veer and Pixi phones, and the TouchPad, remain useful devices that both provide value to their users and education to the rest of the industry. In fact, many webOS innovations have been copied by modern mobile OS developers. You can follow the ongoing efforts to restore and retain the usefulness of the platform here, or join the community and participate!
-    <p style="text-align: right !important"><a href="https://www.twitter.com/webOSArchive"><img src="twitter-follow.png" border="0"></a> <a href="http://twitter.webosarchive.org/?twitterid=MTQ2MzI2MjQ3NTM2MTUzMzk1Mg"><img src="rss-follow.png" border="0"></a>
+    <p style="text-align: right !important">
+    Follow: 
+      <a href="https://palm.weboslives.eu/users/webosarchive">Mastodon</a> | 
+      <a href="<?php echo $rssFeedURI; ?>">RSS</a> |
+      <a href="https://www.twitter.com/webOSArchive">Twitter</a>
+    </p>
 </div>
-
-<?php
-    //$rssFeedURI="http://twitter.webosarchive.org/?twitterid=MTQ2MzI2MjQ3NTM2MTUzMzk1Mg";
-    $rssFeedURI="https://palm.weboslives.eu/users/webosarchive.rss";
-?>
 
 <div>
     <?php include("rssWidget.php") ?>

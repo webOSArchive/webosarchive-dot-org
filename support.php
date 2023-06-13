@@ -24,7 +24,7 @@ td { font-size: 14px; }
     <p style="padding-top: 16px;">webOSArchive (WOSA) is the unofficial repository of information, restoration efforts, and archives for Palm/HP's mobile webOS operating system. This site does not provide material or information about the spin-off operating systems, webOS Open Source Edition (wOSE) or LG's webOS for TVs.</p>
     <p>Its the position of the curator, and the remaining webOS community, that Palm and HP's webOS devices, including the Pre series phones, the Veer and Pixi phones, and the TouchPad, remain useful devices that both provide value to their users and education to the rest of the industry. In fact, many webOS innovations have been copied by modern mobile OS developers.</p>
     <p>webOS Archive is run without profit, thanks to the contributions of volunteers. If you want to help, here's some ways to get involved:</p>
-    <ul style="margin-left:4em;margin-right:4em;margin-top:40px;font-size:1.2em;">
+    <ul style="margin-left:4em;margin-right:4em;margin-top:40px;font-size:1.1em;">
       <li><b>Financial Support:</b> Help keep the server and services up and running by donating cash...
         <ul>
           <li><a href="https://github.com/sponsors/webOSArchive" target="_blank">GitHub Sponsors</a></li>
