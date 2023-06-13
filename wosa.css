@@ -14,14 +14,14 @@
   a {
     color:#3E0BF9;
   }
-  a:hover {
-    color: darkorange;
-  }
   a:active {
     color:darkorange;
   }
   a:visited {
     color:#3E0BF9;
+  }
+  a:hover {
+    color: darkorange;
   }
   .wosaTitle {
     background-color: NavajoWhite;
