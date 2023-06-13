@@ -27,7 +27,8 @@ td { font-size: 14px; }
 </div>
 
 <?php
-    $rssFeedURI="http://twitter.webosarchive.org/?twitterid=MTQ2MzI2MjQ3NTM2MTUzMzk1Mg";
+    //$rssFeedURI="http://twitter.webosarchive.org/?twitterid=MTQ2MzI2MjQ3NTM2MTUzMzk1Mg";
+    $rssFeedURI="https://palm.weboslives.eu/users/webosarchive.rss";
 ?>
 
 <div>

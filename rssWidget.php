@@ -6,7 +6,7 @@
 
     function getHashtags($string) {  
         unset($hashtags);
-        preg_match_all("/(#\w+)/u", $string, $matches);
+        preg_match_all("/(&#35;\w+)/u", $string, $matches);
         if ($matches) {
             $hashtagsArray = array_count_values($matches[0]);
             $hashtags = array_keys($hashtagsArray);
@@ -52,45 +52,91 @@
 if (isset($rssFeedURI) && $rssFeedURI != "") {
     $content = file_get_contents($rssFeedURI);
     $feed = new SimpleXMLElement($content);
-
-    foreach($feed->channel->item as $entry) {
-        $tzDate = new DateTimeZone($rssTimeZone);
-        date_default_timezone_set($rssTimeZone);
-        $date = new DateTime($entry->pubDate);
-        $date->setTimeZone($tzDate);
-        echo "<tr><td class='rss-widget-cell'>\n";
-        echo "   <p><b><a href='" . $feed->channel->link . "'>@" . $entry->author . "</a></b> <small> ". $date->format('Y-m-d g:i:sa') . " ET</small></p>\n";
-        echo "   <p class='rss-widget-content'>";
-        //Entry media
-        foreach ($entry->children('http://search.yahoo.com/mrss/') as $media) {
-            echo "   <img src='" . $media->attributes()['url'] . "' style='float:left; margin-right: 8px; max-width: 48px'/>\n";
+    //detect RSS or ATOM
+    if (isset($feed->channel) && isset($feed->channel->item)) {
+        //RSS
+        foreach($feed->channel->item as $entry) {
+            $tzDate = new DateTimeZone($rssTimeZone);
+            date_default_timezone_set($rssTimeZone);
+            $date = new DateTime($entry->pubDate);
+            $date->setTimeZone($tzDate);
+            echo "<tr><td class='rss-widget-cell'>\n";
+            echo "   <p><b><a href='" . $feed->channel->link . "'>@" . $entry->author . "</a></b> <small> ". $date->format('Y-m-d g:i:sa') . " ET</small></p>\n";
+            echo "   <p class='rss-widget-content'>";
+            //Entry media
+            foreach ($entry->children('http://search.yahoo.com/mrss/') as $media) {
+                echo "   <a href=\"" . $media->attributes()['url'] . "\">\n";
+                echo "      <img src='" . $media->attributes()['url'] . "' style='float:left; margin-right: 8px; max-height: 100px'/>\n";
+                echo "   </a>";
+            }
+    
+            //Main Entry with hashtag lists moved to footer
+            $description = $entry->description;
+            $hashtags = getHashtags($description);
+            if (isset($hashtags) && $hashtags != "") {
+                $searchString = implode(" ", $hashtags);
+                //$description = str_replace($searchString, "", $description);
+            }
+            echo $description . "\n";
+            echo "   </p>\n";
+    
+            //Entry Footer
+            echo "   <div class='rss-widget-footer'>\n";
+            echo "      <span style='float:right; margin-right: 10px;'><a href='$entry->link' title='$entry->title'>Permalink</a>";
+            if (isset($hashtags) && !empty($hashtags)) {
+                echo " | Tags: ";
+                foreach($hashtags as $hashtag) {
+                    $linkTag = str_replace("#", "", $hashtag);
+                    echo "<a href='https://twitter.com/hashtag/$linkTag'>" . $hashtag . "</a> ";
+                }    
+            }
+            echo "      </span>\n";
+            echo "   </div>\n";
+    
+            echo "</td></tr>\n";
         }
-
-        //Main Entry with hashtag lists moved to footer
-        $description = $entry->description;
-        $hashtags = getHashtags($description);
-        if (isset($hashtags) && $hashtags != "") {
-            $searchString = implode(" ", $hashtags);
-            //$description = str_replace($searchString, "", $description);
+    } else {
+        //ATOM
+        foreach($feed->entry as $entry) {
+            $tzDate = new DateTimeZone($rssTimeZone);
+            date_default_timezone_set($rssTimeZone);
+            $date = new DateTime($entry->pubDate);
+            $date->setTimeZone($tzDate);
+            echo "<tr><td class='rss-widget-cell'>\n";
+            echo "   <p><b><a href='" . $feed->author->uri . "'>@" . $feed->author->name . "</a></b> <small> ". $date->format('Y-m-d g:i:sa') . " ET</small></p>\n";
+            echo "   <p class='rss-widget-content'>";
+            //Entry media
+            foreach ($entry->children('http://search.yahoo.com/mrss/') as $media) {
+                echo "   <img src='" . $media->attributes()['url'] . "' style='float:left; margin-right: 8px; max-width: 48px'/>\n";
+            }
+    
+            //Main Entry with hashtag lists moved to footer
+            $description = $entry->content;
+            $hashtags = getHashtags($description);
+            if (isset($hashtags) && $hashtags != "") {
+                $searchString = implode(" ", $hashtags);
+                //$description = str_replace($searchString, "", $description);
+            }
+            echo $description . "\n";
+            echo "   </p>\n";
+    
+            //Entry Footer
+            echo "   <div class='rss-widget-footer'>\n";
+            echo "      <span style='float:right; margin-right: 10px;'><a href='$entry->id' title='$entry->title'>Permalink</a>";
+            if (isset($hashtags) && !empty($hashtags)) {
+                echo " | Tags: ";
+                foreach($hashtags as $hashtag) {
+                    $linkTag = str_replace("#", "", $hashtag);
+                    echo "<a href='https://twitter.com/hashtag/$linkTag'>" . $hashtag . "</a> ";
+                }    
+            }
+            echo "      </span>\n";
+            echo "   </div>\n";
+    
+            echo "</td></tr>\n";
         }
-        echo $description . "\n";
-        echo "   </p>\n";
-
-        //Entry Footer
-        echo "   <div class='rss-widget-footer'>\n";
-        echo "      <span style='float:right; margin-right: 10px;'><a href='$entry->link' title='$entry->title'>Permalink</a>";
-        if (isset($hashtags) && !empty($hashtags)) {
-            echo " | Tags: ";
-            foreach($hashtags as $hashtag) {
-                $linkTag = str_replace("#", "", $hashtag);
-                echo "<a href='https://twitter.com/hashtag/$linkTag'>" . $hashtag . "</a> ";
-            }    
-        }
-        echo "      </span>\n";
-        echo "   </div>\n";
-
-        echo "</td></tr>\n";
     }
+    
 } else {
     echo "<!-- No feed URI provided for RSS Widget. Set the variable rssFeedURI to enable this widget. -->";
 }
