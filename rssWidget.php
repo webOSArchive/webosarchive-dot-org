@@ -102,20 +102,26 @@ if (isset($rssFeedURI) && $rssFeedURI != "") {
             date_default_timezone_set($rssTimeZone);
             $date = new DateTime($entry->pubDate);
             $date->setTimeZone($tzDate);
+            $hashTagRoot = $feed->author->uri;
+            $hashTagRoot = explode('/users/', $hashTagRoot)[0];
+            $hashTagRoot = $hashTagRoot . "/tag/";
             echo "<tr><td class='rss-widget-cell'>\n";
             echo "   <p><b><a href='" . $feed->author->uri . "'>@" . $feed->author->name . "</a></b> <small> ". $date->format('Y-m-d g:i:sa') . " ET</small></p>\n";
             echo "   <p class='rss-widget-content'>";
             //Entry media
-            foreach ($entry->children('http://search.yahoo.com/mrss/') as $media) {
-                echo "   <img src='" . $media->attributes()['url'] . "' style='float:left; margin-right: 8px; max-width: 48px'/>\n";
+            foreach ($entry->link as $link) {
+                if ($link->attributes()['rel'] == "enclosure") {
+                    echo "   <a href=\"" . $link->attributes()['href'] . "\">\n";
+                    echo "      <img src='" . $link->attributes()['href'] . "' style='float:left; margin-right: 8px; max-height: 100px'/>\n";
+                    echo "   </a>";
+                }
             }
     
             //Main Entry with hashtag lists moved to footer
             $description = $entry->content;
-            $hashtags = getHashtags($description);
-            if (isset($hashtags) && $hashtags != "") {
-                $searchString = implode(" ", $hashtags);
-                //$description = str_replace($searchString, "", $description);
+            $hashtags = array();
+            foreach($entry->category as $category) {
+                array_push($hashtags, $category->attributes()['term']);
             }
             echo $description . "\n";
             echo "   </p>\n";
@@ -127,7 +133,7 @@ if (isset($rssFeedURI) && $rssFeedURI != "") {
                 echo " | Tags: ";
                 foreach($hashtags as $hashtag) {
                     $linkTag = str_replace("#", "", $hashtag);
-                    echo "<a href='https://twitter.com/hashtag/$linkTag'>" . $hashtag . "</a> ";
+                    echo "<a href='" . $hashTagRoot . $linkTag . "'>" . $hashtag . "</a> ";
                 }    
             }
             echo "      </span>\n";
