@@ -67,8 +67,8 @@
         <a>Community</a>
           <ul>
             <li><a href="http://www.webosarchive.org/docs/community">Discord</a></li>  
-            <li><a href="https://forums.weboslives.eu/">webOS Live Forums (New!)</a></li>
-            <li><a href="http://forums.webosarchive.org">webOS Nation Forums (Archived)</a></li>
+            <li><a href="https://forums.weboslives.eu/">webOSLive Forums (New!)</a></li>
+            <li><a href="http://forums.webosarchive.org">webOSNation Forums (Archive)</a></li>
             <li><a href="https://palm.weboslives.eu/users/webosarchive">Mastodon</a></li>
             <li><a href="https://twitter.com/webOSArchive">Twitter</a></li>
             <li><a href="http://pivotce.com/">PivotCE</a></li>
