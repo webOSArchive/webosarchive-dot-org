@@ -1,1 +1,1 @@
-webOS Archive is a not-for-profit archival project of <a href="https://codepoetry.app">codepoetry inc.</a> which serves the public interest in preservation, access and research, and is protected by Fair Use provisions of US copyright law.
+webOS Archive is a not-for-profit archival project of <a href="https://codepoetry.app">codepoetry inc.</a> which serves the public interest in preservation, access and research, and is protected by Fair Use provisions, and <a href="https://www.copyright.gov/1201/docs/librarian_statement_01.html">other exemptions</a>, of US copyright law.
