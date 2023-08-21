@@ -15,7 +15,7 @@
         <script>
         var q="<?php echo $q ?>";
         q = q.replace(".", "");
-        setTimeout("document.location='https://www.webosarchive.org?' + q", 3500)
+        setTimeout("document.location='https://www.webosarchive.org' + q", 3500)
         </script>
     </head>
     <body>
