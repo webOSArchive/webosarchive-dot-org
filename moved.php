@@ -7,9 +7,11 @@
             a:hover { text-decoration: underline;}
         </style>
         <?php
-        if (isset($_SERVER['QUERY_STRING']) && $_SERVER['QUERY_STRING'] != "") {
+        if (isset($_SERVER['QUERY_STRING']) && $_SERVER['QUERY_STRING'] != "" && $_SERVER['QUERY_STRING'] != "/") {
             $q = $_SERVER["QUERY_STRING"];
-            echo "<script>alert('go to $q')</script>";
+            ?>
+            <script>setTimeout("document.location='https://www.webosarchive.com?<?php echo $q?>'", 2000)</script>
+            <?php
         }
         ?>
     </head>
