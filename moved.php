@@ -12,7 +12,11 @@
             $q = $_SERVER["QUERY_STRING"];
         }
         ?>
-        <script>setTimeout("document.location='https://www.webosarchive.org<?php echo $q?>'", 3500)</script>
+        <script>
+        var q="<?php echo $q ?>";
+        q = q.replace(/.+$/, "");
+        setTimeout("document.location='https://www.webosarchive.org?' + q", 3500)
+        </script>
     </head>
     <body>
         <table width="100%" height="100%" border="0">
