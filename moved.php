@@ -19,9 +19,10 @@
         </script>
     </head>
     <body>
+        <!-- This domain expires in 2024 and will not be renewed. Update your bookmarks to the new .org domain -->
         <table width="100%" height="100%" border="0">
             <tr><td width="100%" height="100%" align="center" valign="middle">
-                <img src="moving-truck.png">
+                <img src="moving-truck.png" alt="Truck icons created by Freepik - Flaticon">
                 <h1>webOSArchive.com is now <a href="https://www.webosarchive.org">webOSArchive<b>.org</b></a></h1>
                 Please update your bookmarks!
             </td></tr>
