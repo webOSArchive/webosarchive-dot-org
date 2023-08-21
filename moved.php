@@ -10,7 +10,7 @@
         if (isset($_SERVER['QUERY_STRING']) && $_SERVER['QUERY_STRING'] != "" && $_SERVER['QUERY_STRING'] != "/") {
             $q = $_SERVER["QUERY_STRING"];
             ?>
-            <script>setTimeout("document.location='https://www.webosarchive.org/<?php echo $q?>'", 2000)</script>
+            <script>setTimeout("document.location='https://www.webosarchive.org<?php echo $q?>'", 3500)</script>
             <?php
         }
         ?>
