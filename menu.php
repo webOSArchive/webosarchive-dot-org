@@ -60,6 +60,8 @@
               echo "<li><a href=\"https://play.google.com/store/apps/dev?id=6357470001766848305\">Google Play</a></li>";
               echo "<li><a href=\"$protocol://podcasts.webosarchive.org\" target=\"_top\">Podcasts</a></li>";
               echo "<li><a href=\"$protocol://maps.webosarchive.org\" target=\"_top\">Maps</a></li>";
+              echo "<li><a href=\"$protocol://feedspider.wosa.link\" target=\"_top\">FeedSpider 2</a></li>";
+              echo "<li><a href=\"$protocol://checkmate.wosa.link\" target=\"_top\">Check Mate</a></li>";
             ?>
           </ul>
         </li>
