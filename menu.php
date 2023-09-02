@@ -53,12 +53,12 @@
         echo "><a href=\"$protocol://sdk.webosarchive.org\" target=\"_top\">SDK</a></li>";
         ?>
         <li>
-          <a>Services</a>
+          <a>Apps + Services</a>
           <ul>
             <?php
               echo "<li><a href=\"$protocol://appcatalog.webosarchive.org\" target=\"_top\">App Museum</a></li>";
+              echo "<li><a href=\"https://play.google.com/store/apps/dev?id=6357470001766848305\">Google Play</a></li>";
               echo "<li><a href=\"$protocol://podcasts.webosarchive.org\" target=\"_top\">Podcasts</a></li>";
-              echo "<li><a href=\"$protocol://cdav.webosarchive.org\" target=\"_top\">Calendars</a></li>";
               echo "<li><a href=\"$protocol://maps.webosarchive.org\" target=\"_top\">Maps</a></li>";
             ?>
           </ul>
@@ -67,8 +67,8 @@
         <a>Community</a>
           <ul>
             <li><a href="http://www.webosarchive.org/docs/community">Discord</a></li>  
-            <li><a href="https://forums.weboslives.eu/">webOSLive Forums (New!)</a></li>
-            <li><a href="http://forums.webosarchive.org">webOSNation Forums (Archive)</a></li>
+            <li><a href="https://forums.weboslives.eu/">webOSLive Forum (New!)</a></li>
+            <li><a href="http://forums.webosarchive.org">webOSNation Forum Archive</a></li>
             <li><a href="https://palm.weboslives.eu/users/webosarchive">Mastodon</a></li>
             <li><a href="https://twitter.com/webOSArchive">Twitter</a></li>
             <li><a href="http://pivotce.com/">PivotCE</a></li>
