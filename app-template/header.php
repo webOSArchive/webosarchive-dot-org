@@ -1,7 +1,7 @@
 <?php
 $docRoot = "./";
 if (isset($_GET["docRoot"])) {
-    $appTitle = $_GET["docRoot"];
+    $docRoot = $_GET["docRoot"];
 }
 $appTitle = "";
 if (isset($_GET["appTitle"])) {
