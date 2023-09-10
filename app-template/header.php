@@ -7,11 +7,11 @@ $appTitle = "";
 if (isset($_GET["appTitle"])) {
     $appTitle = $_GET["appTitle"];
 }
-if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')
-    $REQUEST_PROTOCOL = "https";
-else
-    $REQUEST_PROTOCOL = "http";
-echo "<!-- docRoot:" . $docRoot . ",appTitle:" . $appTitle . "-->";
+$REQUEST_PROTOCOL = "http";
+if (isset($_GET["protocol"])) {
+    $REQUEST_PROTOCOL = $_GET["protocol"];
+}
+echo "<!-- docRoot:" . $docRoot . ",appTitle:" . $appTitle . ",protocol:". $REQUEST_PROTOCOL . "-->";
 ?>
 <html>
 <head>
