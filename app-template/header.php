@@ -10,6 +10,14 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="white" />
 <?php
+$docRoot = "./";
+if (isset($_GET["docRoot"])) {
+    $appTitle = $_GET["docRoot"];
+}
+$appTitle = "";
+if (isset($_GET["appTitle"])) {
+    $appTitle = $_GET["appTitle"];
+}
 if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')
     $REQUEST_PROTOCOL = "https";
 else
