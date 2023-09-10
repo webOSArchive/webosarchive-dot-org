@@ -1,14 +1,3 @@
-<html>
-<head>
-<link rel="shortcut icon" sizes="256x256" href="<?php echo $docRoot ?>. "assets/icon-256.png">
-<link rel="shortcut icon" sizes="192x192" href="<?php echo $docRoot ?>assets/icon-192.png">
-<link rel="shortcut icon" sizes="128x128" href="<?php echo $docRoot ?>assets/icon-128.png">
-<link rel="shortcut icon" href="<?php echo $docRoot ?>favicon.ico">
-<link rel="icon" type="image/png" href="<?php echo $docRoot ?>assets/icon.png" >
-<link rel="apple-touch-icon" href="<?php echo $docRoot ?>assets/icon.png"/>
-<link rel="apple-touch-startup-image" href="<?php echo $docRoot ?>assets/icon-256.png">
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<meta name="apple-mobile-web-app-status-bar-style" content="white" />
 <?php
 $docRoot = "./";
 if (isset($_GET["docRoot"])) {
@@ -22,7 +11,19 @@ if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')
     $REQUEST_PROTOCOL = "https";
 else
     $REQUEST_PROTOCOL = "http";
+echo "<!-- docRoot:" . $docRoot . ",appTitle:" . $appTitle . "-->";
 ?>
+<html>
+<head>
+<link rel="shortcut icon" sizes="256x256" href="<?php echo $docRoot ?>. "assets/icon-256.png">
+<link rel="shortcut icon" sizes="192x192" href="<?php echo $docRoot ?>assets/icon-192.png">
+<link rel="shortcut icon" sizes="128x128" href="<?php echo $docRoot ?>assets/icon-128.png">
+<link rel="shortcut icon" href="<?php echo $docRoot ?>favicon.ico">
+<link rel="icon" type="image/png" href="<?php echo $docRoot ?>assets/icon.png" >
+<link rel="apple-touch-icon" href="<?php echo $docRoot ?>assets/icon.png"/>
+<link rel="apple-touch-startup-image" href="<?php echo $docRoot ?>assets/icon-256.png">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="white" />
 <link rel="stylesheet" href="<?php echo $docRoot ?>style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1" />
 <title><?php echo $appTitle;?></title>
