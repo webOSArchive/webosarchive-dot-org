@@ -4,6 +4,9 @@
     $protocol = "https";
   else
     $protocol = "http";
+  if (isset($_GET["protocol"])) {
+      $protocol = $_GET["protocol"];
+  }
 ?>
 <!-- Menu -->
 <link rel="stylesheet" href="<?php echo $protocol ?>://www.webosarchive.org/menu.css">

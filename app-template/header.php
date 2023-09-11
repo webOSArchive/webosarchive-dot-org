@@ -30,7 +30,7 @@ echo "<!-- docRoot:" . $docRoot . ",appTitle:" . $appTitle . ",protocol:". $REQU
 <title><?php echo $appTitle;?></title>
 </head>
 <body>
-<?php echo file_get_contents("https://www.webosarchive.org/menu.php?content=" . $appTitle); ?>
+<?php echo file_get_contents("https://www.webosarchive.org/menu.php?protocol=" . $REQUEST_PROTOCOL . "&content=" . $appTitle); ?>
 <div class="content">
 <p align='middle' style='margin-top:50px;'><a href="/"><img src='<?php echo $docRoot ?>assets/icon-128.png' style="width:128px; height: 128px;" border="0"></a><br>
     <strong><?php echo $appTitle;?></strong><br/>
