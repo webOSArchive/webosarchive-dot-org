@@ -24,6 +24,7 @@ echo "<!-- docRoot:" . $docRoot . ",appTitle:" . $appTitle . ",protocol:". $REQU
 <link rel="apple-touch-startup-image" href="<?php echo $docRoot ?>assets/icon-256.png">
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="white" />
+<link rel="stylesheet" href="<?php echo $REQUEST_PROTOCOL ?>://www.webosarchive.org/app-template/style.css">
 <link rel="stylesheet" href="<?php echo $docRoot ?>style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1" />
 <title><?php echo $appTitle;?></title>
