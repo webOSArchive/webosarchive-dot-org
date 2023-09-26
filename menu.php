@@ -72,7 +72,7 @@
         <a>Community</a>
           <ul>
             <li><a href="http://www.webosarchive.org/docs/community">Discord</a></li>  
-            <li><a href="https://forums.weboslives.eu/">webOSLive Forum (New!)</a></li>
+            <li><a href="https://forums.weboslives.eu/">webOSLives Forum (New!)</a></li>
             <li><a href="http://forums.webosarchive.org">webOSNation Forum Archive</a></li>
             <li><a href="https://palm.weboslives.eu/users/webosarchive">Mastodon</a></li>
             <li><a href="https://twitter.com/webOSArchive">Twitter</a></li>
