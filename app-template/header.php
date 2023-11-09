@@ -9,7 +9,7 @@ if (isset($_GET["appTitle"])) {
 }
 $iconPath = "assets/";
 if (isset($_GET["iconPath"])) {
-    $docRoot = $_GET["iconPath"];
+    $iconPath = $_GET["iconPath"];
 }
 $REQUEST_PROTOCOL = "http";
 if (isset($_GET["protocol"])) {
