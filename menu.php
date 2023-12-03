@@ -78,6 +78,7 @@
             <li><a href="https://palm.weboslives.eu/users/webosarchive">Mastodon</a></li>
             <li><a href="https://twitter.com/webOSArchive">Twitter</a></li>
             <li><a href="http://pivotce.com/">PivotCE</a></li>
+            <li><a href="https://palmdb.net/">PalmDB (Classic PalmOS)</a></li>
           </ul>
         </li>
         
