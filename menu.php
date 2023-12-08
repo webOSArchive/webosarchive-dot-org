@@ -55,7 +55,7 @@
           echo " style='background-color: #f38325'";
         echo "><a href=\"$protocol://sdk.webosarchive.org\" target=\"_top\">SDK</a></li>";
         ?>
-        <li>
+        <li onclick="console.log('invoke mneu');">
           <a>Apps + Services</a>
           <ul>
             <?php
@@ -69,7 +69,7 @@
             ?>
           </ul>
         </li>
-        <li>
+        <li onclick="console.log('invoke mneu');">
         <a>Community</a>
           <ul>
             <li><a href="http://www.webosarchive.org/docs/community">Discord</a></li>  
