@@ -4,7 +4,7 @@
 
 <link rel="stylesheet" href="wosa.css">
 <style>
-td { font-size: 14px; }
+
 </style>
 </head>
 <body style="margin:0px;" height="100%">
@@ -16,31 +16,23 @@ td { font-size: 14px; }
     $rssFeedURI="https://palm.weboslives.eu/users/webosarchive.rss";
 ?>
 
-<div id="container">
+<div id="container" class="content">
+<img class="circle-image" style="" src="museum.png">
+  <h1 style="">webOS Archive | News</h1>
 
-<div class="wosaTitle">
-  <div class="wosaIntro">
-    <h2>News and Information</h2>
-  </div>
-</div>
-<div class="wosaIntro">
-    <img class="circle-image" style="margin: -12px 14px 14px 14px; float:left" src="museum.png">
+  <div style="margin-left: 10px; margin-right: 10px">
     <p style="padding-top: 16px;">webOSArchive (WOSA) is the unofficial repository of information, restoration efforts, and archives for Palm/HP's mobile webOS operating system. This site does not provide material or information about the spin-off operating systems, webOS Open Source Edition (wOSE) or LG's webOS for TVs.</p>
-    <p>Its the position of the curator, and the remaining webOS community, that Palm and HP's webOS devices, including the Pre series phones, the Veer and Pixi phones, and the TouchPad, remain useful devices that both provide value to their users and education to the rest of the industry. In fact, many webOS innovations have been copied by modern mobile OS developers. You can follow the ongoing efforts to restore and retain the usefulness of the platform here, or join the community and participate!
-    <p style="text-align: right !important">
-    Follow: 
+    <p style="text-align: right !important; font-weight:bold;">
+      Follow: 
       <a href="https://palm.weboslives.eu/users/webosarchive">Mastodon</a> | 
       <a href="<?php echo $rssFeedURI; ?>">RSS</a> |
       <a href="https://www.twitter.com/webOSArchive">Twitter</a>
     </p>
-</div>
+    <div>
+        <?php include("rssWidget.php") ?>
+    </div>
 
-<div>
-    <?php include("rssWidget.php") ?>
-</div>
-
-<div class="wosaIntro" style="margin-top: 14px; margin-bottom: 40px; padding-bottom: 10px;">
-  <p style="font-size:smaller">The material on this site has been collected from private archives, the Internet Archive's wayback machine, and historical forum and blog posts and is preserved here for public interest under Fair Use provisions, and <a href="https://www.copyright.gov/1201/docs/librarian_statement_01.html">other exemptions</a>, of United States' copyright law. The curator will respond promptly to formal and legally authorized take-down requests from rights holders who can demonstrate clear harm that results from having their historical material preserved.</p>
+  </div>
 </div>
 
 <footer>
