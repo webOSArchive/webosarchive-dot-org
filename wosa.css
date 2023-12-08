@@ -79,7 +79,7 @@
     list-style: none;
     background-color: lightgray;
     border-radius: 4px;
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
   #container a {
     color: darkorange;
@@ -101,7 +101,8 @@
   }
   .feature-title { 
     font-family: sans-serif;
-    font-size: 1.3em;
+    font-size: 1.1em;
+    font-weight: bold;
     color: white;
   }
   .feature-content {
