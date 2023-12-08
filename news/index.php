@@ -2,7 +2,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>webOS Archive</title>
 
-<link rel="stylesheet" href="../wosa.css">
+<link rel="stylesheet" href="../wosa.css?<?php uniqid()?>">
 <style>
 
 </style>
