@@ -49,8 +49,6 @@ else
 </div>
 </td></tr>
 </table>
-&nbsp;<br>
-&nbsp;<br>
 <footer>
 <?php include("legalese.php"); ?>
 </footer>
