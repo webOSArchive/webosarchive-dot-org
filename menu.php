@@ -66,6 +66,7 @@
               echo "<li><a href=\"$protocol://maps.webosarchive.org\" target=\"_top\">Maps</a></li>";
               echo "<li><a href=\"$protocol://feedspider.wosa.link\" target=\"_top\">FeedSpider</a></li>";
               echo "<li><a href=\"$protocol://checkmate.wosa.link\" target=\"_top\">Check Mate</a></li>";
+              echo "<li><a href=\"$protocol://homecontrol.wosa.link\" target=\"_top\">Home Control</a></li>";
             ?>
           </ul>
         </li>
