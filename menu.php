@@ -41,24 +41,24 @@
         <li><a href="http://www.webosarchive.org">Home</a></li>
         <?php 
         echo "<li";
-        if (strpos( $_SERVER['REQUEST_URI'], "/news.php" ) !== false)
-          echo " style='background-color: darkorange'";
+        if (strpos( $_SERVER['REQUEST_URI'], "/news" ) !== false)
+          echo " style='background-color: dimgray'";
         echo "><a href=\"$protocol://www.webosarchive.org/news\" target=\"_top\">News</a></li>";
 
         echo "<li";
         if (isset($_GET['content']) && $_GET['content'] == 'docs')
-          echo " style='background-color: #2980B9'";
+          echo " style='background-color: dimgray'";
         echo "><a href=\"$protocol://www.webosarchive.org/docs\" target=\"_top\">Docs</a></li>";  
 
-        echo "<li";
-        if (isset($_GET['content']) && $_GET['content'] == 'sdk')
-          echo " style='background-color: #f38325'";
-        echo "><a href=\"$protocol://sdk.webosarchive.org\" target=\"_top\">SDK</a></li>";
+        //if (isset($_GET['content']) && $_GET['content'] == 'shop')
+        //  echo " style='background-color: #f38325'";
+        //echo "><a href=\"https://www.tindie.com/stores/webosarchive/\" target=\"_top\">SDK</a></li>";
         ?>
         <li onclick="console.log('invoke mneu');">
           <a>Apps + Services</a>
           <ul>
             <?php
+              echo "<li><a href=\"$protocol://sdk.webosarchive.org\" target=\"_top\">SDK</a></li>";
               echo "<li><a href=\"$protocol://appcatalog.webosarchive.org\" target=\"_top\">App Museum</a></li>";
               echo "<li><a href=\"https://play.google.com/store/apps/dev?id=6357470001766848305\">Apps on Google Play</a></li>";
               echo "<li><a href=\"$protocol://www.webosarchive.org/tracker\" target=\"_top\">webOS Tracker</a></li>";
@@ -66,7 +66,7 @@
               echo "<li><a href=\"$protocol://maps.webosarchive.org\" target=\"_top\">Maps</a></li>";
               echo "<li><a href=\"$protocol://feedspider.wosa.link\" target=\"_top\">FeedSpider</a></li>";
               echo "<li><a href=\"$protocol://checkmate.wosa.link\" target=\"_top\">Check Mate</a></li>";
-              echo "<li><a href=\"$protocol://homecontrol.wosa.link\" target=\"_top\">Home Control</a></li>";
+              //echo "<li><a href=\"$protocol://homecontrol.wosa.link\" target=\"_top\">Home Control</a></li>";
             ?>
           </ul>
         </li>
@@ -85,9 +85,10 @@
         
         <?php
         echo "<li";
-        if (strpos( $_SERVER['REQUEST_URI'], "/support.php" ) !== false)
-          echo " style='background-color: darkorange'";
+        if (strpos( $_SERVER['REQUEST_URI'], "/support" ) !== false)
+          echo " style='background-color: dimgray'";
         echo "><a href=\"$protocol://www.webosarchive.org/support\" target=\"_top\">Support Us!</a></li>";
+        echo "<li style='background-color: darkorange'><a href=\"https://www.tindie.com/stores/webosarchive/\" target=\"_top\">Shop</a></li>";
         ?>        
       </ul>
     </nav>
