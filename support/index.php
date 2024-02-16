@@ -23,7 +23,7 @@
     <div class="feature-block">
       <span class="feature-title">Financial Support</span>
       <div class="feature-content">
-        Help keep the server and services up and running by donating cash...
+        Help keep the server and services up and running by donating or shopping...
         <ul>
           <li><a href="https://github.com/sponsors/webOSArchive" target="_blank">GitHub Sponsors</a></li>
           <li><a href="https://patreon.com/webOSArchive" target="_blank">Patreon</a></li>
