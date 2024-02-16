@@ -88,7 +88,7 @@
         if (strpos( $_SERVER['REQUEST_URI'], "/support" ) !== false)
           echo " style='background-color: dimgray'";
         echo "><a href=\"$protocol://www.webosarchive.org/support\" target=\"_top\">Support Us!</a></li>";
-        echo "<li style='background-color: rgb(62,11,249);'><a href=\"https://www.tindie.com/stores/webosarchive/\" target=\"_top\">Shop</a></li>";
+        echo "<li style='background-color: #ff7f00;'><a href=\"https://www.tindie.com/stores/webosarchive/\" target=\"_top\">Shop</a></li>";
         ?>        
       </ul>
     </nav>
