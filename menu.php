@@ -63,6 +63,7 @@
               echo "<li><a href=\"https://play.google.com/store/apps/dev?id=6357470001766848305\">Apps on Google Play</a></li>";
               echo "<li><a href=\"$protocol://www.webosarchive.org/tracker\" target=\"_top\">webOS Tracker</a></li>";
               echo "<li><a href=\"$protocol://podcasts.webosarchive.org\" target=\"_top\">Podcast Directory</a></li>";
+              echo "<li><a href=\"$protocol://flixnet.wosa.link\" target=\"_top\">Public Domain Movies</a></li>";
               echo "<li><a href=\"$protocol://maps.webosarchive.org\" target=\"_top\">Maps</a></li>";
               echo "<li><a href=\"$protocol://feedspider.wosa.link\" target=\"_top\">FeedSpider</a></li>";
               echo "<li><a href=\"$protocol://checkmate.wosa.link\" target=\"_top\">Check Mate</a></li>";
