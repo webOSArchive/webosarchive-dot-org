@@ -58,7 +58,7 @@ if (isset($rssFeedURI) && $rssFeedURI != "") {
         foreach($feed->channel->item as $entry) {
             $tzDate = new DateTimeZone($rssTimeZone);
             date_default_timezone_set($rssTimeZone);
-            $date = new DateTime($entry->pubDate);
+            $date = new DateTime($entry->published);
             $date->setTimeZone($tzDate);
             echo "<tr><td class='rss-widget-cell'>\n";
             echo "   <p><b><a href='" . $feed->channel->link . "'>@" . $entry->author . "</a></b> <small> ". $date->format('Y-m-d g:i:sa') . " ET</small></p>\n";
@@ -100,7 +100,7 @@ if (isset($rssFeedURI) && $rssFeedURI != "") {
         foreach($feed->entry as $entry) {
             $tzDate = new DateTimeZone($rssTimeZone);
             date_default_timezone_set($rssTimeZone);
-            $date = new DateTime($entry->pubDate);
+            $date = new DateTime($entry->published);
             $date->setTimeZone($tzDate);
             $hashTagRoot = $feed->author->uri;
             $hashTagRoot = explode('/users/', $hashTagRoot)[0];
