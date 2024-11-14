@@ -23,11 +23,8 @@
     <div class="feature-block">
       <span class="feature-title">Financial Support</span>
       <div class="feature-content">
-        Help keep the server and services up and running by donating or shopping...
+        Help keep the server and services up and running by shopping for webOS stuff...
         <ul>
-          <li><a href="https://github.com/sponsors/webOSArchive" target="_blank">GitHub Sponsors</a></li>
-          <li><a href="https://patreon.com/webOSArchive" target="_blank">Patreon</a></li>
-          <li><a href="https://ko-fi.com/webosarchive" target="_blank">Ko-Fi</a></li>
           <li><a href="https://play.google.com/store/apps/details?id=eu.weboslives.webostracker" target="_blank">Buy our app on Google Play!</a></li>
           <li><a href="https://www.tindie.com/stores/webosarchive/" target="_blank">Shop for hardware on Tindie!</a></li>
         </ul>
