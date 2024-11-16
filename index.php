@@ -1,18 +1,22 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="imagetoolbar" content="no"/>
+<meta name="viewport" content="width=1220; user-scalable=yes"/>
 <title>webOS Archive</title>
-<link rel="stylesheet" href="wosa.css">
-<link rel="shortcut icon" href="favicon.ico">
-<meta name="description" content="webOS Archive is the unofficially official home of legacy webOS for the defunct Palm/HP mobile platform. Find community, and community-restored apps, docs and guides.">
-</head>
+
 <link type="text/css" rel="stylesheet" media="screen" href="assets/landing-dark.css"/>
 <link type="text/css" rel="stylesheet" media="screen" href="assets/us-landing-dark.css"/>
 <link type="text/css" rel="stylesheet" href="assets/billboard.css"/>
+<style type="text/css">
+#footer {
+  z-index: 1 !important;
+}
+</style>
 </head>
 <body id="page-homepage-light" class="cleantemp">
+<?php include('menu.php') ?>
 <?php
 //Figure out what protocol the client wanted
 if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')
@@ -20,18 +24,6 @@ if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')
 else
   $protocol = "http";
 ?>
-<?php include('menu.php') ?>
-<style type="text/css">
-.menu-wrapper{
-  background: black !important;
-}
-#footer {
-  z-index: 1 !important;
-}
-#sms .hide {
-  display: none;
-}
-</style>
 <?php include('social-meta.php') ?>
 
 <div class="fade-out-layer"></div>
