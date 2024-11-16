@@ -61,8 +61,7 @@ else
 <!--/#maincontent-->
 </div>
 <!--/#body-wrapper-->
-<div id="select-area"> 
-  <!-- class="core clearfix">--> 
+<div id="select-area" class="core clearfix">
   <img id="select-bg" src="assets/home-navigation-dark.png"/>
   <div class="menu-center">
     <div id="select-navs" class="buffer-center"> 
