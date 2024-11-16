@@ -9,6 +9,7 @@
 <link type="text/css" rel="stylesheet" media="screen" href="assets/landing-dark.css"/>
 <link type="text/css" rel="stylesheet" media="screen" href="assets/us-landing-dark.css"/>
 <link type="text/css" rel="stylesheet" href="assets/billboard.css"/>
+<script type="text/javascript" src="assets/billboard.js"></script>
 <style type="text/css">
 #footer {
   z-index: 1 !important;
@@ -48,16 +49,19 @@ else
     <div class="hero-wrapper"> 
       <!-- billboard -->
       <div class="section" id="billboard">
-        <div class="section touchpad"> <img class="billboard-image" src="assets/touchpad-billboard-new.png" alt=""/>
-          <div class="prod-name">webOS</div>
-          <div class="short-desc">Super natural.</div>
-          <div class="long-desc">Works the way you do, so you get<br/>
-            more done.</div>
+        <div class="section touchpad"> 
+          <img id="billboard-image" class="billboard-image" src="assets/touchpad-billboard-new.png" alt="" style="min-width:400px" onclick="billboardLeft()"/>
+          <div id="billboard-name" class="prod-name">webOS</div>
+          <div id="billboard-short" class="short-desc">Super natural.</div>
+          <div id="billboard-long" class="long-desc">Works the way you do, so you get<br/>more done.</div>
           <!--<a id="touchpad" class="learn-more" href="http://www.hp.com/united-states/webos/us/en/why-webos.html"> <img src="assets/assets/landing/learn-more-dark.png" alt="Learn More" /> </a>-->
           <div class="availability">&nbsp;</div>
         </div>
       </div>
-      <div id="pager" class="nav pager"> <a id="left-arrow-pager" href="#" class="prev dark">&laquo;</a> <a id="right-arrow-pager" href="#" class="next dark">&raquo;</a> </div>
+      <div id="pager" class="nav pager"> 
+        <a id="left-arrow-pager" href="#" class="prev dark" onclick="billboardLeft()">&laquo;</a> 
+        <a id="right-arrow-pager" href="#" class="next dark" onclick="billboardRight()">&raquo;</a> 
+      </div>
       <!-- /billboard --> 
     </div>
   </div>
@@ -79,30 +83,6 @@ else
 <div id="footer"> 
   <ul class="footer-nav">
   </ul>
-<script language="JavaScript" type="text/javascript" src="assets/s_code_1-5-09.js"></script>
-<script language="JavaScript" type="text/javascript">
-<!--
-  s.pageName = "us:us:home"
-  s.channel = "home"
-  s.pageType = ""
-  s.prop1 = "us"
-  s.prop2 = "us"
-  s.prop30 = "www.palm.com"
-  s.eVar30 = "www.palm.com"
-  s.eVar6 = "us:us:index.html"
-  /************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
-  var s_code = s.t();
-  if (s_code)
-    document.write(s_code)
-//-->
-</script>
-<script language="JavaScript" type="text/javascript">
-<!--
-  if (navigator.appVersion.indexOf('MSIE') >= 0)
-    document.write(unescape('%3C') + '\!-' + '-')
-//-->
-</script>
-
   <div class="footnotes">
   <?php include('legalese.php') ?>
   </div>
@@ -113,12 +93,27 @@ else
 <script src="assets/yui-combined.js" type="text/javascript"></script>
 <script src="assets/palm-util.js" type="text/javascript"></script>
 <script type="text/javascript" src="assets/ga-all.js"></script> 
-<script type="text/javascript" src="assets/billboard.js"></script>
 <div class="img-event-over preload"></div>
 <div class="img-touchpad-over preload"></div>
 <div class="img-phones-over preload"></div>
 <div class="img-apps-over preload"></div>
 <div class="img-acc-over preload"></div>
+<script>
+  billboardContents = [
+    {
+      image: "assets/touchpad-billboard-new.png",
+      name: "webOS",
+      short: "Super natural.",
+      long: "Works the way you do, so you get<br/>more done."
+    },
+    {
+      image: "assets/archive-billboard.png",
+      name: "webOS Archive",
+      short: "webOS Lives!",
+      long: "webOSArchive (WOSA) is the unofficial repository of information, <br>restoration efforts, and archives for Palm/HP's mobile <br>webOS operating system."
+    }
+  ]
+</script>
 </body>
 </html>
 <!--
@@ -128,16 +123,4 @@ else
 
      ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
      SECTION 108(a)(3)).
--->
-<!--
-playback timings (ms):
-  captures_list: 0.513
-  exclusion.robots: 0.028
-  exclusion.robots.policy: 0.016
-  esindex: 0.01
-  cdx.remote: 7.084
-  LoadShardBlock: 213.104 (3)
-  PetaboxLoader3.datanode: 202.112 (5)
-  PetaboxLoader3.resolve: 240.92 (3)
-  load_resource: 348.816 (2)
 -->
