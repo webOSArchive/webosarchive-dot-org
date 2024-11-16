@@ -61,7 +61,7 @@ else
 <!--/#maincontent-->
 </div>
 <!--/#body-wrapper-->
-<div id="select-area" class="core clearfix">
+<div id="select-area">
   <img id="select-bg" src="assets/home-navigation-dark.png"/>
   <div class="menu-center">
     <div id="select-navs" class="buffer-center"> 
@@ -73,7 +73,6 @@ else
 </div>
 <!--/#select-area-->
 <div id="footer"> 
-<?php include('legalese.php') ?>
   <ul class="footer-nav">
   </ul>
 <script language="JavaScript" type="text/javascript" src="assets/s_code_1-5-09.js"></script>
@@ -109,71 +108,8 @@ else
 <!--/#footer--> 
 <script src="assets/yui-combined.js" type="text/javascript"></script>
 <script src="assets/palm-util.js" type="text/javascript"></script>
-<!--
-<script src="assets/palm-search.js" type="text/javascript"></script>
-<script src="assets/GetJSON.js" type="text/javascript"></script> 
--->
-<div class="scrim hide lightbox-closer" id="scrim-layer"></div>
-<!--[if IE]>
-    <iframe id="iframe-shim" class="hide" src="/assets/includes/global/iframe-content.html"></iframe>
-		<style>
-			#iframe-shim {
-        width: 100%;
-      }
-			</style>
-<![endif]-->
-<script type="text/javascript" src="assets/Lightbox.js"></script>
- 
 <script type="text/javascript" src="assets/ga-all.js"></script> 
-<script type="text/javascript" src="/assets/billboard.js"></script>
-<script type="text/javascript">
-      $P.event.onDOMReady(function() {
-        $P.dom.batch($$(".fade-out-layer"), function(el) {
-          var a = new $P.anim(el, {
-            opacity : {
-              from : 1,
-              to : 0
-            }
-          }, 1);
-          a.onComplete.subscribe(function() {
-            $P.addClass(el, "hide");
-          });
-          a.animate();
-        });
-
-        var b = new $P.Video({
-          'selector' : '.open-video'
-        });
-        $P.billboard.init(10000);
-      });
-    </script> 
-<script type="text/javascript">
-      $PGA.attach([ {
-          "id" : "ga-10",
-          "dir" : "to",
-          "data" : "home link:mobilityattpreplus"
-        }, {
-          "id" : "ga-11",
-          "dir" : "to",
-          "data" : "home link:mobilityverizonpixiplus"
-        }, {
-          "id" : "flightview",
-          "dir" : "to",
-          "data" : "home link:developers-flightview"
-        }, {
-          "id" : "rockband",
-          "dir" : "to",
-          "data" : "home link:developers-rockband"
-        }, {
-          "id" : "tradewinds",
-          "dir" : "to",
-          "data" : "home link:developers-tradewinds2"
-        }, {
-          "id" : "ga-1",
-          "dir" : "to",
-          "data" : "home link:giftcardpromo"
-        } ]);
-    </script>
+<script type="text/javascript" src="assets/billboard.js"></script>
 <div class="img-event-over preload"></div>
 <div class="img-touchpad-over preload"></div>
 <div class="img-phones-over preload"></div>
