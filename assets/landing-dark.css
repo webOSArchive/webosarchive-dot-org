@@ -494,6 +494,7 @@ div#select-area {
 	left: -50%;
 	z-index:100;
 }
+/*
 .fade-out-layer {
   position:absolute;
   width:100%;
@@ -504,8 +505,7 @@ div#select-area {
   z-index:99999;
 }
 #takeover {
-	/*background: #40cdf8;*/  /* blue */
-  background: #ededee;  /* grey */
+  background: #ededee;
 	width:100%;
 	height:1200px;
 	z-index: 1001;
@@ -519,6 +519,7 @@ div#select-area {
 	width: 100%;
 	height: 822px;
 }
+*/
 #intro-text {
 	width: 85%;
 	z-index: 1008;
@@ -653,24 +654,3 @@ div.footnotes {
 	position:relative;
 	z-index:101;
 }
-
-/*
-     FILE ARCHIVED ON 14:36:24 Apr 04, 2012 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 16:23:50 Nov 16, 2024.
-     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
-
-     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
-     SECTION 108(a)(3)).
-*/
-/*
-playback timings (ms):
-  captures_list: 0.503
-  exclusion.robots: 0.022
-  exclusion.robots.policy: 0.014
-  esindex: 0.01
-  cdx.remote: 34.856
-  LoadShardBlock: 283.061 (3)
-  PetaboxLoader3.datanode: 130.794 (4)
-  PetaboxLoader3.resolve: 596.859 (3)
-  load_resource: 505.761
-*/

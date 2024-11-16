@@ -2,11 +2,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<meta name="description" content="Welcome to HP, innovator of easy-to-use mobile products including HP TouchPad, HP Veer, HP Pre3, Pre2, Palm Pre, Palm Pre Plus, Palm Pixi and Palm Pixi Plus smartphones, software, and accessories."/>
-<meta name="keywords" content="palm, usa, mobile, smartphones, handhelds, accessories, software, HP TouchPad, HP Veer, HP Pre3, Pre2, Palm Pre, Palm Pre Plus, Treo, Palm Pixi, Palm Pixi Plus, Treo, Centro, pda, tungsten, zire"/>
 <meta http-equiv="imagetoolbar" content="no"/>
 <meta name="viewport" content="width=1220; user-scalable=yes"/>
-<title>HP USA | Mobile Products for Consumers, Professionals, and Businesses</title>
+<title>webOS Archive</title>
+
 <link type="text/css" rel="stylesheet" media="screen" href="assets/landing-dark.css"/>
 <link type="text/css" rel="stylesheet" media="screen" href="assets/us-landing-dark.css"/>
 <link type="text/css" rel="stylesheet" href="assets/billboard.css"/>
