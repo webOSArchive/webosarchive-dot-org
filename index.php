@@ -11,17 +11,8 @@
 <link type="text/css" rel="stylesheet" media="screen" href="assets/landing-dark.css"/>
 <link type="text/css" rel="stylesheet" media="screen" href="assets/us-landing-dark.css"/>
 <link type="text/css" rel="stylesheet" href="assets/billboard.css"/>
-<style type="text/css">
-#footer {
-  z-index: 1 !important;
-}
-#sms .hide {
-  display: none;
-}
-</style>
 </head>
 <body id="page-homepage-light" class="cleantemp">
-<?php include('menu.php') ?>
 <?php
 //Figure out what protocol the client wanted
 if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')
@@ -29,6 +20,18 @@ if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')
 else
   $protocol = "http";
 ?>
+<?php include('menu.php') ?>
+<style type="text/css">
+.menu-wrapper{
+  background: black !important;
+}
+#footer {
+  z-index: 1 !important;
+}
+#sms .hide {
+  display: none;
+}
+</style>
 <?php include('social-meta.php') ?>
 
 <div class="fade-out-layer"></div>
