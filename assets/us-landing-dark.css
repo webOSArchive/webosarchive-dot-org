@@ -1,0 +1,156 @@
+/* Time-stamp: <2011-02-24 15:22:03  stanv> */
+.text-1-img:not([border]) {
+ background: url(./takeover-text.png);
+}
+.text-2-img:not([border]) {
+ background: url(./takeover-logo.png);
+}
+.buffer-center {
+  height: 76px;
+  margin: 0 auto;
+  position: relative;
+  width: 860px;
+}
+.img-event:not([border]) {
+ background:url(./icon_event-dark.png) no-repeat transparent;
+}
+.img-event-over, a:hover .img-event {
+  background:url(./icon_event_roll-dark.png) no-repeat transparent;
+}
+.img-touchpad:not([border]) {
+ background:url(./icon_touchpad-dark.png) no-repeat transparent;
+}
+.img-touchpad-over, a:hover .img-touchpad {
+  background:url(./icon_touchpad_roll-dark.png) no-repeat transparent;
+}
+.img-phones:not([border]) {
+ background:url(./icon_phones-dark.png) no-repeat transparent;
+}
+.img-phones-over, a:hover .img-phones {
+  background:url(./icon_phones_roll-dark.png) no-repeat transparent;
+}
+.img-apps:not([border]) {
+ background:url(./icon_apps-dark.png) no-repeat transparent;
+}
+.img-apps-over, a:hover .img-apps {
+  background:url(./icon_apps_roll-dark.png) no-repeat transparent;
+}
+.img-acc:not([border]) {
+ background:url(./icon_accessories-dark.png) no-repeat transparent;
+}
+.img-acc-over, a:hover .img-acc {
+  background:url(./icon_accessories_roll-dark.png) no-repeat transparent;
+}
+ .img-community {
+ background:url(./icon_community-dark.png) no-repeat transparent;
+}
+.img-community-over, a:hover .img-community {
+  background:url(./icon_community_roll-dark.png) no-repeat transparent;
+}
+ .img-support {
+ background:url(./icon_support-dark.png) no-repeat transparent;
+}
+.img-support-over, a:hover .img-support {
+  background:url(./icon_support_roll-dark.png) no-repeat transparent;
+}
+ .img-developer {
+ background:url(./icon_developer-dark.png) no-repeat transparent;
+}
+.img-developer-over, a:hover .img-developer {
+  background:url(./icon_developer_roll-dark.png) no-repeat transparent;
+}
+#img-apps {
+  left: 194px;
+}
+#img-community {
+	left: 287px;
+}
+#img-developer {
+	left: 350px;
+}
+#img-support {
+	left: 526px;
+}
+.hero-wrapper {
+  width: 1024px;
+  height: 540px;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+  top: -61px;
+}
+#play-video {
+  position: relative;
+  left: 75px;
+  top: -373px;
+  text-decoration: none;
+}
+#billboard-2 {
+  position: relative;
+}
+#billboard.section {
+  width: 2048px;
+}
+.learn-more img {
+  width: 104px;
+  height: 25px;
+}
+.notify-me img {
+  width: 93px;
+  height: 25px;
+}
+#veer.learn-more {
+  position: relative;
+  top: -470px;
+  left: 70px;
+}
+#touchpad.learn-more {
+  position: relative;
+  top: -430px;
+  left: 70px;
+}
+#pre3.learn-more {
+  position: relative;
+  top: -455px;
+  left: 70px;
+}
+#pre2.learn-more {
+  position: relative;
+  top: -280px;
+  left: 70px;
+}
+.opaque {
+  /* If you don’t use this order, IE8-as-IE7 doesn’t apply the opacity, although IE8 and a pure IE7 do. */
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+  filter: alpha(opacity=20);
+}
+.opaque:not([border]) {
+ opacity: .4;
+}
+.notifyme .header {
+  width: auto;
+  background: none;
+}
+#footer {
+    top: 590px;
+}
+/*
+     FILE ARCHIVED ON 14:36:26 Apr 04, 2012 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:25:53 Nov 16, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.621
+  exclusion.robots: 0.04
+  exclusion.robots.policy: 0.03
+  esindex: 0.01
+  cdx.remote: 11.62
+  LoadShardBlock: 58.487 (3)
+  PetaboxLoader3.datanode: 64.047 (4)
+  load_resource: 91.989
+  PetaboxLoader3.resolve: 47.17
+*/
