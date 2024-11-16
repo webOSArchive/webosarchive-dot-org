@@ -11,7 +11,7 @@
 <!-- Menu Resources -->
 <link rel="stylesheet" href="<?php echo $protocol ?>://www.webosarchive.org/menu.css">
 <?php
-if (!isset($_GET["backcompat"])) {
+if (!isset($backCompat)) {
   echo '<link rel="stylesheet" href="' . $protocol . '://www.webosarchive.org/menu-responsive.css">';
 }
 ?>

@@ -19,14 +19,15 @@
 </style>
 </head>
 <body id="page-homepage-dark">
-<?php include('menu.php') ?>
 <?php
 //Figure out what protocol the client wanted
 if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')
   $protocol = "https";
 else
   $protocol = "http";
+$backCompat = true;
 ?>
+<?php include('menu.php') ?>
 <?php include('social-meta.php') ?>
 
 <div class="fade-out-layer"></div>
