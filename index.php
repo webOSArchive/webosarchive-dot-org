@@ -13,6 +13,13 @@
 #footer {
   z-index: 1 !important;
 }
+.menu-wrapper 
+{
+  background: black !important;
+}
+a:hover {
+  color: black !important;
+}
 </style>
 </head>
 <body id="page-homepage-light" class="cleantemp">
