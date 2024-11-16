@@ -18,7 +18,8 @@
 }
 </style>
 </head>
-<body id="page-homepage-dark">
+<body id="page-homepage-light" class="cleantemp">
+<?php include('menu.php') ?>
 <?php
 //Figure out what protocol the client wanted
 if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')
@@ -26,7 +27,6 @@ if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')
 else
   $protocol = "http";
 ?>
-<?php include('menu.php') ?>
 <?php include('social-meta.php') ?>
 
 <div class="fade-out-layer"></div>
@@ -47,11 +47,10 @@ else
         <div class="section touchpad"> <img class="billboard-image" src="assets/touchpad-billboard-new.png" alt=""/>
           <div class="prod-name">webOS</div>
           <div class="short-desc">Super natural.</div>
-          <div class="long-desc">Works the way you do, so you get<br/>more done.</div>
-          <!--
-          <a id="touchpad" class="learn-more" href="http://www.hp.com/united-states/webos/us/en/why-webos.html"> <img src="assets/assets/landing/learn-more-dark.png" alt="Learn More" /> </a>
+          <div class="long-desc">Works the way you do, so you get<br/>
+            more done.</div>
+          <!--<a id="touchpad" class="learn-more" href="http://www.hp.com/united-states/webos/us/en/why-webos.html"> <img src="assets/assets/landing/learn-more-dark.png" alt="Learn More" /> </a>-->
           <div class="availability">&nbsp;</div>
-          -->
         </div>
       </div>
       <div id="pager" class="nav pager"> <a id="left-arrow-pager" href="#" class="prev dark">&laquo;</a> <a id="right-arrow-pager" href="#" class="next dark">&raquo;</a> </div>
@@ -62,7 +61,8 @@ else
 <!--/#maincontent-->
 </div>
 <!--/#body-wrapper-->
-<div id="select-area" class="core clearfix">
+<div id="select-area"> 
+  <!-- class="core clearfix">--> 
   <img id="select-bg" src="assets/home-navigation-dark.png"/>
   <div class="menu-center">
     <div id="select-navs" class="buffer-center"> 

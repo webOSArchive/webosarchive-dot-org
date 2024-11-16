@@ -8,10 +8,10 @@
       $protocol = $_GET["protocol"];
   }
 ?>
-<!-- Menu Resources -->
+<!-- Menu -->
 <link rel="stylesheet" href="<?php echo $protocol ?>://www.webosarchive.org/menu.css">
 <script src="<?php echo $protocol ?>://www.webosarchive.org/menu.js"></script>
-<!-- End Menu Resources -->
+<!-- End Menu -->
 <!-- Matomo -->
 <script name="matomo">
   var _paq = window._paq = window._paq || [];
@@ -33,7 +33,7 @@
 <!-- End Notification -->
 <div class="menu-wrapper">
   <header class="wosaMenu">
-    <a href="<?php echo $protocol ?>://www.webosarchive.org" class="wosa-logo" target="_top"><img src="<?php echo $protocol ?>://www.webosarchive.org/webOSLogo.png" height="18" style="height:18px" alt="webOS Archive Home" title="webOS Archive Home"> Archive</a>
+    <a href="<?php echo $protocol ?>://www.webosarchive.org" class="logo" target="_top"><img src="<?php echo $protocol ?>://www.webosarchive.org/webOSLogo.png" height="18" style="height:18px" alt="webOS Archive Home" title="webOS Archive Home"> Archive</a>
     <input class="menu-btn" type="checkbox" id="menu-btn" onclick="javascript:toggleMenu();"/>
     <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
     <nav id="navbar">
