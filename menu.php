@@ -10,11 +10,6 @@
 ?>
 <!-- Menu Resources -->
 <link rel="stylesheet" href="<?php echo $protocol ?>://www.webosarchive.org/menu.css">
-<?php
-if (!isset($backCompat)) {
-  echo '<link rel="stylesheet" href="' . $protocol . '://www.webosarchive.org/menu-responsive.css">';
-}
-?>
 <script src="<?php echo $protocol ?>://www.webosarchive.org/menu.js"></script>
 <!-- End Menu Resources -->
 <!-- Matomo -->

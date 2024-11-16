@@ -25,7 +25,6 @@ if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')
   $protocol = "https";
 else
   $protocol = "http";
-$backCompat = true;
 ?>
 <?php include('menu.php') ?>
 <?php include('social-meta.php') ?>
