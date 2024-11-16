@@ -18,7 +18,7 @@
 }
 </style>
 </head>
-<body id="page-homepage-light" class="cleantemp">
+<body id="page-homepage-dark">
 <?php include('menu.php') ?>
 <?php
 //Figure out what protocol the client wanted
@@ -36,49 +36,6 @@ else
 <div id="body-wrapper">
   <div id="header">
     <div class="core"> 
-      <!-- global nav --> 
-
-<div>
-    
-<!--
-  <ul id="top-nav" class="clearfix">
-    <li id="logo"><a href="https://web.archive.org/web/20120501045026/http://www.hp.com/" target="_blank">HP</a></li>
-    <li><a href="https://web.archive.org/web/20120501045026/http://blog.palm.com/">Community</a></li>
-    <li><a href="/us/products/software/mobile-applications.html">Applications</a></li>
-    <li><a href="https://web.archive.org/web/20120501045026/http://developer.palm.com/">Developer</a></li>
-    <li><a href="https://web.archive.org/web/20120501045026/http://www.shopping.hp.com/can/handheld/categories/palm/2/accessories?sort=Desc&amp;">Accessories</a></li>
-    <li><a href="/web/20120501045026/http://www.hpwebos.com/us/support">Support</a></li>
-    <li><a href="/web/20120501045026/http://www.hpwebos.com/us/index.html">Home</a></li>
-  </ul>
-  <ul id="top-controls" class="clearfix">
-    <li id="menu-search">
-      <form id="menu-search-form" action="#" method="get">
-        <div id="search-input-bg" class="search-input-bg">
-          <input type="hidden" id="local-search" name="local-search" value="Search..."/>
-          <input name="globalsearch" type="text" id="globalsearchinput" maxlength="50"/>
-          <button type="submit" class="submit-search">Search</button>
-          <div id="searchClickOverlay" class="searchClickOverlay"></div>
-        </div>
-      </form>
-    </li>
-  </ul>
--->
-  <div style="clear:both;"></div>
-</div>
-<script>
-  function setStyle()
-  {
-    var url = window.location.href;
-
-    if (url.indexOf("search") > -1)
-    {
-      document.getElementById('menu-search').style.visibility = "hidden";
-    }
-  }
-  setStyle();
-</script>
- 
-      <!-- /global nav --> 
     </div>
   </div>
   <!--/divheader-->
@@ -90,10 +47,11 @@ else
         <div class="section touchpad"> <img class="billboard-image" src="assets/touchpad-billboard-new.png" alt=""/>
           <div class="prod-name">webOS</div>
           <div class="short-desc">Super natural.</div>
-          <div class="long-desc">Works the way you do, so you get<br/>
-            more done.</div>
-          <!--<a id="touchpad" class="learn-more" href="http://www.hp.com/united-states/webos/us/en/why-webos.html"> <img src="assets/assets/landing/learn-more-dark.png" alt="Learn More" /> </a>-->
+          <div class="long-desc">Works the way you do, so you get<br/>more done.</div>
+          <!--
+          <a id="touchpad" class="learn-more" href="http://www.hp.com/united-states/webos/us/en/why-webos.html"> <img src="assets/assets/landing/learn-more-dark.png" alt="Learn More" /> </a>
           <div class="availability">&nbsp;</div>
+          -->
         </div>
       </div>
       <div id="pager" class="nav pager"> <a id="left-arrow-pager" href="#" class="prev dark">&laquo;</a> <a id="right-arrow-pager" href="#" class="next dark">&raquo;</a> </div>
@@ -104,8 +62,7 @@ else
 <!--/#maincontent-->
 </div>
 <!--/#body-wrapper-->
-<div id="select-area"> 
-  <!-- class="core clearfix">--> 
+<div id="select-area" class="core clearfix">
   <img id="select-bg" src="assets/home-navigation-dark.png"/>
   <div class="menu-center">
     <div id="select-navs" class="buffer-center"> 
