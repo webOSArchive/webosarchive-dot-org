@@ -20,5 +20,4 @@ function updateBillboard() {
     document.getElementById("billboard-name").innerHTML = billboardContents[billboardPos].name;
     document.getElementById("billboard-short").innerHTML = billboardContents[billboardPos].short;
     document.getElementById("billboard-long").innerHTML = billboardContents[billboardPos].long;
-
 }
