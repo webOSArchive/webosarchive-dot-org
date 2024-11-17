@@ -5,13 +5,13 @@
     font-family: Verdana,sans-serif;
     margin:0;
     padding:0;
-    background-color: black;
+    background-color: #101110;
   }
   #container {
      min-height:100%;
      position:relative;
      margin-bottom: 60px;
-     background-color: black;
+     background-color: #101110;
      color:white;
   }
   a {
