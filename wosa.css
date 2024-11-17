@@ -80,7 +80,7 @@
     margin-bottom: 20px;
     list-style: none;
     background-color: rgb(41, 40, 40);
-    border-radius: 4px;
+    border-radius: 0px;
     font-size: 1.2em;
   }
   #container a {
@@ -93,10 +93,6 @@
     display: block;
     width: 95%;
     background-color: dimgray;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border:2px solid #4b15a6;
     padding: 10px;
     margin: auto;
     margin-bottom: 1em; 

@@ -43,14 +43,14 @@ else
         <div id="billboard-long" class="long-desc">Works the way you do, so you get more done.</div>
     </div>
     <div class="column right">
-      <img class="hero" id="billboard-image" src="assets/touchpad-billboard-cropped.png"/>
+      <a href="https://www.webosarchive.org/docs/thingstotry/"><img class="hero" id="billboard-image" src="assets/touchpad-billboard-cropped.png" alt="Jump into webOS!" title="Jump into webOS!"/></a>
     </div>
   </div>
 </div>
 <div class="links">
-    <a href="<?php echo $protocol; ?>://appcatalog.webosarchive.org"><img src="assets/icon_apps-dark.png" onmouseover="hoverImg(this)" onmouseout="leaveImg(this)"></a>
-    <a href="<?php echo $protocol; ?>://sdk.webosarchive.org"><img src="assets/icon_developer-dark.png" onmouseover="hoverImg(this)" onmouseout="leaveImg(this)"></a>
-    <a href="<?php echo $protocol; ?>://docs.webosarchive.org"><img src="assets/icon_support-dark.png" onmouseover="hoverImg(this)" onmouseout="leaveImg(this)"></a>
+    <a href="<?php echo $protocol; ?>://appcatalog.webosarchive.org"><img src="assets/icon_apps-dark.png" onmouseover="hoverImg(this)" onmouseout="leaveImg(this)" alt="webOS App Museum" title="webOS App Museum"></a>
+    <a href="<?php echo $protocol; ?>://sdk.webosarchive.org"><img src="assets/icon_developer-dark.png" onmouseover="hoverImg(this)" onmouseout="leaveImg(this)" alt="Restored webOS SDK" title="Restored webOS SDK"></a>
+    <a href="<?php echo $protocol; ?>://docs.webosarchive.org"><img src="assets/icon_support-dark.png" onmouseover="hoverImg(this)" onmouseout="leaveImg(this)" alt="Updated Help and Docs" title="Updated Help and Docs"></a>
 </div>
 <footer>
     <?php include("legalese.php"); ?>
