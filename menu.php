@@ -9,8 +9,8 @@
   }
 ?>
 <!-- Menu -->
-<link rel="stylesheet" href="<?php echo $protocol ?>://www.webosarchive.org/menu.css">
-<script src="<?php echo $protocol ?>://www.webosarchive.org/menu.js"></script>
+<link rel="stylesheet" href="<?php echo $protocol ?>://www.webosarchive.org/menu.css?<?php echo uniqid()?>">
+<script src="<?php echo $protocol ?>://www.webosarchive.org/menu.js?<?php echo uniqid()?>"></script>
 <!-- End Menu -->
 <!-- Matomo -->
 <script name="matomo">

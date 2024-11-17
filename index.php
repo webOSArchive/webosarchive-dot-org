@@ -61,7 +61,7 @@ else
       image: "assets/touchpad-billboard-cropped.png",
       name: "webOS",
       short: "Super natural",
-      long: "Works the way you do, so you get >more done."
+      long: "Works the way you do, so you get more done."
     },
     {
       image: "assets/archive-billboard.png",
