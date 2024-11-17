@@ -98,6 +98,23 @@ a {
         height:50px;
     }
 }
+@media screen and (max-width: 400px) {
+    .hero {
+        width:240px;
+    }
+    .links {
+        height: 44px;
+    }
+    .links img {
+        height:44px;
+    }
+    #container {
+        margin-top: -40px;
+    }
+    .left {
+        margin-left: -30px !important;
+    }
+}
 footer {
     margin: auto;
     padding-top: 50px;

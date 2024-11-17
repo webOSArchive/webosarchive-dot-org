@@ -24,7 +24,7 @@
   }
 </style>
 </head>
-<body>
+<body bgcolor="#101110">
 <?php include('menu.php') ?>
 <?php
 //Figure out what protocol the client wanted
