@@ -15,16 +15,16 @@
      color:white;
   }
   a {
-    color:#3E0BF9;
+    color:#7e65d6;
   }
   a:active {
-    color:darkorange;
+    color:darkblue;
   }
   a:visited {
-    color:#3E0BF9;
+    color:#7e65d6;
   }
   a:hover {
-    color: darkorange;
+    color: darkblue;
   }
   .wosaTitle {
     background-color: NavajoWhite;
@@ -84,10 +84,10 @@
     font-size: 1.2em;
   }
   #container a {
-    color: lightgray;
+    color: #7e65d6;
   }
   #container a:hover {
-    color:rgb(116, 64, 0);
+    color: #3E0BF9;
   }
   .feature-block { 
     display: block;
