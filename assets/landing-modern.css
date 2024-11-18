@@ -99,6 +99,9 @@ a {
     }
 }
 @media screen and (max-width: 400px) {
+    .prod-name {
+        font-size: 2.4em;
+    }
     .hero {
         width:240px;
     }
