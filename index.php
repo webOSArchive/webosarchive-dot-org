@@ -66,7 +66,7 @@ else
     {
       image: "assets/archive-billboard.png",
       name: "wOSA",
-      short: "webOS Livesn!",
+      short: "webOS Lives!",
       long: "webOSArchive (WOSA) is the unofficial repository of development efforts and archives for webOS."
     }
   ]
