@@ -65,12 +65,12 @@ else
     },
     {
       image: "assets/archive-billboard.png",
-      name: "webOS Archive",
-      short: "webOS Lives!",
+      name: "webOS Lives!",
+      short: "webOS Archive",
       long: "webOSArchive (WOSA) is the unofficial repository of development efforts and archives for webOS."
     }
   ]
-  window.setInterval("billboardRight()", 4000)
+  window.setInterval("billboardRight()", 5500)
 </script>
 </body>
 </html>
