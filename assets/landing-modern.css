@@ -79,6 +79,9 @@ a {
     }
 }
 @media screen and (max-width: 802px) {
+    #container {
+        margin-top: -20px;
+    }
     .column {
         width: 100%;
         font-size: 12px;
