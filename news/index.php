@@ -25,8 +25,8 @@
     <p style="text-align: right !important; font-weight:bold;">
       Follow: 
       <a href="https://palm.weboslives.eu/users/webosarchive">Mastodon</a> | 
-      <a href="<?php echo $rssFeedURI; ?>">RSS</a> |
-      <a href="https://www.twitter.com/webOSArchive">Twitter</a>
+      <a href="https://bsky.app/profile/webosarchive.org">Bluesky</a> | 
+      <a href="<?php echo $rssFeedURI; ?>">RSS</a>
     </p>
     <div>
         <?php include("../rssWidget.php") ?>
