@@ -83,7 +83,7 @@
             <li><a href="https://palmdb.net/">PalmDB (Classic PalmOS)</a></li>
           </ul>
         </li>
-           
+        <li style='background-color: #4b15a6;'><a href="https://www.tindie.com/stores/webosarchive/" target="_top">Shop</a></li>
       </ul>
     </nav>
   </header>
