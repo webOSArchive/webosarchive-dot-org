@@ -20,6 +20,9 @@ body {
   padding: 12px 20px;
   text-decoration: none;
 }
+.wosaMenu .wosa-log a:hover {
+  color: #fff;
+}
 .menu-wrapper {
   background: #414141;
   height: 45px;
