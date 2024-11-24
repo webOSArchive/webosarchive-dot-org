@@ -19,7 +19,7 @@
   {
     background: black !important;
   }
-  .menu-wrapper a:hover {
+  .menu-ul a:hover {
     color: black !important;
   }
 </style>

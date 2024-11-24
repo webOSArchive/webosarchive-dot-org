@@ -12,7 +12,6 @@
 <?php include('../social-meta.php') ?>
 <?php include('../menu.php')?>
 <?php
-    //$rssFeedURI="http://twitter.webosarchive.org/?twitterid=MTQ2MzI2MjQ3NTM2MTUzMzk1Mg";
     $rssFeedURI="https://palm.weboslives.eu/users/webosarchive.rss";
 ?>
 
