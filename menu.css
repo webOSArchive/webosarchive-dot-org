@@ -21,7 +21,7 @@ body {
   text-decoration: none;
 }
 .wosaMenu .wosa-log a:hover {
-  color: #fff;
+  color: #fff !important;
 }
 .menu-wrapper {
   background: #414141;
