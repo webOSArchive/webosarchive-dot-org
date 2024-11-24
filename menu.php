@@ -78,19 +78,12 @@
             <li><a href="https://forums.weboslives.eu/">webOSLives Forum (New!)</a></li>
             <li><a href="http://forums.webosarchive.org">webOSNation Forum Archive</a></li>
             <li><a href="https://palm.weboslives.eu/users/webosarchive">Mastodon</a></li>
-            <li><a href="https://twitter.com/webOSArchive">Twitter</a></li>
+            <li><a href="https://bsky.app/profile/webosarchive.org">Bluesky</a></li>
             <li><a href="http://pivotce.com/">PivotCE</a></li>
             <li><a href="https://palmdb.net/">PalmDB (Classic PalmOS)</a></li>
           </ul>
         </li>
-        
-        <?php
-        echo "<li";
-        if (strpos( $_SERVER['REQUEST_URI'], "/support" ) !== false)
-          echo " style='background-color: dimgray'";
-        echo "><a href=\"$protocol://www.webosarchive.org/support\" target=\"_top\">Support Us!</a></li>";
-        echo "<li style='background-color: #4b15a6;'><a href=\"https://www.tindie.com/stores/webosarchive/\" target=\"_top\">Shop</a></li>";
-        ?>        
+        <li style='background-color: #4b15a6;'><a href="https://www.tindie.com/stores/webosarchive/" target="_top">Shop</a></li>
       </ul>
     </nav>
   </header>
