@@ -9,7 +9,8 @@
         <?php
         $q = "";
         if (isset($_SERVER['QUERY_STRING']) && $_SERVER['QUERY_STRING'] != "" && $_SERVER['QUERY_STRING'] != "/") {
-            $q = $_SERVER["QUERY_STRING"];
+            // Sanitize query string to prevent XSS
+            $q = htmlspecialchars($_SERVER["QUERY_STRING"], ENT_QUOTES, 'UTF-8');
         }
         ?>
         <script>

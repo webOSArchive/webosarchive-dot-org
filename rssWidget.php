@@ -50,6 +50,13 @@
 <table class='rss-widget-list'>
 <?php
 if (isset($rssFeedURI) && $rssFeedURI != "") {
+    // Validate RSS feed URL to prevent SSRF attacks
+    if (!filter_var($rssFeedURI, FILTER_VALIDATE_URL) || 
+        !in_array(parse_url($rssFeedURI, PHP_URL_SCHEME), ['https', 'http'])) {
+        echo "<!-- Invalid RSS feed URL provided -->";
+        return;
+    }
+    
     $content = file_get_contents($rssFeedURI);
     $feed = new SimpleXMLElement($content);
     //detect RSS or ATOM
