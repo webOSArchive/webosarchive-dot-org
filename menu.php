@@ -48,7 +48,7 @@
         echo "<li";
         if (isset($_GET['content']) && $_GET['content'] == 'docs')
           echo " style='background-color: dimgray'";
-        echo "><a href=\"$protocol://www.webosarchive.org/docs\" target=\"_top\">Docs</a></li>";  
+        echo "><a href=\"$protocol://docs.webosarchive.org\" target=\"_top\">Docs</a></li>";  
 
         //if (isset($_GET['content']) && $_GET['content'] == 'shop')
         //  echo " style='background-color: #f38325'";
@@ -72,7 +72,7 @@
         <li onclick="console.log('invoke mneu');">
         <a>Community</a>
           <ul>
-            <li><a href="http://www.webosarchive.org/docs/community">Discord</a></li>  
+            <li><a href="http://docs.webosarchive.org/community">Discord</a></li>  
             <li><a href="https://forums.weboslives.eu/">webOSLives Forum (New!)</a></li>
             <li><a href="http://forums.webosarchive.org">webOSNation Forum Archive</a></li>
             <li><a href="https://palm.weboslives.eu/users/webosarchive">Mastodon</a></li>
@@ -86,4 +86,5 @@
     </nav>
   </header>
 </div>
+
 
