@@ -65,7 +65,7 @@
               echo "<li><a href=\"$protocol://flixnet.webosarchive.org\" target=\"_top\">Public Domain Movies</a></li>";
               echo "<li><a href=\"$protocol://feedspider.wosa.link\" target=\"_top\">FeedSpider</a></li>";
               echo "<li><a href=\"$protocol://checkmate.wosa.link\" target=\"_top\">Check Mate</a></li>";
-              //echo "<li><a href=\"$protocol://homecontrol.wosa.link\" target=\"_top\">Home Control</a></li>";
+              echo "<li><a href=\"$protocol://hackermystery95.wosa.link\" target=\"_top\">Hacker Mystery 95</a></li>";
             ?>
           </ul>
         </li>
@@ -86,6 +86,7 @@
     </nav>
   </header>
 </div>
+
 
 
 
