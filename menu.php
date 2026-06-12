@@ -62,6 +62,7 @@
               echo "<li><a href=\"$protocol://appcatalog.webosarchive.org\" target=\"_top\">App Museum</a></li>";
               echo "<li><a href=\"$protocol://www.webosarchive.org/tracker\" target=\"_top\">webOS Tracker</a></li>";
               echo "<li><a href=\"$protocol://podcasts.webosarchive.org\" target=\"_top\">Podcast Directory</a></li>";
+              echo "<li><a href=\"$protocol://hackermystery95.wosa.link\" target=\"_top\">Papyrus eReader</a></li>";
               echo "<li><a href=\"$protocol://hackermystery95.wosa.link\" target=\"_top\">Hacker Mystery 95</a></li>";
               /* // Deprecated
               echo "<li><a href=\"$protocol://feedspider.wosa.link\" target=\"_top\">FeedSpider</a></li>";
