@@ -49,10 +49,6 @@
         if (isset($_GET['content']) && $_GET['content'] == 'docs')
           echo " style='background-color: dimgray'";
         echo "><a href=\"$protocol://docs.webosarchive.org\" target=\"_top\">Docs</a></li>";  
-
-        //if (isset($_GET['content']) && $_GET['content'] == 'shop')
-        //  echo " style='background-color: #f38325'";
-        //echo "><a href=\"https://www.tindie.com/stores/webosarchive/\" target=\"_top\">SDK</a></li>";
         ?>
         <li onclick="console.log('invoke mneu');">
           <a>Apps + Services</a>
@@ -82,11 +78,18 @@
             <li><a href="https://palm.weboslives.eu/users/webosarchive">Mastodon</a></li>
             <li><a href="https://bsky.app/profile/webosarchive.org">Bluesky</a></li>
             -->
-            <li><a href="http://pivotce.com/">PivotCE</a></li>
+            <?php
+              // PivotCE: the original domain was sold and is now monetised with
+              // injected advertising, so this points at our rescue archive.
+              echo "<li";
+              if (isset($_GET['content']) && $_GET['content'] == 'pivotce')
+                echo " style='background-color: dimgray'";
+              echo "><a href=\"$protocol://www.webosarchive.org/pivot\" target=\"_top\">PivotCE</a></li>";
+            ?>
             <li><a href="https://palmdb.net/">PalmDB (Classic PalmOS)</a></li>
           </ul>
         </li>
-        <li style='background-color: #4b15a6;'><a href="https://www.tindie.com/stores/webosarchive/" target="_top">Shop</a></li>
+        <li style='background-color: #4b15a6;'><a href="https://shop.webosarchive.org/" target="_top">Shop</a></li>
       </ul>
     </nav>
   </header>
