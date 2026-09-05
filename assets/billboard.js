@@ -1,19 +1,62 @@
-billboardPos = 0;
+var billboardPos = 0;
+var billboardTransitioning = false;
+var BILLBOARD_TRANSITION_MS = 500;
+
 function billboardLeft() {
-    if (billboardPos > 0) {
-        billboardPos--;
-    } else {
-        billboardPos = billboardContents.length - 1;
-    }
-    updateBillboard();
+    billboardGoTo(billboardPos > 0 ? billboardPos - 1 : billboardContents.length - 1);
 }
 function billboardRight() {
-    if (billboardPos < billboardContents.length - 1) {
-        billboardPos++;
-    } else {
-        billboardPos = 0;
+    billboardGoTo(billboardPos < billboardContents.length - 1 ? billboardPos + 1 : 0);
+}
+function billboardGoTo(index) {
+    if (billboardTransitioning || index === billboardPos) {
+        return;
     }
-    updateBillboard();
+    billboardTransitioning = true;
+    billboardPos = index;
+
+    var textEl = document.getElementById("billboard-text");
+    var imageEl = document.getElementById("billboard-image");
+
+    billboardSlideOut(textEl);
+    billboardSlideOut(imageEl);
+
+    window.setTimeout(function() {
+        updateBillboard();
+        billboardSlideInPrepare(textEl);
+        billboardSlideInPrepare(imageEl);
+
+        // force reflow so the "enter from the right" starting position is
+        // applied before the transition back to the resting position runs
+        textEl.offsetHeight;
+        imageEl.offsetHeight;
+
+        billboardSlideInStart(textEl);
+        billboardSlideInStart(imageEl);
+
+        window.setTimeout(function() {
+            billboardTransitioning = false;
+        }, BILLBOARD_TRANSITION_MS);
+    }, BILLBOARD_TRANSITION_MS);
+}
+function billboardSlideOut(el) {
+    el.style.opacity = "0";
+    el.style.webkitTransform = "translateX(-30px)";
+    el.style.transform = "translateX(-30px)";
+}
+function billboardSlideInPrepare(el) {
+    el.style.webkitTransition = "none";
+    el.style.transition = "none";
+    el.style.opacity = "0";
+    el.style.webkitTransform = "translateX(30px)";
+    el.style.transform = "translateX(30px)";
+}
+function billboardSlideInStart(el) {
+    el.style.webkitTransition = "";
+    el.style.transition = "";
+    el.style.opacity = "1";
+    el.style.webkitTransform = "translateX(0)";
+    el.style.transform = "translateX(0)";
 }
 function updateBillboard() {
     document.getElementById("billboard-image").src = billboardContents[billboardPos].image;

@@ -32,6 +32,11 @@ a {
     width: 700px;
     margin-left: -10px;
 }
+#billboard-text,
+.hero {
+    -webkit-transition: opacity 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
 .row:after {
     content: "";
     display: table;

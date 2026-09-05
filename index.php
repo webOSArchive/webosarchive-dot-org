@@ -38,9 +38,11 @@ else
 <div id="container">
   <div class="row">
     <div class="column left">
-        <div id="billboard-name" class="prod-name">webOS</div>
-        <div id="billboard-short" class="short-desc">Super natural</div>
-        <div id="billboard-long" class="long-desc">Palm and HP's legacy mobile platform still works the way you do, so you can get more done.</div>
+        <div id="billboard-text">
+            <div id="billboard-name" class="prod-name">webOS</div>
+            <div id="billboard-short" class="short-desc">Super natural</div>
+            <div id="billboard-long" class="long-desc">Palm and HP's legacy mobile platform still works the way you do, so you can get more done.</div>
+        </div>
     </div>
     <div class="column right">
       <a href="https://www.webosarchive.org/docs/thingstotry/"><img class="hero" id="billboard-image" src="assets/touchpad-billboard-cropped.png" alt="Jump into webOS!" title="Jump into webOS!"/></a>
@@ -70,7 +72,7 @@ else
       long: "webOSArchive (WOSA) is the unofficial repository of development efforts and archives for webOS."
     }
   ]
-  window.setInterval("billboardRight()", 5500)
+  window.setInterval(billboardRight, 5500)
 </script>
 </body>
 </html>
