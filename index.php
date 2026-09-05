@@ -72,7 +72,7 @@ else
       link: "https://github.com/webOSArchive/webOS-Community-Edition",
       name: "webOS 3.1.0",
       short: "Community Edition",
-      long: "A modernized system image, created by the community in&nbsp;2026."
+      long: "A modernized system image, created&nbsp;by the community in 2026."
     },
     {
       image: "assets/archive-billboard.png",
