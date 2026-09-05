@@ -71,7 +71,7 @@
         <li onclick="console.log('invoke mneu');">
         <a>Community</a>
           <ul>
-            <li><a href="http://docs.webosarchive.org/community">Discord</a></li>  
+            <li><a href="http://www.webosarchive.org/discord">Discord</a></li>  
             <li><a href="https://forums.weboslives.eu/">webOSLives Forum (New!)</a></li>
             <li><a href="http://forums.webosarchive.org">webOSNation Forum Archive</a></li>
             <!--
