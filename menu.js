@@ -1,6 +1,6 @@
 var menuOpen = false;
 var resizeTimer;
-var oldSize = 0;
+var oldSize = window.innerWidth;
 function toggleMenu() {
     var menuElement = document.getElementById("menu-ul");
     var menuCheckbox = document.getElementById("menu-btn");
@@ -24,13 +24,20 @@ function redrawMenu() { // Touchpads sometimes need help
     resizeTimer = setTimeout(function() {
       var menuElement = document.getElementById("menu-ul");
       var menuCheckbox = document.getElementById("menu-btn");
-      if (window.innerWidth > oldSize) {
-        oldSize = window.innerWidth;
-        if (window.innerWidth > 800) {
-          menuElement.style.visibility = "visible";
-          menuCheckbox.checked = true;
-        }
+      var newSize = window.innerWidth;
+      if (newSize > oldSize && newSize > 800) {
+        // grew into the desktop layout: nav is always shown there
+        menuElement.style.visibility = "visible";
+        menuCheckbox.checked = true;
+        menuOpen = false;
+      } else if (newSize < oldSize && newSize < 800) {
+        // shrank into the mobile layout: start collapsed rather than
+        // inheriting whatever visibility the desktop layout left behind
+        menuElement.style.visibility = "hidden";
+        menuCheckbox.checked = false;
+        menuOpen = false;
       }
+      oldSize = newSize;
     }, 350);
 }
 window.addEventListener('resize', redrawMenu);

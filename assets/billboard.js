@@ -1,6 +1,18 @@
 var billboardPos = 0;
 var billboardTransitioning = false;
 var BILLBOARD_TRANSITION_MS = 500;
+var billboardIntervalMs = 5500;
+var billboardIntervalId = null;
+
+function billboardStartAutoRotate(intervalMs) {
+    if (intervalMs) {
+        billboardIntervalMs = intervalMs;
+    }
+    if (billboardIntervalId !== null) {
+        window.clearInterval(billboardIntervalId);
+    }
+    billboardIntervalId = window.setInterval(billboardRight, billboardIntervalMs);
+}
 
 function billboardPreload(contents) {
     var i, img;
@@ -54,6 +66,7 @@ function billboardGoTo(index) {
     billboardTransitioning = true;
     billboardPos = index;
     billboardUpdateDots();
+    billboardStartAutoRotate();
 
     var textEl = document.getElementById("billboard-text");
     var imageEl = document.getElementById("billboard-image");

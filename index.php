@@ -39,13 +39,13 @@ else
   <div class="row">
     <div class="column left">
         <div id="billboard-text">
-            <div id="billboard-name" class="prod-name">webOS</div>
-            <div id="billboard-short" class="short-desc">Super natural</div>
-            <div id="billboard-long" class="long-desc">Palm and HP's legacy mobile platform still works the way you do, so you can get more done.</div>
+            <div id="billboard-name" class="prod-name">webOS 3.1.0</div>
+            <div id="billboard-short" class="short-desc">Community Edition</div>
+            <div id="billboard-long" class="long-desc">A modernized system image,<br/>created by and for the community in 2026.</div>
         </div>
     </div>
     <div class="column right">
-      <a id="billboard-link" href="https://www.webosarchive.org/docs/thingstotry/"><img class="hero" id="billboard-image" src="assets/touchpad-billboard-cropped.png" alt="Jump into webOS!" title="Jump into webOS!"/></a>
+      <a id="billboard-link" href="https://www.webosarchive.org/docs/thingstotry/"><img class="hero" id="billboard-image" src="assets/webos-ce-billboard.png" alt="Jump into webOS!" title="Jump into webOS!"/></a>
     </div>
   </div>
   <div id="billboard-dots" class="billboard-dots"></div>
@@ -61,18 +61,18 @@ else
 <script>
   billboardContents = [
     {
-      image: "assets/touchpad-billboard-cropped.png",
-      link: "http://docs.websosarchive.org/",
-      name: "webOS",
-      short: "Super natural",
-      long: "Palm and HP's legacy mobile platform still works the way you do, so you can get more done."
-    },
-    {
       image: "assets/webos-ce-billboard.png",
       link: "https://github.com/webOSArchive/webOS-Community-Edition",
       name: "webOS 3.1.0",
       short: "Community Edition",
-      long: "A modernized system image, created&nbsp;by the community in 2026."
+      long: "A modernized system image,<br/>created by and for the community in 2026."
+    },
+    {
+      image: "assets/touchpad-billboard-cropped.png",
+      link: "http://docs.webosarchive.org/",
+      name: "webOS",
+      short: "Super natural",
+      long: "Palm and HP's legacy mobile platform still works the way you do, so you can get more done."
     },
     {
       image: "assets/archive-billboard.png",
@@ -84,7 +84,7 @@ else
   ]
   billboardPreload(billboardContents)
   billboardRenderDots()
-  window.setInterval(billboardRight, 5500)
+  billboardStartAutoRotate(5500)
 </script>
 </body>
 </html>

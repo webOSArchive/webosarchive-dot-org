@@ -100,6 +100,8 @@ a {
     .hero {
         width:500px;
     }
+}
+@media screen and (max-width: 1023px) {
     #container {
         margin-top: -20px;
     }
@@ -109,6 +111,12 @@ a {
     }
     .prod-name {
         margin-top:-20px !important;
+    }
+    .right {
+        text-align: center;
+    }
+    .hero {
+        margin-left: 0;
     }
 }
 @media screen and (max-width: 600px) {
