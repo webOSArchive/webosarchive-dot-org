@@ -42,6 +42,24 @@ a {
     display: table;
     clear: both;
 }
+.billboard-dots {
+    clear: both;
+    text-align: center;
+    padding-top: 10px;
+}
+.billboard-dot {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    margin: 0 4px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background-color: dimgray;
+    cursor: pointer;
+}
+.billboard-dot.active {
+    background-color: white;
+}
 .prod-name {
     color: white;
     font-size: 2.6em;
@@ -82,8 +100,6 @@ a {
     .hero {
         width:500px;
     }
-}
-@media screen and (max-width: 802px) {
     #container {
         margin-top: -20px;
     }
