@@ -2,6 +2,14 @@ var billboardPos = 0;
 var billboardTransitioning = false;
 var BILLBOARD_TRANSITION_MS = 500;
 
+function billboardPreload(contents) {
+    var i, img;
+    for (i = 0; i < contents.length; i++) {
+        img = new Image();
+        img.src = contents[i].image;
+    }
+}
+
 function billboardLeft() {
     billboardGoTo(billboardPos > 0 ? billboardPos - 1 : billboardContents.length - 1);
 }

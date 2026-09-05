@@ -72,6 +72,7 @@ else
       long: "webOSArchive (WOSA) is the unofficial repository of development efforts and archives for webOS."
     }
   ]
+  billboardPreload(billboardContents)
   window.setInterval(billboardRight, 5500)
 </script>
 </body>
