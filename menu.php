@@ -41,7 +41,7 @@
         <li><a href="http://www.webosarchive.org">Home</a></li>
         <?php 
         echo "<li";
-        if (strpos( $_SERVER['REQUEST_URI'], "/pivot" ) !== false)
+        if (isset($_GET['content']) && $_GET['content'] == 'pivot')
           echo " style='background-color: dimgray'";
         echo "><a href=\"$protocol://www.webosarchive.org/news\" target=\"_top\">News</a></li>";
 
@@ -59,16 +59,17 @@
               echo "<li><a href=\"$protocol://www.webosarchive.org/tracker\" target=\"_top\">webOS Tracker</a></li>";
               echo "<li><a href=\"$protocol://podcasts.webosarchive.org\" target=\"_top\">Podcast Directory</a></li>";
               echo "<li><a href=\"$protocol://papyrus.wosa.link\" target=\"_top\">Papyrus eReader</a></li>";
+              echo "<li><a href=\"$protocol://checkmate.wosa.link\" target=\"_top\">Check Mate</a></li>";
               echo "<li><a href=\"$protocol://hackermystery95.wosa.link\" target=\"_top\">Hacker Mystery 95</a></li>";
               /* // Deprecated
               echo "<li><a href=\"$protocol://feedspider.wosa.link\" target=\"_top\">FeedSpider</a></li>";
               echo "<li><a href=\"$protocol://flixnet.webosarchive.org\" target=\"_top\">Public Domain Movies</a></li>";              
-              echo "<li><a href=\"$protocol://checkmate.wosa.link\" target=\"_top\">Check Mate</a></li>";
+              
               */
             ?>
           </ul>
         </li>
-        <li onclick="console.log('invoke menu');">
+        <li>
         <a>Community</a>
           <ul>
             <li><a href="http://www.webosarchive.org/discord">Discord</a></li>  
@@ -78,14 +79,6 @@
             <li><a href="https://palm.weboslives.eu/users/webosarchive">Mastodon</a></li>
             <li><a href="https://bsky.app/profile/webosarchive.org">Bluesky</a></li>
             -->
-            <?php
-              // PivotCE: the original domain was sold and is now monetised with
-              // injected advertising, so this points at our rescue archive.
-              echo "<li";
-              if (isset($_GET['content']) && $_GET['content'] == 'pivotce')
-                echo " style='background-color: dimgray'";
-              echo "><a href=\"$protocol://www.webosarchive.org/pivot\" target=\"_top\">PivotCE</a></li>";
-            ?>
             <li><a href="https://palmdb.net/">PalmDB (Classic PalmOS)</a></li>
           </ul>
         </li>
