@@ -75,10 +75,9 @@
             <li><a href="http://www.webosarchive.org/discord">Discord</a></li>  
             <li><a href="https://forums.weboslives.eu/">webOSLives Forum (New!)</a></li>
             <li><a href="http://forums.webosarchive.org">webOSNation Forum Archive</a></li>
-            <!--
             <li><a href="https://palm.weboslives.eu/users/webosarchive">Mastodon</a></li>
             <li><a href="https://bsky.app/profile/webosarchive.org">Bluesky</a></li>
-            -->
+            <li><a href="https://twitter.com/webOSArchive">Xitter</a></li>
             <li><a href="https://palmdb.net/">PalmDB (Classic PalmOS)</a></li>
           </ul>
         </li>
