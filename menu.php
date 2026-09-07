@@ -41,7 +41,7 @@
         <li><a href="http://www.webosarchive.org">Home</a></li>
         <?php 
         echo "<li";
-        if (strpos( $_SERVER['REQUEST_URI'], "/news" ) !== false)
+        if (strpos( $_SERVER['REQUEST_URI'], "/pivot" ) !== false)
           echo " style='background-color: dimgray'";
         echo "><a href=\"$protocol://www.webosarchive.org/news\" target=\"_top\">News</a></li>";
 
@@ -68,7 +68,7 @@
             ?>
           </ul>
         </li>
-        <li onclick="console.log('invoke mneu');">
+        <li onclick="console.log('invoke menu');">
         <a>Community</a>
           <ul>
             <li><a href="http://www.webosarchive.org/discord">Discord</a></li>  
