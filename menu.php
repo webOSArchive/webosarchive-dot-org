@@ -43,7 +43,7 @@
         echo "<li";
         if (isset($_GET['content']) && $_GET['content'] == 'pivot')
           echo " style='background-color: dimgray'";
-        echo "><a href=\"$protocol://www.webosarchive.org/news\" target=\"_top\">News</a></li>";
+        echo "><a href=\"$protocol://www.webosarchive.org/pivot\" target=\"_top\">News</a></li>";
 
         echo "<li";
         if (isset($_GET['content']) && $_GET['content'] == 'docs')
