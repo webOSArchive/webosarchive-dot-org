@@ -34,11 +34,12 @@
     <nav id="navbar">
       <ul id="menu-ul">
         <li><a href="http://www.webosarchive.org">Home</a></li>
-        <?php 
+        <?php
         echo "<li";
         if (isset($_GET['content']) && $_GET['content'] == 'pivot')
           echo " style='background-color: dimgray'";
-        echo "><a href=\"$protocol://www.webosarchive.org/pivot\" target=\"_top\">News</a><img src=\"new-badge.png\"</li>";
+        echo "><a href=\"$protocol://www.webosarchive.org/pivot\" target=\"_top\">News ";
+	      echo "<img src=\"$protocol://www.webosarchive.org/new-badge.png\" style='height:16px; width:16px; margin-top:-10px !important;'></a></li>";
 
         echo "<li";
         if (isset($_GET['content']) && $_GET['content'] == 'docs')
@@ -58,8 +59,7 @@
               echo "<li><a href=\"$protocol://hackermystery95.wosa.link\" target=\"_top\">Hacker Mystery 95</a></li>";
               /* // Deprecated
               echo "<li><a href=\"$protocol://feedspider.wosa.link\" target=\"_top\">FeedSpider</a></li>";
-              echo "<li><a href=\"$protocol://flixnet.webosarchive.org\" target=\"_top\">Public Domain Movies</a></li>";              
-              
+              echo "<li><a href=\"$protocol://flixnet.webosarchive.org\" target=\"_top\">Public Domain Movies</a></li>";
               */
             ?>
           </ul>
@@ -76,7 +76,13 @@
             <li><a href="https://palmdb.net/">PalmDB (Classic PalmOS)</a></li>
           </ul>
         </li>
-        <li style='background-color: #4b15a6;'><a href="https://shop.webosarchive.org/" target="_top">Shop</a></li>
+        <?php
+        echo "<li";
+        if (isset($_GET['content']) && $_GET['content'] == 'shop')
+          echo " style='background-color: dimgray'";
+        echo "><a href=\"$protocol://shop.webosarchive.org\" target=\"_top\">Shop ";
+	      echo "<img src=\"$protocol://www.webosarchive.org/new-badge.png\" style='height:16px; width:16px; margin-top:-10px !important;'></a></li>";
+	      ?>
       </ul>
     </nav>
   </header>
