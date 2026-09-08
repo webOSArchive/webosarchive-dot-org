@@ -22,6 +22,18 @@ body {
   min-height: 100%;
 }
 
+/* Vertically center the page on tall screens. The template's table sits
+   below the 45px shared menu, so it fills the rest of the viewport and its
+   cell aligns to the middle. calc()/vh are unknown to 2011 webOS WebKit,
+   which drops the rule and keeps today's top-aligned layout. */
+body > table {
+  min-height: calc(100vh - 45px);
+  min-height: calc(100dvh - 45px);
+}
+body > table > tbody > tr > td {
+  vertical-align: middle;
+}
+
 #row {
   display: -webkit-flex;
   display:         flex;
