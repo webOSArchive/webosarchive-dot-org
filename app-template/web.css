@@ -39,12 +39,15 @@ body {
   
   min-height: 655px;
   max-width: 916px;
+  /* gutters when the columns run edge to edge (TouchPad portrait) */
+  padding: 0 20px;
 }
 
 @media all and (max-width: 767px) {
   #row {
     -webkit-flex-direction: column;
             flex-direction: column;
+    padding: 0;
   }
 
   /* no columns on narrow screens (old WebKit; flex browsers ignore float) */
