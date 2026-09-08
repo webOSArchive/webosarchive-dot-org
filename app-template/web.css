@@ -23,14 +23,10 @@ body {
 }
 
 #row {
-  /* 2009 box model first: the only flexbox 2011-era webOS WebKit knows.
-     Modern browsers override it with the flex rules below. */
-  display: -webkit-box;
-  -webkit-box-orient: horizontal;
-  -webkit-box-align: center;
-  -webkit-box-pack: justify;
   display: -webkit-flex;
   display:         flex;
+  /* contains the floated columns on browsers without flexbox (2011 webOS WebKit) */
+  overflow: hidden;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 
   -webkit-align-content: center;
@@ -47,9 +43,14 @@ body {
 
 @media all and (max-width: 767px) {
   #row {
-    -webkit-box-orient: vertical;
     -webkit-flex-direction: column;
             flex-direction: column;
+  }
+
+  /* no columns on narrow screens (old WebKit; flex browsers ignore float) */
+  #content,
+  #hero {
+    float: none;
   }
 
   #content,
@@ -66,6 +67,15 @@ body {
 #content,
 #hero {
   width: 48%;
+}
+
+/* Side-by-side columns for browsers without flexbox (2011 webOS WebKit).
+   Flex browsers ignore float on flex items, so this is a no-op for them. */
+#content {
+  float: left;
+}
+#hero {
+  float: right;
 }
 
 h1 {
