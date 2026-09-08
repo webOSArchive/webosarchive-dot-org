@@ -26,11 +26,6 @@
   })();
 </script>
 <!-- End Matomo -->
-<!-- Notification Code -->
-<link rel="stylesheet" href="<?php echo $protocol ?>://www.webosarchive.org/notifications/notifications.css">
-<script src="<?php echo $protocol ?>://www.webosarchive.org/notifications/notifications.js"></script>
-<script src="<?php echo $protocol ?>://www.webosarchive.org/tldnotice.js"></script>
-<!-- End Notification -->
 <div class="menu-wrapper">
   <header class="wosaMenu">
     <a href="<?php echo $protocol ?>://www.webosarchive.org" class="wosa-logo" target="_top"><img src="<?php echo $protocol ?>://www.webosarchive.org/webOSLogo.png" height="18" style="height:18px" alt="webOS Archive Home" title="webOS Archive Home"> Archive</a>
@@ -43,7 +38,7 @@
         echo "<li";
         if (isset($_GET['content']) && $_GET['content'] == 'pivot')
           echo " style='background-color: dimgray'";
-        echo "><a href=\"$protocol://www.webosarchive.org/pivot\" target=\"_top\">News</a></li>";
+        echo "><a href=\"$protocol://www.webosarchive.org/pivot\" target=\"_top\">News</a><img src=\"new-badge.png\"</li>";
 
         echo "<li";
         if (isset($_GET['content']) && $_GET['content'] == 'docs')
