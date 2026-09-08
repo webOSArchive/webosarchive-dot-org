@@ -45,7 +45,7 @@ else
         </div>
     </div>
     <div class="column right">
-      <a id="billboard-link" href="https://www.webosarchive.org/docs/thingstotry/"><img class="hero" id="billboard-image" src="assets/webos-ce-billboard.png" alt="Jump into webOS!" title="Jump into webOS!"/></a>
+      <a id="billboard-link" href=""><img class="hero" id="billboard-image" src="assets/webos-ce-billboard.png" alt="Jump into webOS!" title="Jump into webOS!"/></a>
     </div>
   </div>
   <div id="billboard-dots" class="billboard-dots"></div>
