@@ -45,7 +45,7 @@ else
         </div>
     </div>
     <div class="column right">
-      <a id="billboard-link" href=""><img class="hero" id="billboard-image" src="assets/webos-ce-billboard.png" alt="Jump into webOS!" title="Jump into webOS!"/></a>
+      <a id="billboard-link" href="https://www.webosarchive.org/pivot/2026/09/08/webos-3.1.0-community-edition-is-here/"><img class="hero" id="billboard-image" src="assets/webos-ce-billboard.png" alt="Jump into webOS!" title="Jump into webOS!"/></a>
     </div>
   </div>
   <div id="billboard-dots" class="billboard-dots"></div>
@@ -62,7 +62,7 @@ else
   billboardContents = [
     {
       image: "assets/webos-ce-billboard.png",
-      link: "https://github.com/webOSArchive/webOS-Community-Edition",
+      link: "https://www.webosarchive.org/pivot/2026/09/08/webos-3.1.0-community-edition-is-here/",
       name: "webOS 3.1.0",
       short: "Community Edition",
       long: "A modernized system image,<br/>created by and for the community in 2026."
