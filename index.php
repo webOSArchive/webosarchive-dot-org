@@ -10,7 +10,7 @@ else
   $protocol = "http";
 ?>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<link type="text/css" rel="stylesheet" media="screen" href="assets/landing-modern.css"/>
+<link type="text/css" rel="stylesheet" media="screen" href="assets/landing-modern.css?v=<?php echo filemtime('assets/landing-modern.css'); ?>"/>
 <link rel="alternate" type="application/rss+xml" title="webOS Archive News" href="<?php echo $protocol; ?>://www.webosarchive.org/pivot/index.xml">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script type="text/javascript" src="assets/billboard.js"></script>
