@@ -2,8 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 <title>webOS Archive</title>
+<?php
+//Figure out what protocol the client wanted
+if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')
+  $protocol = "https";
+else
+  $protocol = "http";
+?>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <link type="text/css" rel="stylesheet" media="screen" href="assets/landing-modern.css"/>
+<link rel="alternate" type="application/rss+xml" title="webOS Archive News" href="<?php echo $protocol; ?>://www.webosarchive.org/pivot/index.xml">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script type="text/javascript" src="assets/billboard.js"></script>
 <script>
@@ -26,13 +34,6 @@
 </head>
 <body bgcolor="#101110">
 <?php include('menu.php') ?>
-<?php
-//Figure out what protocol the client wanted
-if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')
-  $protocol = "https";
-else
-  $protocol = "http";
-?>
 <?php include('social-meta.php') ?>
 <div id="margin" style="margin-top: 65px"></div>
 <div id="container">
