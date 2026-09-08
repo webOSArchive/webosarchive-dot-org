@@ -67,6 +67,9 @@ body > table > tbody > tr > td {
   #hero {
     float: none;
   }
+  #hero {
+    margin-top: 0;
+  }
 
   #content,
   #hero {
@@ -91,6 +94,10 @@ body > table > tbody > tr > td {
 }
 #hero {
   float: right;
+  /* Old-device only: nudge the hero column down. Modern browsers take the
+     calc() override; 2011 webOS WebKit drops it and keeps the 100px. */
+  margin-top: 100px;
+  margin-top: calc(0px);
 }
 
 h1 {
