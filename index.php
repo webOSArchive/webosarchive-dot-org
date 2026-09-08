@@ -36,6 +36,7 @@ else
 <?php include('menu.php') ?>
 <?php include('social-meta.php') ?>
 <div id="margin" style="margin-top: 65px"></div>
+<main id="landing-main">
 <div id="container">
   <div class="row">
     <div class="column left">
@@ -56,6 +57,7 @@ else
     <a href="<?php echo $protocol; ?>://sdk.webosarchive.org"><img src="assets/icon_developer-dark.png" onmouseover="hoverImg(this)" onmouseout="leaveImg(this)" alt="Restored webOS SDK" title="Restored webOS SDK"></a>
     <a href="<?php echo $protocol; ?>://docs.webosarchive.org"><img src="assets/icon_support-dark.png" onmouseover="hoverImg(this)" onmouseout="leaveImg(this)" alt="Updated Help and Docs" title="Updated Help and Docs"></a>
 </div>
+</main>
 <footer>
     <?php include("legalese.php"); ?>
 </footer>
