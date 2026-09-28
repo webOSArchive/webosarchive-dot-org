@@ -54,14 +54,17 @@ function billboardUpdateDots() {
 }
 
 function billboardLeft() {
-    billboardGoTo(billboardPos > 0 ? billboardPos - 1 : billboardContents.length - 1);
+    billboardGoTo(billboardPos > 0 ? billboardPos - 1 : billboardContents.length - 1, -1);
 }
 function billboardRight() {
-    billboardGoTo(billboardPos < billboardContents.length - 1 ? billboardPos + 1 : 0);
+    billboardGoTo(billboardPos < billboardContents.length - 1 ? billboardPos + 1 : 0, 1);
 }
-function billboardGoTo(index) {
+function billboardGoTo(index, direction) {
     if (billboardTransitioning || index === billboardPos) {
         return;
+    }
+    if (!direction) {
+        direction = index > billboardPos ? 1 : -1;
     }
     billboardTransitioning = true;
     billboardPos = index;
@@ -71,15 +74,15 @@ function billboardGoTo(index) {
     var textEl = document.getElementById("billboard-text");
     var imageEl = document.getElementById("billboard-image");
 
-    billboardSlideOut(textEl);
-    billboardSlideOut(imageEl);
+    billboardSlideOut(textEl, direction);
+    billboardSlideOut(imageEl, direction);
 
     window.setTimeout(function() {
         updateBillboard();
-        billboardSlideInPrepare(textEl);
-        billboardSlideInPrepare(imageEl);
+        billboardSlideInPrepare(textEl, direction);
+        billboardSlideInPrepare(imageEl, direction);
 
-        // force reflow so the "enter from the right" starting position is
+        // force reflow so the "enter from the side" starting position is
         // applied before the transition back to the resting position runs
         textEl.offsetHeight;
         imageEl.offsetHeight;
@@ -92,17 +95,17 @@ function billboardGoTo(index) {
         }, BILLBOARD_TRANSITION_MS);
     }, BILLBOARD_TRANSITION_MS);
 }
-function billboardSlideOut(el) {
+function billboardSlideOut(el, direction) {
     el.style.opacity = "0";
-    el.style.webkitTransform = "translateX(-30px)";
-    el.style.transform = "translateX(-30px)";
+    el.style.webkitTransform = "translateX(" + (-30 * direction) + "px)";
+    el.style.transform = "translateX(" + (-30 * direction) + "px)";
 }
-function billboardSlideInPrepare(el) {
+function billboardSlideInPrepare(el, direction) {
     el.style.webkitTransition = "none";
     el.style.transition = "none";
     el.style.opacity = "0";
-    el.style.webkitTransform = "translateX(30px)";
-    el.style.transform = "translateX(30px)";
+    el.style.webkitTransform = "translateX(" + (30 * direction) + "px)";
+    el.style.transform = "translateX(" + (30 * direction) + "px)";
 }
 function billboardSlideInStart(el) {
     el.style.webkitTransition = "";
@@ -117,4 +120,35 @@ function updateBillboard() {
     document.getElementById("billboard-name").innerHTML = billboardContents[billboardPos].name;
     document.getElementById("billboard-short").innerHTML = billboardContents[billboardPos].short;
     document.getElementById("billboard-long").innerHTML = billboardContents[billboardPos].long;
+}
+function billboardEnableSwipe(elementId) {
+    var el = document.getElementById(elementId);
+    var startX = null, startY = null;
+    if (!el || !el.addEventListener) {
+        return;
+    }
+    el.addEventListener("touchstart", function(e) {
+        if (e.touches.length !== 1) {
+            startX = null;
+            return;
+        }
+        startX = e.touches[0].pageX;
+        startY = e.touches[0].pageY;
+    }, false);
+    el.addEventListener("touchend", function(e) {
+        var dx, dy;
+        if (startX === null || !e.changedTouches || !e.changedTouches.length) {
+            return;
+        }
+        dx = e.changedTouches[0].pageX - startX;
+        dy = e.changedTouches[0].pageY - startY;
+        startX = null;
+        if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy)) {
+            if (dx < 0) {
+                billboardRight();
+            } else {
+                billboardLeft();
+            }
+        }
+    }, false);
 }

@@ -87,6 +87,7 @@ else
   ]
   billboardPreload(billboardContents)
   billboardRenderDots()
+  billboardEnableSwipe("container")
   billboardStartAutoRotate(5500)
 </script>
 </body>
