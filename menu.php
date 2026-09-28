@@ -51,7 +51,7 @@
           <ul>
             <?php
               echo "<li><a href=\"$protocol://sdk.webosarchive.org\" target=\"_top\">SDK</a></li>";
-              echo "<li><a href=\"$protocol://appcatalog.webosarchive.org\" target=\"_top\">App Museum</a></li>";
+              echo "<li><a href=\"$protocol://appcatalog.webosarchive.org\" target=\"_top\">App Catalog</a></li>";
               echo "<li><a href=\"$protocol://www.webosarchive.org/tracker\" target=\"_top\">webOS Tracker</a></li>";
               echo "<li><a href=\"$protocol://podcasts.webosarchive.org\" target=\"_top\">Podcast Directory</a></li>";
               echo "<li><a href=\"$protocol://papyrus.wosa.link\" target=\"_top\">Papyrus eReader</a></li>";

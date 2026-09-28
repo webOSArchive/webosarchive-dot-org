@@ -53,7 +53,7 @@ else
   <div id="billboard-dots" class="billboard-dots"></div>
 </div>
 <div class="links">
-    <a href="<?php echo $protocol; ?>://appcatalog.webosarchive.org"><img src="assets/icon_apps-dark.png" onmouseover="hoverImg(this)" onmouseout="leaveImg(this)" alt="webOS App Museum" title="webOS App Museum"></a>
+    <a href="<?php echo $protocol; ?>://appcatalog.webosarchive.org"><img src="assets/icon_apps-dark.png" onmouseover="hoverImg(this)" onmouseout="leaveImg(this)" alt="Restored webOS App Catalog" title="Restored webOS App Catalog"></a>
     <a href="<?php echo $protocol; ?>://sdk.webosarchive.org"><img src="assets/icon_developer-dark.png" onmouseover="hoverImg(this)" onmouseout="leaveImg(this)" alt="Restored webOS SDK" title="Restored webOS SDK"></a>
     <a href="<?php echo $protocol; ?>://docs.webosarchive.org"><img src="assets/icon_support-dark.png" onmouseover="hoverImg(this)" onmouseout="leaveImg(this)" alt="Updated Help and Docs" title="Updated Help and Docs"></a>
 </div>

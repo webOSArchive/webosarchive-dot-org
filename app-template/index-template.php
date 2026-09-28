@@ -56,7 +56,7 @@ echo file_get_contents("https://www.webosarchive.org/menu.php?docRoot=" . $docRo
     <div id="content" align="left">
       <h1><img src="<?php echo $icon;?>" width="60" height="60" alt=""/><?php echo $title; ?></h1>
       <p><?php echo $description; ?></p>
-      <p>Available for most platforms as a Progressive Web App, on Google Play for Android, and the webOS App Museum for webOS devices.</p>
+      <p>Available for most platforms as a Progressive Web App, on Google Play for Android, and the webOS App Catalog for webOS devices.</p>
       <p>View the source and contribute on <?php echo "<a href='" . $github . "'>GitHub</a>"?>.</p>
       <p class="center">
         <?php if (isset($pwaLink)) { ?>
