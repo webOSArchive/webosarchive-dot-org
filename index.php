@@ -48,9 +48,9 @@ else
     </div>
     <div class="column right">
       <a id="billboard-link" href="https://www.webosarchive.org/pivot/2026/09/08/webos-3.1.0-community-edition-is-here/"><img class="hero" id="billboard-image" src="assets/webos-ce-billboard.png" alt="Jump into webOS!" title="Jump into webOS!"/></a>
+      <a class="billboard-arrow billboard-arrow-right" href="#" onclick="billboardRight(); return false;"><img src="assets/billboard-arrow-right.png" alt="Next" title="Next"/></a>
     </div>
-    <a class="billboard-arrow billboard-arrow-left" href="#" onclick="billboardLeft(); return false;"><img src="assets/billboard-arrow-left-grey.png" alt="Previous" title="Previous"/></a>
-    <a class="billboard-arrow billboard-arrow-right" href="#" onclick="billboardRight(); return false;"><img src="assets/billboard-arrow-right-grey.png" alt="Next" title="Next"/></a>
+    <a class="billboard-arrow billboard-arrow-left" href="#" onclick="billboardLeft(); return false;"><img src="assets/billboard-arrow-left.png" alt="Previous" title="Previous"/></a>
   </div>
   <div id="billboard-dots" class="billboard-dots"></div>
 </div>

@@ -63,9 +63,11 @@ a {
     clear: both;
 }
 /* Prev/next arrows, only on large screens (small screens swipe instead).
-   The row is 60% of the viewport, so -33.33% of its width reaches the
-   viewport edge. */
-.row {
+   The left arrow sits just outside the text (which is pulled 60px left
+   of the row); the right arrow sits just past the hero image, which can
+   spill out of its column, so it is positioned within that column. */
+.row,
+.right {
     position: relative;
 }
 .billboard-arrow {
@@ -78,16 +80,19 @@ a {
     border: 0;
 }
 .billboard-arrow-left {
-    left: -33.33%;
-    margin-left: 20px;
+    left: -100px;
 }
 .billboard-arrow-right {
-    right: -33.33%;
-    margin-right: 20px;
+    left: 731px; /* hero margin 15px + width 700px + 16px gap */
 }
 @media screen and (min-width: 1030px) {
     .billboard-arrow {
         display: block;
+    }
+}
+@media screen and (max-width: 1124px) {
+    .billboard-arrow-right {
+        left: 531px; /* hero is 500px wide here */
     }
 }
 .billboard-dots {
