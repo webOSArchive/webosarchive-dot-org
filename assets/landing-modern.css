@@ -62,6 +62,34 @@ a {
     display: table;
     clear: both;
 }
+/* Prev/next arrows, only on large screens (small screens swipe instead).
+   The row is 60% of the viewport, so -33.33% of its width reaches the
+   viewport edge. */
+.row {
+    position: relative;
+}
+.billboard-arrow {
+    display: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -22px;
+}
+.billboard-arrow img {
+    border: 0;
+}
+.billboard-arrow-left {
+    left: -33.33%;
+    margin-left: 20px;
+}
+.billboard-arrow-right {
+    right: -33.33%;
+    margin-right: 20px;
+}
+@media screen and (min-width: 1030px) {
+    .billboard-arrow {
+        display: block;
+    }
+}
 .billboard-dots {
     clear: both;
     text-align: center;
