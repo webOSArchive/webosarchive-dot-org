@@ -200,4 +200,17 @@ body {
   .wosaMenu .menu-icon {
     display: none;
   }
+  /* Rounded dropdown corners: radius goes on the first/last items rather than
+     the ul with overflow:hidden, which older WebKit doesn't clip reliably.
+     Browsers without border-radius just get square corners. */
+  #navbar ul li:hover ul li:first-child {
+    -webkit-border-top-right-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+  #navbar ul li:hover ul li:last-child {
+    -webkit-border-bottom-left-radius: 6px;
+    -webkit-border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
 }
