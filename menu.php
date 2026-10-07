@@ -61,8 +61,9 @@
           <ul>
             <?php
               echo "<li><a href=\"$protocol://appcatalog.webosarchive.org\" target=\"_top\"><img src=\"$protocol://www.webosarchive.org/assets/appcatalog-icon.png\" class=\"project-icon\">App Catalog</a></li>";
-              echo "<li><a href=\"$protocol://www.webosarchive.org/tracker\" target=\"_top\"><img src=\"$protocol://www.webosarchive.org/assets/tracker-icon.png\" class=\"project-icon\">webOS Tracker</a></li>";
+              echo "<li><a href=\"http://webos-ports.org\" target=\"_top\"><img src=\"$protocol://www.webosarchive.org/assets/luneos-icon.png\" class=\"project-icon\">LuneOS</a></li>";              
               echo "<li><a href=\"$protocol://www.webosarchive.org/pivot/2026/09/20/lunacy-a-new-child-of-webos/\" target=\"_top\"><img src=\"$protocol://www.webosarchive.org/assets/lunacy-icon.png\" class=\"project-icon\">Lunacy for Android</a></li>";
+              echo "<li><a href=\"$protocol://www.webosarchive.org/tracker\" target=\"_top\"><img src=\"$protocol://www.webosarchive.org/assets/tracker-icon.png\" class=\"project-icon\">webOS Tracker</a></li>";
               echo "<li><a href=\"$protocol://podcasts.webosarchive.org\" target=\"_top\"><img src=\"$protocol://www.webosarchive.org/assets/podcast-icon.png\" class=\"project-icon\">Podcast Directory</a></li>";
               echo "<li><a href=\"$protocol://papyrus.wosa.link\" target=\"_top\"><img src=\"$protocol://www.webosarchive.org/assets/papyrus-icon.png\" class=\"project-icon\">Papyrus eReader</a></li>";
               echo "<li><a href=\"$protocol://feedspider.wosa.link\" target=\"_top\"><img src=\"$protocol://www.webosarchive.org/assets/feedspider-icon.png\" class=\"project-icon\">FeedSpider</a></li>";
@@ -84,7 +85,6 @@
             <li><a href="https://palm.weboslives.eu/users/webosarchive">Mastodon</a></li>
             <li><a href="https://bsky.app/profile/webosarchive.org">Bluesky</a></li>
             <li><a href="https://twitter.com/webOSArchive">Twitter</a></li>
-            <li><a href="https://webos-ports.org/">LuneOS</a></li>
             <li><a href="https://palmdb.net/">PalmDB (Classic PalmOS)</a></li>
           </ul>
         </li>
