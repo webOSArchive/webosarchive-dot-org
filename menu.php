@@ -77,7 +77,7 @@
           <ul>
             <li><a class='item' href="http://www.webosarchive.org/discord"><img src="<?php echo $protocol; ?>://www.webosarchive.org/assets/discord.png" class="project-icon">Discord</a></li>
             <li><a class='item' href="http://www.github.com/webOSArchive"><img src="<?php echo $protocol; ?>://www.webosarchive.org/assets/github.png" class="project-icon">GitHub</a></li>
-            <li><div class='item' style="padding:0.5rem 1rem 0.5rem 0.9rem !important">
+            <li><div class='item' style="padding:0.5rem 1rem 0.5rem 1rem !important">
               <a href="https://palm.weboslives.eu/users/webosarchive"><img src="<?php echo $protocol; ?>://www.webosarchive.org/assets/fediverse.png" class="social-icon"></a>
               <a href="https://bsky.app/profile/webosarchive.org"><img src="<?php echo $protocol; ?>://www.webosarchive.org/assets/bsky.png" class="social-icon"></a>
               <a href="https://twitter.com/webOSArchive"><img src="<?php echo $protocol; ?>://www.webosarchive.org/assets/twitter.png" class="social-icon"></a>
