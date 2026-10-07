@@ -75,13 +75,13 @@
         <li>
         <a class='item'>Community</a>
           <ul>
-            <li><a class='item' href="http://www.webosarchive.org/discord">Discord</a></li>  
+            <li><a class='item' href="http://www.webosarchive.org/discord"><img src="<?php echo $protocol; ?>://www.webosarchive.org/assets/discord.png" class="project-icon">Discord</a></li>
             <li><a class='item' href="http://www.github.com/webOSArchive">GitHub</a></li>
-            <li><div class='item' style="padding:0.5rem 1rem 0.5rem 0.9rem !important">Socials: 
-		<a href="https://palm.weboslives.eu/users/webosarchive"><img src="<?php echo $protocol; ?>://www.webosarchive.org/assets/fediverse.png" style="height:24px;width:24px;margin-right:8px;vertical-align:middle;"></a>
-		<a href="https://bsky.app/profile/webosarchive.org"><img src="<?php echo $protocol; ?>://www.webosarchive.org/assets/bsky.png" style="height:24px;width:24px;margin-right:8px;vertical-align:middle;"></a>
-		<a href="https://twitter.com/webOSArchive"><img src="<?php echo $protocol; ?>://www.webosarchive.org/assets/twitter.png" style="height:24px;width:24px;margin-right:8px;vertical-align:middle;"></a>
-	    </div></li>
+            <li><div class='item' style="padding:0.5rem 1rem 0.5rem 0.9rem !important">Socials: &nbsp;
+              <a href="https://palm.weboslives.eu/users/webosarchive"><img src="<?php echo $protocol; ?>://www.webosarchive.org/assets/fediverse.png" class="social-icon"></a>
+              <a href="https://bsky.app/profile/webosarchive.org"><img src="<?php echo $protocol; ?>://www.webosarchive.org/assets/bsky.png" class="social-icon"></a>
+              <a href="https://twitter.com/webOSArchive"><img src="<?php echo $protocol; ?>://www.webosarchive.org/assets/twitter.png" class="social-icon"></a>
+            </div></li>
             <li><a class='item' href="https://forums.weboslives.eu/">webOSLives Forum</a></li>
             <li><a class='item' href="http://forums.webosarchive.org">webOSNation Archive</a></li>
             <li><a class='item' href="https://palmdb.net/">PalmDB (Classic PalmOS)</a></li>

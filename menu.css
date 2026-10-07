@@ -84,6 +84,12 @@ body {
   vertical-align: middle;
   margin: -6px 8px -6px 0;
 }
+.wosaMenu .social-icon {
+  height: 24px;
+  width: 24px;
+  margin-right: 8px;
+  vertical-align:middle;
+}
 /* Dropdown CSS menus from: https://webcodeflow.com/responsive-navbar-with-dropdown/ */
 #navbar {
   float:left;
