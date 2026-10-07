@@ -45,7 +45,7 @@
         <?php
         if (isset($_GET['content']) && $_GET['content'] == 'docs')
           echo " style='background-color: dimgray'";
-        echo "><a>Docs</a>";  
+        echo "><a>Guides</a>";  
         ?>
           <ul>
             <?php
