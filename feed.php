@@ -59,6 +59,19 @@ foreach ($sources as $source) {
 				break;
 			}
 		}
+		$description = (string)$item->description;
+		$enclosures = [];
+		foreach ($item->enclosure as $e) {
+			if (!empty($e['url']))
+				$enclosures[] = ['url' => (string)$e['url'], 'type' => (string)$e['type'], 'length' => (string)$e['length']];
+		}
+		// Show image attachments (e.g. Mastodon media) inline, since many readers ignore enclosures
+		foreach ($enclosures as $e) {
+			if (strpos($e['type'], 'image/') === 0 && strpos($description, $e['url']) === false)
+				$description .= '<p><img src="' . htmlspecialchars($e['url']) . '" alt="" /></p>';
+		}
+		// Thumbnail for card/magazine views: first image in the description
+		$thumbnail = preg_match('/<img[^>]+src=["\']([^"\']+)["\']/i', $description, $m) ? html_entity_decode($m[1]) : null;
 		$guid = trim((string)$item->guid);
 		$time = strtotime((string)$item->pubDate);
 		$items[] = [
@@ -66,7 +79,9 @@ foreach ($sources as $source) {
 			'link'        => $link ?: $guid,
 			'guid'        => $guid ?: $link,
 			'time'        => $time ?: 0,
-			'description' => (string)$item->description,
+			'description' => $description,
+			'enclosures'  => $enclosures,
+			'thumbnail'   => $thumbnail,
 			'categories'  => array_map('strval', iterator_to_array($item->category, false)),
 			'source'      => ['title' => $channelTitle, 'url' => $source['url']],
 		];
@@ -87,6 +102,7 @@ $w->startDocument('1.0', 'UTF-8');
 $w->startElement('rss');
 $w->writeAttribute('version', '2.0');
 $w->writeAttribute('xmlns:atom', 'http://www.w3.org/2005/Atom');
+$w->writeAttribute('xmlns:media', 'http://search.yahoo.com/mrss/');
 $w->startElement('channel');
 $w->writeElement('title', $feedTitle);
 $w->writeElement('link', $feedLink);
@@ -121,6 +137,18 @@ foreach ($items as $item) {
 	$w->startElement('description');
 	$w->writeCdata(str_replace(']]>', ']]]]><![CDATA[>', $item['description']));
 	$w->endElement();
+	foreach ($item['enclosures'] as $e) {
+		$w->startElement('enclosure');
+		$w->writeAttribute('url', $e['url']);
+		$w->writeAttribute('type', $e['type'] ?: 'application/octet-stream');
+		$w->writeAttribute('length', $e['length'] ?: '0');
+		$w->endElement();
+	}
+	if ($item['thumbnail']) {
+		$w->startElement('media:thumbnail');
+		$w->writeAttribute('url', $item['thumbnail']);
+		$w->endElement();
+	}
 	$w->startElement('source');
 	$w->writeAttribute('url', $item['source']['url']);
 	$w->text($item['source']['title']);
