@@ -80,7 +80,7 @@
             <li><a href="http://forums.webosarchive.org">webOSNation Forum Archive</a></li>
             <li><a href="https://palm.weboslives.eu/users/webosarchive">Mastodon</a></li>
             <li><a href="https://bsky.app/profile/webosarchive.org">Bluesky</a></li>
-            <li><a href="https://twitter.com/webOSArchive">Xitter</a></li>
+            <li><a href="https://twitter.com/webOSArchive">Twitter</a></li>
             <li><a href="https://www.luneos.org/">LuneOS</a></li>
             <li><a href="https://palmdb.net/">PalmDB (Classic PalmOS)</a></li>
           </ul>
