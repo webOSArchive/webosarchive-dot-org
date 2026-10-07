@@ -78,6 +78,12 @@ body {
 .wosaMenu .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0;
 }
+.wosaMenu .project-icon {
+  height: 24px;
+  width: 24px;
+  vertical-align: middle;
+  margin: -6px 8px -6px 0;
+}
 /* Dropdown CSS menus from: https://webcodeflow.com/responsive-navbar-with-dropdown/ */
 #navbar {
   float:left;

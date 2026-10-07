@@ -9,6 +9,7 @@
   }
 ?>
 <!-- Menu -->
+
 <link rel="stylesheet" href="<?php echo $protocol ?>://www.webosarchive.org/menu.css?<?php echo uniqid()?>">
 <script src="<?php echo $protocol ?>://www.webosarchive.org/menu.js?<?php echo uniqid()?>"></script>
 <!-- End Menu -->
@@ -49,8 +50,8 @@
         ?>
           <ul>
             <?php
-              echo "<li><a href=\"$protocol://docs.webosarchive.org\" target=\"_top\">Support Docs</a></li>";
-              echo "<li><a href=\"$protocol://sdk.webosarchive.org\" target=\"_top\">SDK + PDK</a></li>";
+              echo "<li><a href=\"$protocol://docs.webosarchive.org\" target=\"_top\">img src=\"$protocol://www.webosarchive.org/help-icon.png\" class=\"project-icon\">Support Docs</a></li>";
+              echo "<li><a href=\"$protocol://sdk.webosarchive.org\" target=\"_top\">img src=\"$protocol://www.webosarchive.org/assets/hacker-icon.png\" class=\"project-icon\">SDK + PDK</a></li>";
             ?>
           </ul>
         </li>
@@ -58,14 +59,14 @@
           <a>Projects</a>
           <ul>
             <?php
-              echo "<li><a href=\"$protocol://appcatalog.webosarchive.org\" target=\"_top\">App Catalog</a></li>";
-              echo "<li><a href=\"$protocol://www.webosarchive.org/tracker\" target=\"_top\">webOS Tracker</a></li>";
-              echo "<li><a href=\"$protocol://www.webosarchive.org/pivot/2026/09/20/lunacy-a-new-child-of-webos/\" target=\"_top\">Lunacy for Android</a></li>";
-              echo "<li><a href=\"$protocol://podcasts.webosarchive.org\" target=\"_top\">Podcast Directory</a></li>";
-              echo "<li><a href=\"$protocol://papyrus.wosa.link\" target=\"_top\">Papyrus eReader</a></li>";
-              echo "<li><a href=\"$protocol://feedspider.wosa.link\" target=\"_top\">FeedSpider</a></li>";
-              echo "<li><a href=\"$protocol://checkmate.wosa.link\" target=\"_top\">Check Mate</a></li>";
-              echo "<li><a href=\"$protocol://hackermystery95.wosa.link\" target=\"_top\">Hacker Mystery 95</a></li>";
+              echo "<li><a href=\"$protocol://appcatalog.webosarchive.org\" target=\"_top\"><img src=\"$protocol://www.webosarchive.org/assets/appcatalog-icon.png\" class=\"project-icon\">App Catalog</a></li>";
+              echo "<li><a href=\"$protocol://www.webosarchive.org/tracker\" target=\"_top\"><img src=\"$protocol://www.webosarchive.org/assets/tracker-icon.png\" class=\"project-icon\">webOS Tracker</a></li>";
+              echo "<li><a href=\"$protocol://www.webosarchive.org/pivot/2026/09/20/lunacy-a-new-child-of-webos/\" target=\"_top\"><img src=\"$protocol://www.webosarchive.org/assets/lunacy-icon.png\" class=\"project-icon\">Lunacy for Android</a></li>";
+              echo "<li><a href=\"$protocol://podcasts.webosarchive.org\" target=\"_top\"><img src=\"$protocol://www.webosarchive.org/assets/podcast-icon.png\" class=\"project-icon\">Podcast Directory</a></li>";
+              echo "<li><a href=\"$protocol://papyrus.wosa.link\" target=\"_top\"><img src=\"$protocol://www.webosarchive.org/assets/papyrus-icon.png\" class=\"project-icon\">Papyrus eReader</a></li>";
+              echo "<li><a href=\"$protocol://feedspider.wosa.link\" target=\"_top\"><img src=\"$protocol://www.webosarchive.org/assets/feedspider-icon.png\" class=\"project-icon\">FeedSpider</a></li>";
+              echo "<li><a href=\"$protocol://checkmate.wosa.link\" target=\"_top\"><img src=\"$protocol://www.webosarchive.org/assets/checkmate-icon.png\" class=\"project-icon\">Check Mate</a></li>";
+              echo "<li><a href=\"$protocol://hackermystery95.wosa.link\" target=\"_top\"><img src=\"$protocol://www.webosarchive.org/assets/hacker-icon.png\" class=\"project-icon\">Hacker Mystery 95</a></li>";
               /* // Deprecated
               echo "<li><a href=\"$protocol://flixnet.webosarchive.org\" target=\"_top\">Public Domain Movies</a></li>";
               */
