@@ -82,8 +82,10 @@
               <a href="https://bsky.app/profile/webosarchive.org"><img src="<?php echo $protocol; ?>://www.webosarchive.org/assets/bsky.png" class="social-icon"></a>
               <a href="https://twitter.com/webOSArchive"><img src="<?php echo $protocol; ?>://www.webosarchive.org/assets/twitter.png" class="social-icon"></a>
             </div></li>
-            <li><a class='item' href="https://forums.weboslives.eu/">webOSLives Forum</a></li>
-            <li><a class='item' href="http://forums.webosarchive.org">webOSNation Archive</a></li>
+            <li><div class='item' style="padding:0.5rem 1rem 0.5rem 0.9rem !important">Forms: &nbsp;
+              <a class='item' href="https://forums.weboslives.eu/">Current</a>
+              <a class='item' href="http://forums.webosarchive.org">Archived</a>
+            </div></li>
             <li><a class='item' href="https://palmdb.net/">PalmDB (Classic PalmOS)</a></li>
           </ul>
         </li>
