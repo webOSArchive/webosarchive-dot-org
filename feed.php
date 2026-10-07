@@ -65,13 +65,29 @@ foreach ($sources as $source) {
 			if (!empty($e['url']))
 				$enclosures[] = ['url' => (string)$e['url'], 'type' => (string)$e['type'], 'length' => (string)$e['length']];
 		}
-		// Show image attachments (e.g. Mastodon media) inline, since many readers ignore enclosures
+		$images = [];
 		foreach ($enclosures as $e) {
-			if (strpos($e['type'], 'image/') === 0 && strpos($description, $e['url']) === false)
-				$description .= '<p><img src="' . htmlspecialchars($e['url']) . '" alt="" /></p>';
+			if (strpos($e['type'], 'image/') === 0)
+				$images[] = $e['url'];
 		}
-		// Thumbnail for card/magazine views: first image in the description
-		$thumbnail = preg_match('/<img[^>]+src=["\']([^"\']+)["\']/i', $description, $m) ? html_entity_decode($m[1]) : null;
+		// Media RSS images (e.g. Pivot)
+		$media = $item->children('http://search.yahoo.com/mrss/');
+		foreach ([$media->thumbnail, $media->content] as $list) {
+			foreach ($list as $mc) {
+				$attrs = $mc->attributes();
+				$type = (string)$attrs['type'];
+				if (!empty($attrs['url']) && ((string)$attrs['medium'] === 'image' || strpos($type, 'image/') === 0 || $type === ''))
+					$images[] = (string)$attrs['url'];
+			}
+		}
+		$images = array_values(array_unique($images));
+		// Show images inline if the description doesn't already, since many readers ignore enclosures and media tags
+		foreach ($images as $url) {
+			if (strpos($description, $url) === false)
+				$description .= '<p><img src="' . htmlspecialchars($url) . '" alt="" /></p>';
+		}
+		// Thumbnail for card/magazine views: the feed's own image, else the first image in the description
+		$thumbnail = $images[0] ?? (preg_match('/<img[^>]+src=["\']([^"\']+)["\']/i', $description, $m) ? html_entity_decode($m[1]) : null);
 		$guid = trim((string)$item->guid);
 		$time = strtotime((string)$item->pubDate);
 		$items[] = [
