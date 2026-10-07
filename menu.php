@@ -52,7 +52,7 @@
             <?php
               echo "<li><a href=\"$protocol://docs.webosarchive.org\" target=\"_top\"><img src=\"$protocol://www.webosarchive.org/assets/help-icon.png\" class=\"project-icon\">Support Docs</a></li>";
               echo "<li><a href=\"$protocol://sdk.webosarchive.org\" target=\"_top\"><img src=\"$protocol://www.webosarchive.org/assets/sdk-icon.png\" class=\"project-icon\">SDK + PDK</a></li>";
-              echo "<li><a href=\"http://webos-internals.org/\" target=\"_top\"><img src=\"$protocol://www.webosarchive.org/assets/internals-icon.png\" class=\"project-icon\">SDK + PDK</a></li>";
+              echo "<li><a href=\"http://webos-internals.org/\" target=\"_top\"><img src=\"$protocol://www.webosarchive.org/assets/internals-icon.png\" class=\"project-icon\">webOS Internals</a></li>";
             ?>
           </ul>
         </li>
