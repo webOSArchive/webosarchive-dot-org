@@ -83,7 +83,7 @@
               <a href="https://twitter.com/webOSArchive"><img src="<?php echo $protocol; ?>://www.webosarchive.org/assets/twitter.png" class="social-icon"></a>
             </div></li>
             <li><div class='item'>Forums:
-              <a href="https://forums.weboslives.eu/">Current</a>
+              <a href="https://forums.weboslives.eu/">Current</a> | 
               <a href="http://forums.webosarchive.org">Archived</a>
             </div></li>
             <li><a class='item' href="https://palmdb.net/"><img src="<?php echo $protocol; ?>://www.webosarchive.org/assets/palmdb.png" class="project-icon">PalmDB (Classic)</a></li>
