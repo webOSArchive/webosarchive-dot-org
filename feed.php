@@ -9,7 +9,7 @@ $sources = [
 	['label' => 'App Catalog', 'url' => 'https://appcatalog.webosarchive.org/feed.php'],
 	['label' => 'Socials',   'url' => 'https://palm.weboslives.eu/users/webosarchive.rss', 'skipReplies' => true],
 ];
-$feedTitle = 'webOS Archive - Everything';
+$feedTitle = 'webOS Archive News';
 $feedLink  = 'https://www.webosarchive.org/';
 $feedDesc  = 'News, app updates and posts from across the webOS Archive.';
 $selfUrl   = 'http://www.webosarchive.org/feed.php';
