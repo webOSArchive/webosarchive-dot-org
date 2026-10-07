@@ -5,14 +5,15 @@
  */
 
 $sources = [
-	['label' => 'Pivot',      'url' => 'https://www.webosarchive.org/pivot/index.xml'],
-	['label' => 'App Museum', 'url' => 'https://appcatalog.webosarchive.org/feed.php'],
-	['label' => 'Mastodon',   'url' => 'https://palm.weboslives.eu/users/webosarchive.rss', 'skipReplies' => true],
+	['label' => 'News',      'url' => 'https://www.webosarchive.org/pivot/index.xml'],
+	['label' => 'App Catalog', 'url' => 'https://appcatalog.webosarchive.org/feed.php'],
+	['label' => 'Socials',   'url' => 'https://palm.weboslives.eu/users/webosarchive.rss', 'skipReplies' => true],
 ];
 $feedTitle = 'webOS Archive - Everything';
 $feedLink  = 'https://www.webosarchive.org/';
 $feedDesc  = 'News, app updates and posts from across the webOS Archive.';
 $selfUrl   = 'http://www.webosarchive.org/feed.php';
+$feedImage = 'http://www.webosarchive.org/wosa.png';
 $maxItems  = 50;
 $cacheTtl  = 900; // seconds
 $cacheDir  = sys_get_temp_dir() . '/wosa-feed-cache';
@@ -98,6 +99,13 @@ $w->writeElement('description', $feedDesc);
 $w->writeElement('language', 'en-us');
 $w->writeElement('lastBuildDate', date(DATE_RSS, $items ? max($items[0]['time'], 0) : time()));
 $w->writeElement('ttl', (string)intdiv($cacheTtl, 60));
+$w->startElement('image');
+$w->writeElement('url', $feedImage);
+$w->writeElement('title', $feedTitle);
+$w->writeElement('link', $feedLink);
+$w->writeElement('width', '64');
+$w->writeElement('height', '64');
+$w->endElement();
 foreach ($items as $item) {
 	$w->startElement('item');
 	$w->writeElement('title', $item['title']);
