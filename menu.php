@@ -84,9 +84,9 @@
               Socials
             </div></li>
             <li><a class='item' href="http://www.webosarchive.org/feed.php"><img src="<?php echo $protocol; ?>://www.webosarchive.org/assets/rss.png" class="project-icon">RSS Feed</a></li>
-            <li><div class='item'>Forums:
-              <a href="https://forums.weboslives.eu/">Current</a> | 
-              <a href="http://forums.webosarchive.org">Archived</a>
+            <li><div class='item'><img src="<?php echo $protocol; ?>://www.webosarchive.org/assets/discord.png" class="project-icon">Forums:
+              <a href="https://forums.weboslives.eu/">New</a> | 
+              <a href="http://forums.webosarchive.org">Old</a>
             </div></li>
             <li><a class='item' href="https://palmdb.net/"><img src="<?php echo $protocol; ?>://www.webosarchive.org/assets/palmdb.png" class="project-icon">PalmDB (Classic)</a></li>
           </ul>
