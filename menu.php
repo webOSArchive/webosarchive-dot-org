@@ -84,7 +84,7 @@
               Socials
             </div></li>
             <li><a class='item' href="http://www.webosarchive.org/feed.php"><img src="<?php echo $protocol; ?>://www.webosarchive.org/assets/rss.png" class="project-icon">RSS Feed</a></li>
-            <li><div class='item'><img src="<?php echo $protocol; ?>://www.webosarchive.org/assets/discord.png" class="project-icon">Forums:
+            <li><div class='item'><img src="<?php echo $protocol; ?>://www.webosarchive.org/assets/forums.png" class="project-icon">Forums:
               <a href="https://forums.weboslives.eu/">New</a> | 
               <a href="http://forums.webosarchive.org">Old</a>
             </div></li>
