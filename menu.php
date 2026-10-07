@@ -79,7 +79,7 @@
             <li><a href="http://www.github.com/webOSArchive">GitHub</a></li>
             <li><a href="https://forums.weboslives.eu/">webOSLives Forum</a></li>
             <li><a href="http://forums.webosarchive.org">webOSNation Archive</a></li>
-            <li>Socials: <a href="https://palm.weboslives.eu/users/webosarchive">M</a> <a href="https://bsky.app/profile/webosarchive.org">B</a> <a href="https://twitter.com/webOSArchive">X</a></li>
+            <li>Socials: <a href="https://palm.weboslives.eu/users/webosarchive"><img src=\"$protocol://www.webosarchive.org/assets/fediverse.png\" class=\"project-icon\"></a> <a href="https://bsky.app/profile/webosarchive.org"><img src=\"$protocol://www.webosarchive.org/assets/bsky.png\" class=\"project-icon\"</a> <a href="https://twitter.com/webOSArchive"><img src=\"$protocol://www.webosarchive.org/assets/twitter.png\" class=\"project-icon\"</a></li>
             <li><a href="https://palmdb.net/">PalmDB (Classic PalmOS)</a></li>
           </ul>
         </li>
