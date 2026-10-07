@@ -50,8 +50,8 @@
         ?>
           <ul>
             <?php
-              echo "<li><a href=\"$protocol://docs.webosarchive.org\" target=\"_top\">img src=\"$protocol://www.webosarchive.org/help-icon.png\" class=\"project-icon\">Support Docs</a></li>";
-              echo "<li><a href=\"$protocol://sdk.webosarchive.org\" target=\"_top\">img src=\"$protocol://www.webosarchive.org/assets/hacker-icon.png\" class=\"project-icon\">SDK + PDK</a></li>";
+              echo "<li><a href=\"$protocol://docs.webosarchive.org\" target=\"_top\"><img src=\"$protocol://www.webosarchive.org/help-icon.png\" class=\"project-icon\">Support Docs</a></li>";
+              echo "<li><a href=\"$protocol://sdk.webosarchive.org\" target=\"_top\"><img src=\"$protocol://www.webosarchive.org/assets/hacker-icon.png\" class=\"project-icon\">SDK + PDK</a></li>";
             ?>
           </ul>
         </li>
