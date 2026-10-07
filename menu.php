@@ -43,13 +43,13 @@
         ?>
         <li onclick="console.log('invoke menu');"
         <?php
-        if (isset($_GET['content']) && $_GET['content'] == 'docs')
+        if (isset($_GET['content']) && ($_GET['content'] == 'docs' || $_GET['content'] == 'sdk'))
           echo " style='background-color: dimgray'";
         echo "><a>Guides</a>";  
         ?>
           <ul>
             <?php
-              echo "<li><a href=\"$protocol://docs.webosarchive.org\" target=\"_top\">Help</a></li>";
+              echo "<li><a href=\"$protocol://docs.webosarchive.org\" target=\"_top\">Docs</a></li>";
               echo "<li><a href=\"$protocol://sdk.webosarchive.org\" target=\"_top\">SDK</a></li>";
             ?>
           </ul>
@@ -60,6 +60,7 @@
             <?php
               echo "<li><a href=\"$protocol://appcatalog.webosarchive.org\" target=\"_top\">App Catalog</a></li>";
               echo "<li><a href=\"$protocol://www.webosarchive.org/tracker\" target=\"_top\">webOS Tracker</a></li>";
+              echo "<li><a href=\"$protocol://www.webosarchive.org/pivot/2026/09/20/lunacy-a-new-child-of-webos/\" target=\"_top\">Lunacy for Android</a></li>";
               echo "<li><a href=\"$protocol://podcasts.webosarchive.org\" target=\"_top\">Podcast Directory</a></li>";
               echo "<li><a href=\"$protocol://papyrus.wosa.link\" target=\"_top\">Papyrus eReader</a></li>";
               echo "<li><a href=\"$protocol://feedspider.wosa.link\" target=\"_top\">FeedSpider</a></li>";
