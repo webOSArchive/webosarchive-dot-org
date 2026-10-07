@@ -109,6 +109,10 @@ body {
 #navbar ul li a {
   color: inherit;
   text-decoration: none;
+  OFF-display: block;
+  OFF-padding: 1rem;
+}
+#navbar ul li .item {
   display: block;
   padding: 1rem;
 }
@@ -187,7 +191,7 @@ body {
   }
   #navbar li a {
     color: #000;
-    display: inline-block;
+    OFF-display: inline-block;
   }
 }
 /* responsive: big */

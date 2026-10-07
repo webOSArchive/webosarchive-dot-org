@@ -34,60 +34,64 @@
     <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
     <nav id="navbar">
       <ul id="menu-ul">
-        <li><a href="http://www.webosarchive.org">Home</a></li>
+        <li><a class='item' href="http://www.webosarchive.org">Home</a></li>
         <?php
         echo "<li";
         if (isset($_GET['content']) && $_GET['content'] == 'pivot')
           echo " style='background-color: dimgray'";
-        echo "><a href=\"$protocol://www.webosarchive.org/pivot\" target=\"_top\">News ";
+        echo "><a class='item' href=\"$protocol://www.webosarchive.org/pivot\" target=\"_top\">News ";
 	      echo "<img src=\"$protocol://www.webosarchive.org/new-badge.png\" style='height:16px; width:16px; margin-top:-10px !important;'></a></li>";
         ?>
-        <li onclick="console.log('invoke menu');"
+        <li class='item' onclick="console.log('invoke menu');"
         <?php
         if (isset($_GET['content']) && ($_GET['content'] == 'docs' || $_GET['content'] == 'sdk'))
           echo " style='background-color: dimgray'";
-        echo "><a>Guides</a>";  
+        echo "><a class='item'>Guides</a>";  
         ?> 
           <ul>
             <?php
-              echo "<li><a href=\"$protocol://docs.webosarchive.org\" target=\"_top\"><img src=\"$protocol://www.webosarchive.org/assets/help-icon.png\" class=\"project-icon\">Support Docs</a></li>";
-              echo "<li><a href=\"$protocol://sdk.webosarchive.org\" target=\"_top\"><img src=\"$protocol://www.webosarchive.org/assets/sdk-icon.png\" class=\"project-icon\">SDK + PDK</a></li>";
-              echo "<li><a href=\"http://webos-internals.org/\" target=\"_top\"><img src=\"$protocol://www.webosarchive.org/assets/internals-icon.png\" class=\"project-icon\">webOS Internals</a></li>";
+              echo "<li><a class=\"item\" href=\"$protocol://docs.webosarchive.org\" target=\"_top\"><img src=\"$protocol://www.webosarchive.org/assets/help-icon.png\" class=\"project-icon\">Support Docs</a></li>";
+              echo "<li><a class=\"item\" href=\"$protocol://sdk.webosarchive.org\" target=\"_top\"><img src=\"$protocol://www.webosarchive.org/assets/sdk-icon.png\" class=\"project-icon\">SDK + PDK</a></li>";
+              echo "<li><a class=\"item\" href=\"http://webos-internals.org/\" target=\"_top\"><img src=\"$protocol://www.webosarchive.org/assets/internals-icon.png\" class=\"project-icon\">webOS Internals</a></li>";
             ?>
           </ul>
         </li>
         <li onclick="console.log('invoke menu');">
-          <a>Projects</a>
+          <a class='item'>Projects</a>
           <ul>
             <?php
-              echo "<li><a href=\"$protocol://appcatalog.webosarchive.org\" target=\"_top\"><img src=\"$protocol://www.webosarchive.org/assets/appcatalog-icon.png\" class=\"project-icon\">App Catalog</a></li>";
-              echo "<li><a href=\"$protocol://www.webosarchive.org/pivot/2026/09/20/lunacy-a-new-child-of-webos/\" target=\"_top\"><img src=\"$protocol://www.webosarchive.org/assets/lunacy-icon.png\" class=\"project-icon\">Lunacy for Android</a></li>";
-              echo "<li><a href=\"http://webos-ports.org\" target=\"_top\"><img src=\"$protocol://www.webosarchive.org/assets/luneos-icon.png\" class=\"project-icon\">LuneOS</a></li>";              
-              echo "<li><a href=\"$protocol://www.webosarchive.org/tracker\" target=\"_top\"><img src=\"$protocol://www.webosarchive.org/assets/tracker-icon.png\" class=\"project-icon\">webOS Tracker</a></li>";
-              echo "<li><a href=\"$protocol://podcasts.webosarchive.org\" target=\"_top\"><img src=\"$protocol://www.webosarchive.org/assets/podcast-icon.png\" class=\"project-icon\">Podcast Directory</a></li>";
-              echo "<li><a href=\"$protocol://papyrus.wosa.link\" target=\"_top\"><img src=\"$protocol://www.webosarchive.org/assets/papyrus-icon.png\" class=\"project-icon\">Papyrus eReader</a></li>";
-              echo "<li><a href=\"$protocol://feedspider.wosa.link\" target=\"_top\"><img src=\"$protocol://www.webosarchive.org/assets/feedspider-icon.png\" class=\"project-icon\">FeedSpider</a></li>";
-              echo "<li><a href=\"$protocol://checkmate.wosa.link\" target=\"_top\"><img src=\"$protocol://www.webosarchive.org/assets/checkmate-icon.png\" class=\"project-icon\">Check Mate</a></li>";
-              echo "<li><a href=\"$protocol://hackermystery95.wosa.link\" target=\"_top\"><img src=\"$protocol://www.webosarchive.org/assets/hacker-icon.png\" class=\"project-icon\">Hacker Mystery 95</a></li>";
+              echo "<li><a class=\"item\" href=\"$protocol://appcatalog.webosarchive.org\" target=\"_top\"><img src=\"$protocol://www.webosarchive.org/assets/appcatalog-icon.png\" class=\"project-icon\">App Catalog</a></li>";
+              echo "<li><a class=\"item\" href=\"$protocol://www.webosarchive.org/pivot/2026/09/20/lunacy-a-new-child-of-webos/\" target=\"_top\"><img src=\"$protocol://www.webosarchive.org/assets/lunacy-icon.png\" class=\"project-icon\">Lunacy for Android</a></li>";
+              echo "<li><a class=\"item\" href=\"http://webos-ports.org\" target=\"_top\"><img src=\"$protocol://www.webosarchive.org/assets/luneos-icon.png\" class=\"project-icon\">LuneOS</a></li>";              
+              echo "<li><a class=\"item\" href=\"$protocol://www.webosarchive.org/tracker\" target=\"_top\"><img src=\"$protocol://www.webosarchive.org/assets/tracker-icon.png\" class=\"project-icon\">webOS Tracker</a></li>";
+              echo "<li><a class=\"item\" href=\"$protocol://podcasts.webosarchive.org\" target=\"_top\"><img src=\"$protocol://www.webosarchive.org/assets/podcast-icon.png\" class=\"project-icon\">Podcast Directory</a></li>";
+              echo "<li><a class=\"item\" href=\"$protocol://papyrus.wosa.link\" target=\"_top\"><img src=\"$protocol://www.webosarchive.org/assets/papyrus-icon.png\" class=\"project-icon\">Papyrus eReader</a></li>";
+              echo "<li><a class=\"item\" href=\"$protocol://feedspider.wosa.link\" target=\"_top\"><img src=\"$protocol://www.webosarchive.org/assets/feedspider-icon.png\" class=\"project-icon\">FeedSpider</a></li>";
+              echo "<li><a class=\"item\" href=\"$protocol://checkmate.wosa.link\" target=\"_top\"><img src=\"$protocol://www.webosarchive.org/assets/checkmate-icon.png\" class=\"project-icon\">Check Mate</a></li>";
+              echo "<li><a class=\"item\" href=\"$protocol://hackermystery95.wosa.link\" target=\"_top\"><img src=\"$protocol://www.webosarchive.org/assets/hacker-icon.png\" class=\"project-icon\">Hacker Mystery 95</a></li>";
             ?>
           </ul>
         </li>
         <li>
-        <a>Community</a>
+        <a class='item'>Community</a>
           <ul>
-            <li><a href="http://www.webosarchive.org/discord">Discord</a></li>  
-            <li><a href="http://www.github.com/webOSArchive">GitHub</a></li>
-            <li><a href="https://forums.weboslives.eu/">webOSLives Forum</a></li>
-            <li><a href="http://forums.webosarchive.org">webOSNation Archive</a></li>
-            <?php echo "<li>Socials: <a href=\"https://palm.weboslives.eu/users/webosarchive\"><img src=\"$protocol://www.webosarchive.org/assets/fediverse.png\" class=\"project-icon\"></a> <a href=\"https://bsky.app/profile/webosarchive.org\"><img src=\"$protocol://www.webosarchive.org/assets/bsky.png\" class=\"project-icon\"</a> <a href=\"https://twitter.com/webOSArchive\"><img src=\"$protocol://www.webosarchive.org/assets/twitter.png\" class=\"project-icon\"</a></li>"; ?>
-            <li><a href="https://palmdb.net/">PalmDB (Classic PalmOS)</a></li>
+            <li><a class='item' href="http://www.webosarchive.org/discord">Discord</a></li>  
+            <li><a class='item' href="http://www.github.com/webOSArchive">GitHub</a></li>
+            <li><div class='item' style="padding:0.5rem 1rem 0.5rem 0.9rem !important">Socials: 
+		<a href="https://palm.weboslives.eu/users/webosarchive"><img src="<?php echo $protocol; ?>://www.webosarchive.org/assets/fediverse.png" style="height:24px;width:24px;margin-right:8px;vertical-align:middle;"></a>
+		<a href="https://bsky.app/profile/webosarchive.org"><img src="<?php echo $protocol; ?>://www.webosarchive.org/assets/bsky.png" style="height:24px;width:24px;margin-right:8px;vertical-align:middle;"></a>
+		<a href="https://twitter.com/webOSArchive"><img src="<?php echo $protocol; ?>://www.webosarchive.org/assets/twitter.png" style="height:24px;width:24px;margin-right:8px;vertical-align:middle;"></a>
+	    </div></li>
+            <li><a class='item' href="https://forums.weboslives.eu/">webOSLives Forum</a></li>
+            <li><a class='item' href="http://forums.webosarchive.org">webOSNation Archive</a></li>
+            <li><a class='item' href="https://palmdb.net/">PalmDB (Classic PalmOS)</a></li>
           </ul>
         </li>
         <?php
         echo "<li";
         if (isset($_GET['content']) && $_GET['content'] == 'shop')
           echo " style='background-color: dimgray'";
-        echo "><a href=\"$protocol://shop.webosarchive.org\" target=\"_top\">Shop ";
+        echo "><a class='item' href=\"$protocol://shop.webosarchive.org\" target=\"_top\">Shop ";
 	      echo "<img src=\"$protocol://www.webosarchive.org/new-badge.png\" style='height:16px; width:16px; margin-top:-10px !important;'></a></li>";
 	      ?>
       </ul>
