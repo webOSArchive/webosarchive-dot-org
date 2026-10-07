@@ -49,8 +49,8 @@
         ?>
           <ul>
             <?php
-              echo "<li><a href=\"$protocol://docs.webosarchive.org\" target=\"_top\">Docs</a></li>";
-              echo "<li><a href=\"$protocol://sdk.webosarchive.org\" target=\"_top\">SDK</a></li>";
+              echo "<li><a href=\"$protocol://docs.webosarchive.org\" target=\"_top\">Support Docs</a></li>";
+              echo "<li><a href=\"$protocol://sdk.webosarchive.org\" target=\"_top\">SDK + PDK</a></li>";
             ?>
           </ul>
         </li>
