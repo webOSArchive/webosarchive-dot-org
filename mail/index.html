@@ -98,8 +98,8 @@ footer.site a, footer.site a:visited { color: #fff; text-decoration: underline; 
 
           <h2>What it does</h2>
           <ul>
-            <li>Reads your Gmail inbox and labels as folders, with the familiar webOS card-based mail interface.</li>
-            <li>Downloads message headers, bodies and attachments so you can read mail, including offline.</li>
+            <li>Loads your Gmail inbox and labels as folders, with the familiar webOS card-based mail interface.</li>
+            <li>Downloads message headers, bodies and attachments to your own device so you can read mail, including offline.</li>
             <li>Composes, replies to and forwards mail, and sends it through your own Gmail account.</li>
             <li>Marks messages read or unread, flags them, moves them between folders, and deletes them. Changes sync back to Gmail.</li>
             <li>Runs in the background so new mail and notifications arrive without opening the app.</li>
@@ -113,19 +113,6 @@ footer.site a, footer.site a:visited { color: #fff; text-decoration: underline; 
             <tr><td>Sending</td><td>SMTP to <code>smtp.gmail.com</code>, with the connection secured by TLS. Gmail keeps a copy in your Sent folder.</td></tr>
             <tr><td>Signing in</td><td>OAuth 2.0 sign-in with Google (XOAUTH2). The app never sees or stores your Google password.</td></tr>
           </table>
-
-          <h3>Signing in, step by step</h3>
-          <p>webOS devices are too old to display Google&rsquo;s sign-in page themselves, so the webOS Archive runs a small <em>sign-in helper</em> that handles that one step in a modern browser:</p>
-          <div class="flow">
-            <ol>
-              <li>On your webOS device, add a Gmail account in Email. The device shows a short, one-time code and the address of the helper page.</li>
-              <li>On a phone or computer, open the helper page and enter the code.</li>
-              <li>You are taken to Google&rsquo;s own sign-in and consent screen, where you choose your account and review exactly what you are allowing.</li>
-              <li>Once you approve, the helper passes an access token to your device, which finds it by polling with the code. The code is single-use and expires quickly.</li>
-              <li>Your device connects to Gmail directly and begins syncing. When the token expires, the helper refreshes it so you stay signed in.</li>
-            </ol>
-          </div>
-          <p>You can end the app&rsquo;s access at any time by removing the account from your device, or by visiting <a href="https://myaccount.google.com/permissions">your Google Account&rsquo;s third-party access page</a> and removing webOS Email.</p>
 
           <h2>Why the app asks for access to your Google data</h2>
           <p>webOS Email asks for permission to <strong>read, compose, send, and permanently delete all your email from Gmail</strong> (the <code>https://mail.google.com/</code> scope). A mail client needs exactly this: to download your messages, send new ones, and to let you move or delete them. The IMAP and SMTP protocols can only be authorized with this scope, so a narrower one would not work.</p>

@@ -1,0 +1,12 @@
+<h3>Signing in, step by step</h3>
+          <p>webOS devices are too old to display Google&rsquo;s sign-in page themselves, so the webOS Archive runs a small <em>sign-in helper</em> that handles that one step in a modern browser:</p>
+          <div class="flow">
+            <ol>
+              <li>On your webOS device, add a Gmail account in Email. The device shows a short, one-time code and the address of the helper page.</li>
+              <li>On a phone or computer, open the helper page and enter the code.</li>
+              <li>You are taken to Google&rsquo;s own sign-in and consent screen, where you choose your account and review exactly what you are allowing.</li>
+              <li>Once you approve, the helper passes an access token to your device, which finds it by polling with the code. The code is single-use and expires quickly.</li>
+              <li>Your device connects to Gmail directly and begins syncing. When the token expires, the helper refreshes it so you stay signed in.</li>
+            </ol>
+          </div>
+          <p>You can end the app&rsquo;s access at any time by removing the account from your device, or by visiting <a href="https://myaccount.google.com/permissions">your Google Account&rsquo;s third-party access page</a> and removing webOS Email.</p>
