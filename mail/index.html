@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Email for webOS · webOS Archive</title>
+<meta name="description" content="Email for webOS is the restored stock webOS mail app, updated to send and receive Gmail using Google sign-in (OAuth 2.0). A project of the webOS Archive.">
+<link rel="canonical" href="https://www.webosarchive.org/mail/">
+<link rel="icon" type="image/png" href="icon.png">
+<style>
+/* Styled after the pivotCE archive (www.webosarchive.org/pivot/), itself modelled on the 2011 HP webOS Developer Blog. */
+* { -webkit-box-sizing: border-box; box-sizing: border-box; }
+html { height: 100%; }
+body {
+  margin: 0; padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13.5px; line-height: 1.62; color: #444;
+  background-color: #b4b4b0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#8d8d89), to(#d2d2cd));
+  background-image: -webkit-linear-gradient(top, #8d8d89, #d2d2cd);
+  background-image: linear-gradient(to bottom, #8d8d89, #d2d2cd);
+  background-repeat: no-repeat; background-attachment: fixed;
+}
+a, a:visited { color: #2e9cba; text-decoration: none; }
+a:hover { color: #1d7d97; text-decoration: underline; }
+img { border: 0; }
+.shell { max-width: 1000px; margin: 0 auto; padding: 0 14px; }
+.row:after { content: ""; display: table; clear: both; }
+.col-main { float: left; width: 75.5%; }
+.col-side { float: right; width: 22.5%; }
+.card {
+  background-color: #fff; padding: 26px 30px 34px 30px; margin-bottom: 26px;
+  -webkit-border-radius: 9px; border-radius: 9px;
+  -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.28); box-shadow: 0 1px 4px rgba(0,0,0,.28);
+}
+.col-side .card { padding: 20px 20px 24px 20px; }
+.masthead { padding: 16px 0 24px 0; }
+.crumbs { margin: 0 0 14px 0; font-size: 12px; color: #333; }
+.crumbs a, .crumbs a:visited { color: #333; }
+.crumbs a:hover { color: #000; }
+.crumbs .sep { color: #d6d6d2; padding: 0 7px; }
+.masthead h1 { margin: 0; font-size: 34px; font-weight: 300; line-height: 1.1; color: #fff; text-shadow: 0 1px 1px rgba(0,0,0,.22); }
+.masthead h1 img { width: 46px; height: 46px; vertical-align: middle; margin-right: 12px; }
+.masthead p.tagline { margin: 12px 0 0 0; color: #fff; font-size: 21px; font-weight: 300; line-height: 1.2; text-shadow: 0 1px 1px rgba(0,0,0,.22); }
+.post-title { font-size: 30px; font-weight: 300; line-height: 1.15; margin: 0 0 8px 0; color: #f2761b; }
+.post-meta { font-size: 11px; font-weight: bold; text-transform: uppercase; letter-spacing: .04em; color: #6b6b6b; margin: 0 0 20px 0; padding-bottom: 12px; border-bottom: 1px solid #e3e3e3; }
+.post-body p { margin: 0 0 16px 0; }
+.post-body h2 { font-size: 22px; font-weight: 300; color: #555; margin: 1.7em 0 .5em 0; line-height: 1.25; }
+.post-body h3 { font-size: 15px; font-weight: bold; color: #555; margin: 1.4em 0 .4em 0; }
+.post-body ul, .post-body ol { margin: 0 0 16px 0; padding-left: 22px; }
+.post-body li { margin-bottom: 6px; }
+.post-body table { border-collapse: collapse; width: 100%; margin: 16px 0; }
+.post-body th, .post-body td { border: 1px solid #e3e3e3; padding: 6px 9px; text-align: left; vertical-align: top; }
+.post-body th { background-color: #f7f7f5; }
+.post-body code { background-color: #f7f7f5; padding: 1px 4px; font-size: 12px; color: #333; }
+.flow { margin: 16px 0; padding: 12px 18px; background-color: #f7f7f5; border: 1px solid #e3e3e3; }
+.flow ol { margin: 0; }
+.callout { margin: 18px 0; padding: 10px 18px; border-left: 3px solid #f2761b; background-color: #f7f7f5; color: #5c5c5c; }
+.side-block { margin-bottom: 22px; }
+.side-block:last-child { margin-bottom: 0; }
+.side-block h2 { margin: 0 0 8px 0; font-size: 20px; font-weight: 300; color: #555; line-height: 1.2; }
+.side-block ul { list-style: none; margin: 0; padding: 0; }
+.side-block li { font-size: 12px; line-height: 1.45; margin: 0 0 5px 0; color: #888; }
+footer.site { border-top: 1px solid rgba(255,255,255,.35); text-align: center; color: #f2f2f0; font-size: 11px; padding: 16px 10px 26px 10px; margin-top: 6px; }
+footer.site p { margin: 0; }
+footer.site a, footer.site a:visited { color: #fff; text-decoration: underline; }
+@media screen and (max-width: 760px) {
+  .col-main, .col-side { float: none; width: auto; }
+  .card { padding: 20px 18px 24px 18px; }
+  .post-title { font-size: 24px; }
+  .masthead h1 { font-size: 26px; }
+  .masthead p.tagline { font-size: 17px; }
+}
+</style>
+</head>
+<body>
+
+<div class="masthead">
+  <div class="shell">
+    <div class="crumbs"><a href="https://www.webosarchive.org">webOS Archive</a><span class="sep">›</span>Email for webOS</div>
+    <h1><img src="icon.png" alt="" width="46" height="46">Email for webOS</h1>
+    <p class="tagline">The classic webOS mail app, working with Gmail again</p>
+  </div>
+</div>
+
+<div class="shell row">
+  <div class="col-main">
+    <div class="card">
+      <article>
+        <h1 class="post-title" style="font-size:30px">Application Home Page</h1>
+        <p class="post-meta">A project of the webOS Archive · Last updated November 5, 2026</p>
+
+        <div class="post-body">
+
+          <h2>What is Email for webOS?</h2>
+          <p><strong>Email for webOS</strong> is the original mail app from HP/Palm webOS (<code>com.palm.app.email</code>), restored and kept running by the <a href="https://www.webosarchive.org">webOS Archive</a>, a volunteer, non-profit preservation project. It runs on the webOS devices people still own and love: the Palm Pre, Pixi and Veer, and the HP TouchPad.</p>
+          <p>When these devices were new, signing in to Gmail meant typing your Google password into the phone. Google switched that off in 2022, which left the built-in Gmail account unable to sign in at all. Email for webOS brings it back using Google&rsquo;s current, secure sign-in.</p>
+
+          <h2>What it does</h2>
+          <ul>
+            <li>Reads your Gmail inbox and labels as folders, with the familiar webOS card-based mail interface.</li>
+            <li>Downloads message headers, bodies and attachments so you can read mail, including offline.</li>
+            <li>Composes, replies to and forwards mail, and sends it through your own Gmail account.</li>
+            <li>Marks messages read or unread, flags them, moves them between folders, and deletes them. Changes sync back to Gmail.</li>
+            <li>Runs in the background so new mail and notifications arrive without opening the app.</li>
+          </ul>
+
+          <h2>How it sends and receives Gmail</h2>
+          <p>Email for webOS is an ordinary mail client. It talks to Gmail directly over the standard mail protocols, and never uses a middleman server to read or relay your mail.</p>
+          <table>
+            <tr><th>Direction</th><th>How</th></tr>
+            <tr><td>Receiving</td><td>IMAP to <code>imap.gmail.com</code>, with the connection secured by TLS.</td></tr>
+            <tr><td>Sending</td><td>SMTP to <code>smtp.gmail.com</code>, with the connection secured by TLS. Gmail keeps a copy in your Sent folder.</td></tr>
+            <tr><td>Signing in</td><td>OAuth 2.0 sign-in with Google (XOAUTH2). The app never sees or stores your Google password.</td></tr>
+          </table>
+
+          <h3>Signing in, step by step</h3>
+          <p>webOS devices are too old to display Google&rsquo;s sign-in page themselves, so the webOS Archive runs a small <em>sign-in helper</em> that handles that one step in a modern browser:</p>
+          <div class="flow">
+            <ol>
+              <li>On your webOS device, add a Gmail account in Email. The device shows a short, one-time code and the address of the helper page.</li>
+              <li>On a phone or computer, open the helper page and enter the code.</li>
+              <li>You are taken to Google&rsquo;s own sign-in and consent screen, where you choose your account and review exactly what you are allowing.</li>
+              <li>Once you approve, the helper passes an access token to your device, which finds it by polling with the code. The code is single-use and expires quickly.</li>
+              <li>Your device connects to Gmail directly and begins syncing. When the token expires, the helper refreshes it so you stay signed in.</li>
+            </ol>
+          </div>
+          <p>You can end the app&rsquo;s access at any time by removing the account from your device, or by visiting <a href="https://myaccount.google.com/permissions">your Google Account&rsquo;s third-party access page</a> and removing Email for webOS.</p>
+
+          <h2>Why the app asks for access to your Google data</h2>
+          <p>Email for webOS asks for permission to <strong>read, compose, send, and permanently delete all your email from Gmail</strong> (the <code>https://mail.google.com/</code> scope). A mail client needs exactly this: to download your messages, send new ones, and to let you move or delete them. The IMAP and SMTP protocols can only be authorized with this scope, so a narrower one would not work.</p>
+          <table>
+            <tr><th>Google data</th><th>Used for</th></tr>
+            <tr><td>Your email address and profile name</td><td>Identifying the account on the device and filling in the &ldquo;From&rdquo; address of messages you send.</td></tr>
+            <tr><td>Your messages, labels and attachments</td><td>Showing them to you in the app and syncing your changes back.</td></tr>
+            <tr><td>Permission to send mail</td><td>Sending the messages <em>you</em> write, from your address.</td></tr>
+          </table>
+
+          <h3>What we do not do with it</h3>
+          <ul>
+            <li>Your mail is downloaded <strong>directly to your device</strong>. It is not copied to, stored on, or read by webOS Archive servers.</li>
+            <li>The sign-in helper handles only the OAuth sign-in codes and tokens needed to connect your device. It never handles your mail content.</li>
+            <li>We do not sell Google user data, use it for advertising or profiling, or share it with anyone.</li>
+            <li>No person at the webOS Archive reads your email.</li>
+            <li>Email for webOS&rsquo;s use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy#limited-use">Google API Services User Data Policy</a>, including the Limited Use requirements.</li>
+          </ul>
+
+          <div class="callout">The full details of what we collect and how we protect it are in our <a href="https://www.webosarchive.org/privacy.html">Privacy Policy</a>. Use of the app is also covered by our <a href="https://www.webosarchive.org/tos.html">Terms of Service</a>.</div>
+
+          <h2>Who we are</h2>
+          <p>Email for webOS is developed by the <a href="https://www.webosarchive.org">webOS Archive</a>, a community project dedicated to keeping webOS devices useful. The source code is on <a href="https://github.com/webOSArchive">GitHub</a>. Questions, problems or requests to delete data: <a href="mailto:webosarchive@gmail.com">webosarchive@gmail.com</a>.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <div class="col-side">
+    <div class="card">
+      <div class="side-block">
+        <h2>Works with</h2>
+        <ul>
+          <li>Gmail and Google Workspace accounts</li>
+          <li>HP TouchPad</li>
+          <li>Palm Pre, Pre 2, Pre 3, Pixi, Veer</li>
+        </ul>
+      </div>
+      <div class="side-block">
+        <h2>Links</h2>
+        <ul>
+          <li><a href="https://www.webosarchive.org/privacy.html">Privacy Policy</a></li>
+          <li><a href="https://www.webosarchive.org/tos.html">Terms of Service</a></li>
+          <li><a href="https://www.webosarchive.org">webOS Archive</a></li>
+          <li><a href="https://www.webosarchive.org/pivot/">pivotCE archive</a></li>
+          <li><a href="mailto:webosarchive@gmail.com">Contact us</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="site">
+  <p>
+    Email for webOS, a project of the <a href="https://www.webosarchive.org">webOS Archive</a>. ·
+    <a href="https://www.webosarchive.org/privacy.html">Privacy Policy</a> ·
+    <a href="https://www.webosarchive.org/tos.html">Terms of Service</a>
+  </p>
+</footer>
+
+</body>
+</html>
