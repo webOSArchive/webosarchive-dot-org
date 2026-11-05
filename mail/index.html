@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Email for webOS · webOS Archive</title>
+<title>webOS Email · webOS Archive</title>
 <meta name="description" content="Email for webOS is the restored stock webOS mail app, updated to send and receive Gmail using Google sign-in (OAuth 2.0). A project of the webOS Archive.">
 <link rel="canonical" href="https://www.webosarchive.org/mail/">
 <link rel="icon" type="image/png" href="icon.png">
@@ -78,8 +78,8 @@ footer.site a, footer.site a:visited { color: #fff; text-decoration: underline; 
 
 <div class="masthead">
   <div class="shell">
-    <div class="crumbs"><a href="https://www.webosarchive.org">webOS Archive</a><span class="sep">›</span>Email for webOS</div>
-    <h1><img src="icon.png" alt="" width="46" height="46">Email for webOS</h1>
+    <div class="crumbs"><a href="https://www.webosarchive.org">webOS Archive</a><span class="sep">›</span>webOS Email</div>
+    <h1><img src="icon.png" alt="" width="46" height="46">webOS Email</h1>
     <p class="tagline">The classic webOS mail app, working with Gmail again</p>
   </div>
 </div>
@@ -88,14 +88,13 @@ footer.site a, footer.site a:visited { color: #fff; text-decoration: underline; 
   <div class="col-main">
     <div class="card">
       <article>
-        <h1 class="post-title" style="font-size:30px">Application Home Page</h1>
         <p class="post-meta">A project of the webOS Archive · Last updated November 5, 2026</p>
 
         <div class="post-body">
 
-          <h2>What is Email for webOS?</h2>
-          <p><strong>Email for webOS</strong> is the original mail app from HP/Palm webOS (<code>com.palm.app.email</code>), restored and kept running by the <a href="https://www.webosarchive.org">webOS Archive</a>, a volunteer, non-profit preservation project. It runs on the webOS devices people still own and love: the Palm Pre, Pixi and Veer, and the HP TouchPad.</p>
-          <p>When these devices were new, signing in to Gmail meant typing your Google password into the phone. Google switched that off in 2022, which left the built-in Gmail account unable to sign in at all. Email for webOS brings it back using Google&rsquo;s current, secure sign-in.</p>
+          <h2>What is webOS Email?</h2>
+          <p><strong>webOS Email</strong> is the original mail app from HP/Palm webOS (<code>com.palm.app.email</code>), restored and kept running by the <a href="https://www.webosarchive.org">webOS Archive</a>, a volunteer, non-profit preservation project. It runs on the webOS devices people still own and love: the Palm Pre, Pixi and Veer, and the HP TouchPad.</p>
+          <p>When these devices were new, signing in to Gmail meant typing your Google password into the phone. Google switched that off in 2022, which left the built-in Gmail account unable to sign in at all. webOS Email brings it back using Google&rsquo;s current, secure sign-in.</p>
 
           <h2>What it does</h2>
           <ul>
@@ -107,7 +106,7 @@ footer.site a, footer.site a:visited { color: #fff; text-decoration: underline; 
           </ul>
 
           <h2>How it sends and receives Gmail</h2>
-          <p>Email for webOS is an ordinary mail client. It talks to Gmail directly over the standard mail protocols, and never uses a middleman server to read or relay your mail.</p>
+          <p>webOS Email is an ordinary mail client. It talks to Gmail directly over the standard mail protocols, and never uses a middleman server to read or relay your mail.</p>
           <table>
             <tr><th>Direction</th><th>How</th></tr>
             <tr><td>Receiving</td><td>IMAP to <code>imap.gmail.com</code>, with the connection secured by TLS.</td></tr>
@@ -126,10 +125,10 @@ footer.site a, footer.site a:visited { color: #fff; text-decoration: underline; 
               <li>Your device connects to Gmail directly and begins syncing. When the token expires, the helper refreshes it so you stay signed in.</li>
             </ol>
           </div>
-          <p>You can end the app&rsquo;s access at any time by removing the account from your device, or by visiting <a href="https://myaccount.google.com/permissions">your Google Account&rsquo;s third-party access page</a> and removing Email for webOS.</p>
+          <p>You can end the app&rsquo;s access at any time by removing the account from your device, or by visiting <a href="https://myaccount.google.com/permissions">your Google Account&rsquo;s third-party access page</a> and removing webOS Email.</p>
 
           <h2>Why the app asks for access to your Google data</h2>
-          <p>Email for webOS asks for permission to <strong>read, compose, send, and permanently delete all your email from Gmail</strong> (the <code>https://mail.google.com/</code> scope). A mail client needs exactly this: to download your messages, send new ones, and to let you move or delete them. The IMAP and SMTP protocols can only be authorized with this scope, so a narrower one would not work.</p>
+          <p>webOS Email asks for permission to <strong>read, compose, send, and permanently delete all your email from Gmail</strong> (the <code>https://mail.google.com/</code> scope). A mail client needs exactly this: to download your messages, send new ones, and to let you move or delete them. The IMAP and SMTP protocols can only be authorized with this scope, so a narrower one would not work.</p>
           <table>
             <tr><th>Google data</th><th>Used for</th></tr>
             <tr><td>Your email address and profile name</td><td>Identifying the account on the device and filling in the &ldquo;From&rdquo; address of messages you send.</td></tr>
@@ -143,13 +142,13 @@ footer.site a, footer.site a:visited { color: #fff; text-decoration: underline; 
             <li>The sign-in helper handles only the OAuth sign-in codes and tokens needed to connect your device. It never handles your mail content.</li>
             <li>We do not sell Google user data, use it for advertising or profiling, or share it with anyone.</li>
             <li>No person at the webOS Archive reads your email.</li>
-            <li>Email for webOS&rsquo;s use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy#limited-use">Google API Services User Data Policy</a>, including the Limited Use requirements.</li>
+            <li>webOS Email&rsquo;s use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy#limited-use">Google API Services User Data Policy</a>, including the Limited Use requirements.</li>
           </ul>
 
           <div class="callout">The full details of what we collect and how we protect it are in our <a href="https://www.webosarchive.org/privacy.html">Privacy Policy</a>. Use of the app is also covered by our <a href="https://www.webosarchive.org/tos.html">Terms of Service</a>.</div>
 
           <h2>Who we are</h2>
-          <p>Email for webOS is developed by the <a href="https://www.webosarchive.org">webOS Archive</a>, a community project dedicated to keeping webOS devices useful. The source code is on <a href="https://github.com/webOSArchive">GitHub</a>. Questions, problems or requests to delete data: <a href="mailto:webosarchive@gmail.com">webosarchive@gmail.com</a>.</p>
+          <p>webOS Email is developed by the <a href="https://www.webosarchive.org">webOS Archive</a>, a community project dedicated to keeping webOS devices useful. The source code is on <a href="https://github.com/webOSArchive">GitHub</a>. Questions, problems or requests to delete data: <a href="mailto:webosarchive@gmail.com">webosarchive@gmail.com</a>.</p>
         </div>
       </article>
     </div>
@@ -181,7 +180,7 @@ footer.site a, footer.site a:visited { color: #fff; text-decoration: underline; 
 
 <footer class="site">
   <p>
-    Email for webOS, a project of the <a href="https://www.webosarchive.org">webOS Archive</a>. ·
+    webOS Email, a project of the <a href="https://www.webosarchive.org">webOS Archive</a>. ·
     <a href="https://www.webosarchive.org/privacy.html">Privacy Policy</a> ·
     <a href="https://www.webosarchive.org/tos.html">Terms of Service</a>
   </p>
