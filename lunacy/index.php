@@ -107,6 +107,8 @@ footer.site a, footer.site a:visited { color: #fff; text-decoration: underline; 
           </ul>
           <p>Enyo was designed to scale from phone to tablet, so most apps run at the device&rsquo;s real size, on both phones and tablets.</p>
 
+          <a href="LunacyScreenshot.jpg"><img src="LunacyScreenshot.jpg" height="280" width="350" style="height:280px;width:350px"></a>
+
           <div class="callout">Fidelity is the project&rsquo;s first rule, ahead of speed or simplicity. The look and feel of the TouchPad (or Pre3) is measured on an original device: how a card opens, how the launcher moves, where every pixel of the shell sits.</div>
 
           <h2>What it is not</h2>
@@ -115,8 +117,6 @@ footer.site a, footer.site a:visited { color: #fff; text-decoration: underline; 
             <li><strong>Not a per-app porting kit.</strong> No app is patched. Every fix goes into the frameworks or a compatibility layer that treats all apps alike.</li>
             <li><strong>Not LuneOS.</strong> <a href="https://github.com/webOS-ports">LuneOS</a> is a full OS. Lunacy is an app on the Android you already have.</li>
           </ul>
-
-          <a href="LunacyScreenshot.jpg"><img src="LunacyScreenshot.jpg" height="280" width="350" style="height:280px;width:350px"></a>
 
           <h2>What runs</h2>
           <table>
