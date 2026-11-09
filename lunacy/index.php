@@ -95,13 +95,13 @@ footer.site a, footer.site a:visited { color: #fff; text-decoration: underline; 
 
           <h2>What is Lunacy?</h2>
           <p><img src="icon.png" alt="Lunacy's icon: the Android robot with a door open on the night sky and the moon" width="117" height="128" style="float:right; margin: 0 0 10px 16px"><strong>Lunacy</strong> runs legacy webOS apps on modern Android phones and tablets, inside a shell that looks and feels like webOS. It is developed by the <a href="https://www.webosarchive.org">webOS Archive</a>, a volunteer, non-profit preservation project.</p>
-          <p>webOS apps were HTML and JavaScript. They loaded their framework (Enyo or Mojo) from the OS, ran as cards in the Luna system shell, and talked to the system over the Luna service bus. The devices are more than a decade old, but the apps are still good. Most of them never needed Palm&rsquo;s hardware. They needed Palm&rsquo;s <em>contract</em>. Lunacy provides that contract on Android.</p>
+          <p>webOS apps were HTML and JavaScript. They loaded their framework (Enyo or Mojo) from the OS, ran as cards in the Luna system shell, and talked to the system over the Luna service bus. The devices are more than a decade old, but the apps are still good. Palm's platform was truly open, all the apps needed was Palm&rsquo;s <em>contract</em>. Lunacy provides that contract on Android.</p>
 
           <h2>How it works</h2>
           <p>Lunacy re-implements the contract, not the OS:</p>
           <ul>
-            <li><strong>A simulated Luna shell.</strong> A native Android UI that recreates the webOS experience: card view, gestures, launcher, notification banners and dashboard. None of Palm&rsquo;s code runs. It looks and behaves like webOS, and it has to feel right.</li>
-            <li><strong>Modernized frameworks.</strong> Lunacy supplies the TouchPad&rsquo;s own <a href="https://github.com/enyojs/enyo-1.0">Enyo 1.0</a>, fixed to run on a modern Chromium renderer. Fixes in the library cover every app built on it.</li>
+            <li><strong>A simulated Luna shell.</strong> A native Android UI that recreates the webOS experience: card view, gestures, launcher, notification banners and dashboard. It looks and behaves like webOS, and it has to feel right.</li>
+            <li><strong>Modernized frameworks.</strong> Lunacy supplies the TouchPad&rsquo;s own <a href="https://github.com/enyojs/enyo-1.0">Enyo 1.0</a>, fixed to run on a modern Chromium renderer. Fixes in the SDK modernize every app built on it.</li>
             <li><strong>Apps as cards.</strong> Each app runs unmodified in its own WebView card.</li>
             <li><strong>A simulated service bus.</strong> <code>palm://</code> calls are routed either to Lunacy itself (app manager, db8, shell services) or to the equivalent Android feature (connectivity, power, locale, notifications, intents).</li>
           </ul>
@@ -119,7 +119,7 @@ footer.site a, footer.site a:visited { color: #fff; text-decoration: underline; 
           <h2>What runs</h2>
           <table>
             <tr><th>App type</th><th>Era</th></tr>
-            <tr><td>Enyo 1 apps</td><td>webOS 3.x, the TouchPad era. Enyo 2 apps bundle their own framework and feel at home too.</td></tr>
+            <tr><td>Enyo 1 apps</td><td>webOS 2.2 and up, the Pre3 and TouchPad era. Enyo 2 apps bundled their own framework to run anywhere, and still work great in Lunacy.</td></tr>
             <tr><td>Mojo apps</td><td>webOS 1.x&ndash;2.x, the Pre and Pixi era.</td></tr>
             <tr><td>JS (Node) services</td><td>The background services that ship with apps.</td></tr>
             <tr><td>PDK native apps</td><td>Native games and apps, run as shipped on a glibc runtime.</td></tr>
@@ -128,7 +128,7 @@ footer.site a, footer.site a:visited { color: #fff; text-decoration: underline; 
           <p>Apps come from the webOS Archive <a href="https://appcatalog.webosarchive.org">Museum</a>, through the TouchPad&rsquo;s own App Catalog, which Lunacy bundles and runs like any other card.</p>
 
           <h2>Getting it</h2>
-          <p>Lunacy is sideloaded: there is no store listing for now. It supports Android 5.0.1 through Android 17. Tablets are fully supported; phones are partially supported through light adaptation or zooming.</p>
+          <p>Lunacy is sideloaded: there is no store listing for now. It supports Android 5.0.1 through Android 17. Tablets are fully supported; phones are largely supported through light adaptation or zooming.</p>
           <div class="flow">
             <ol>
               <li><strong>Allow unknown sources.</strong> Settings &rarr; Security &rarr; Unknown sources. (On Android 8 and later this is asked for per app, when you open the APK.)</li>
