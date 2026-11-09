@@ -107,7 +107,7 @@ footer.site a, footer.site a:visited { color: #fff; text-decoration: underline; 
           </ul>
           <p>Enyo was designed to scale from phone to tablet, so most apps run at the device&rsquo;s real size, on both phones and tablets.</p>
 
-          <a href="LunacyScreenshot.jpg"><img src="LunacyScreenshot.jpg" height="280" width="350" style="height:280px;width:350px"></a>
+          <a href="LunacyScreenshot.jpg"><img src="LunacyScreenshot.jpg" height="280" width="350" style="height:280px;width:350px;border-radius:6px;"></a>
 
           <div class="callout">Fidelity is the project&rsquo;s first rule, ahead of speed or simplicity. The look and feel of the TouchPad (or Pre3) is measured on an original device: how a card opens, how the launcher moves, where every pixel of the shell sits.</div>
 
