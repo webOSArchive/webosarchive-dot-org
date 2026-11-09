@@ -61,7 +61,7 @@
           <ul>
             <?php
               echo "<li><a class=\"item\" href=\"$protocol://appcatalog.webosarchive.org\" target=\"_top\"><img src=\"$protocol://www.webosarchive.org/assets/appcatalog-icon.png\" class=\"project-icon\">App Catalog</a></li>";
-              echo "<li><a class=\"item\" href=\"$protocol://www.webosarchive.org/pivot/2026/09/20/lunacy-a-new-child-of-webos/\" target=\"_top\"><img src=\"$protocol://www.webosarchive.org/assets/lunacy-icon.png\" class=\"project-icon\">Lunacy for Android</a></li>";
+              echo "<li><a class=\"item\" href=\"$protocol://www.webosarchive.org/lunacy/\" target=\"_top\"><img src=\"$protocol://www.webosarchive.org/assets/lunacy-icon.png\" class=\"project-icon\">Lunacy for Android</a></li>";
               echo "<li><a class=\"item\" href=\"http://webos-ports.org\" target=\"_top\"><img src=\"$protocol://www.webosarchive.org/assets/luneos-icon.png\" class=\"project-icon\">LuneOS</a></li>";              
               echo "<li><a class=\"item\" href=\"$protocol://www.webosarchive.org/tracker\" target=\"_top\"><img src=\"$protocol://www.webosarchive.org/assets/tracker-icon.png\" class=\"project-icon\">webOS Tracker</a></li>";
               echo "<li><a class=\"item\" href=\"$protocol://podcasts.webosarchive.org\" target=\"_top\"><img src=\"$protocol://www.webosarchive.org/assets/podcast-icon.png\" class=\"project-icon\">Podcast Directory</a></li>";

@@ -75,6 +75,7 @@ footer.site a, footer.site a:visited { color: #fff; text-decoration: underline; 
 </style>
 </head>
 <body>
+<?php include("../menu.php") ?>
 
 <div class="masthead">
   <div class="shell">
