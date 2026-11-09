@@ -116,6 +116,8 @@ footer.site a, footer.site a:visited { color: #fff; text-decoration: underline; 
             <li><strong>Not LuneOS.</strong> <a href="https://github.com/webOS-ports">LuneOS</a> is a full OS. Lunacy is an app on the Android you already have.</li>
           </ul>
 
+          <a href="LunacyScreenshot.jpg"><img src="LunacyScreenshot.jpg" height="280" width="350" style="height:280px;width:250px"></a>
+
           <h2>What runs</h2>
           <table>
             <tr><th>App type</th><th>Era</th></tr>
