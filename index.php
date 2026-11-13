@@ -42,7 +42,7 @@ $showBillboard = false;
 <div id="margin" style="margin-top: 65px"></div>
 <main id="landing-main">
 <div id="try-webos">
-  <div class="try-heading">Three ways to try webOS in <?php echo date("Y"); ?></div>
+  <div class="try-heading">Three ways to try webOS <span style="white-space: nowrap">in <?php echo date("Y"); ?></span></div>
   <div class="try-tiles">
     <a class="try-tile" href="https://www.webosarchive.org/pivot/2026/09/08/webos-3.1.0-community-edition-is-here/">
       <img class="try-icon try-icon-round" src="assets/try-webos-ce.png" alt="" width="128" height="128"/>
