@@ -13,7 +13,11 @@ else
 <link type="text/css" rel="stylesheet" media="screen" href="assets/landing-modern.css?v=<?php echo filemtime('assets/landing-modern.css'); ?>"/>
 <link rel="alternate" type="application/rss+xml" title="webOS Archive News" href="<?php echo $protocol; ?>://www.webosarchive.org/feed.php">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script type="text/javascript" src="assets/billboard.js"></script>
+<?php
+// Home page hero: the 3-up "try webOS" tiles. Set to true to bring back the rotating billboard.
+$showBillboard = false;
+?>
+<?php if ($showBillboard) { ?><script type="text/javascript" src="assets/billboard.js"></script><?php } ?>
 <script>
   function hoverImg(img) {
       img.src = img.src.replace("-dark.png", "_roll-dark.png");
@@ -37,6 +41,30 @@ else
 <?php include('social-meta.php') ?>
 <div id="margin" style="margin-top: 65px"></div>
 <main id="landing-main">
+<div id="try-webos">
+  <div class="try-heading">Three ways to try webOS</div>
+  <div class="try-tiles">
+    <a class="try-tile" href="https://www.webosarchive.org/pivot/2026/09/08/webos-3.1.0-community-edition-is-here/">
+      <img class="try-icon try-icon-round" src="assets/try-webos-ce.png" alt="" width="128" height="128"/>
+      <span class="try-name">webOS 3.1.0</span>
+      <span class="try-short">Community Edition</span>
+      <span class="try-long">A modernized system image for your TouchPad, made by and for the community.</span>
+    </a>
+    <a class="try-tile" href="https://www.webosarchive.org/lunacy/">
+      <img class="try-icon" src="lunacy/icon.png" alt="" width="117" height="128"/>
+      <span class="try-name">Lunacy</span>
+      <span class="try-short">for Android</span>
+      <span class="try-long">Run webOS apps on the Android phone or tablet you already have.</span>
+    </a>
+    <a class="try-tile" href="https://webos-ports.org/">
+      <img class="try-icon" src="assets/luneos-mark.png" alt="" width="128" height="128"/>
+      <span class="try-name">LuneOS</span>
+      <span class="try-short">from WebOS Ports</span>
+      <span class="try-long">A webOS-inspired open operating system for modern phones and tablets.</span>
+    </a>
+  </div>
+</div>
+<?php if ($showBillboard) { ?>
 <div id="container">
   <div class="row">
     <div class="column left">
@@ -54,6 +82,7 @@ else
   </div>
   <div id="billboard-dots" class="billboard-dots"></div>
 </div>
+<?php } ?>
 <div class="links">
     <a href="<?php echo $protocol; ?>://appcatalog.webosarchive.org"><img src="assets/icon_apps-dark.png" onmouseover="hoverImg(this)" onmouseout="leaveImg(this)" alt="Restored webOS App Catalog" title="Restored webOS App Catalog"></a>
     <a href="<?php echo $protocol; ?>://sdk.webosarchive.org"><img src="assets/icon_developer-dark.png" onmouseover="hoverImg(this)" onmouseout="leaveImg(this)" alt="Restored webOS SDK" title="Restored webOS SDK"></a>
@@ -63,6 +92,7 @@ else
 <footer>
     <?php include("legalese.php"); ?>
 </footer>
+<?php if ($showBillboard) { ?>
 <script>
   billboardContents = [
     {
@@ -92,5 +122,6 @@ else
   billboardEnableSwipe("container")
   billboardStartAutoRotate(5500)
 </script>
+<?php } ?>
 </body>
 </html>
