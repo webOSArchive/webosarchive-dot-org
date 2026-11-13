@@ -170,7 +170,7 @@ footer.site a, footer.site a:visited { color: #fff; text-decoration: underline; 
           <li>Android 5.0.1 to 17</li>
           <li>32-bit and 64-bit ARM</li>
         </ul>
-        <p style="margin:12px 0 0 0; font-size:12px; line-height:1.3;"><a href="https://stacks.webosarchive.org/feeds/fdroid/repo/"><img src="https://appcatalog.webosarchive.org/assets/fdroid.png" alt="Get it on F-Droid" width="100" height="30" style="display:block;margin:0 0 4px 0;">Our F-Droid repo</a></p>
+        <p style="margin:12px 0 0 0; font-size:12px; line-height:1.3;"><a href="https://stacks.webosarchive.org/feeds/fdroid/repo/"><img src="https://appcatalog.webosarchive.org/assets/fdroid.png" alt="Get it on F-Droid" width="100" height="30" style="display:block;margin:0 0 4px 0;">Get it on F-Droid</a></p>
       </div>
       <div class="side-block">
         <h2>Companions</h2>
