@@ -48,13 +48,13 @@ $showBillboard = false;
       <img class="try-icon try-icon-round" src="assets/try-webos-ce.png" alt="" width="128" height="128"/>
       <span class="try-name">webOS 3.1.0</span>
       <span class="try-short">Community Edition</span>
-      <span class="try-long">A modernized system image for your <a href="https://shop.webosarchive.org">TouchPad</a>, made by and for the community.</span>
+      <span class="try-long">A modernized system image for your TouchPad, made by and for the community.</span>
     </a>
     <a class="try-tile" href="https://www.webosarchive.org/lunacy/">
       <img class="try-icon" src="lunacy/icon.png" alt="" width="117" height="128"/>
       <span class="try-name">Lunacy</span>
       <span class="try-short">for Android</span>
-      <span class="try-long">Run webOS apps on the Android phone or tablet you already have.</span>
+      <span class="try-long">A faithfully re-created webOS Launcher that runs webOS Apps on almost any Android device.</span>
     </a>
     <a class="try-tile" href="https://webos-ports.org/">
       <img class="try-icon" src="assets/luneos-mark.png" alt="" width="128" height="128"/>
