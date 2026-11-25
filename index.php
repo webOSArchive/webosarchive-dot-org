@@ -42,11 +42,11 @@ $showBillboard = false;
 <div id="margin" style="margin-top: 65px"></div>
 <main id="landing-main">
 <div id="try-webos">
-  <div class="try-heading">webOS Lives! 3 Ways to Explore webOS in <span style="white-space: nowrap">in <?php echo date("Y"); ?></span></div>
+  <div class="try-heading">webOS Lives! 3 New Ways to Explore webOS...</span></div>
   <div class="try-tiles">
     <a class="try-tile" href="https://www.webosarchive.org/pivot/2026/09/08/webos-3.1.0-community-edition-is-here/">
       <img class="try-icon try-icon-round" src="assets/try-webos-ce.png" alt="" width="128" height="128"/>
-      <span class="try-name">webOS 3.1.0</span>
+      <span class="try-name">webOS 3.2.0</span>
       <span class="try-short">Community Edition</span>
       <span class="try-long">A modernized system image for your TouchPad, made by and for the community.</span>
     </a>
