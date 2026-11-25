@@ -44,7 +44,7 @@ $showBillboard = false;
 <div id="try-webos">
   <div class="try-heading">webOS Lives! 3 New Ways to Explore webOS...</span></div>
   <div class="try-tiles">
-    <a class="try-tile" href="https://www.webosarchive.org/pivot/2026/09/08/webos-3.1.0-community-edition-is-here/">
+    <a class="try-tile" href="https://www.webosarchive.org/pivot/2026/11/25/webos-3.2.0-community-edition/">
       <img class="try-icon try-icon-round" src="assets/try-webos-ce.png" alt="" width="128" height="128"/>
       <span class="try-name">webOS 3.2.0</span>
       <span class="try-short">Community Edition</span>
