@@ -42,7 +42,7 @@ $showBillboard = false;
 <div id="margin" style="margin-top: 65px"></div>
 <main id="landing-main">
 <div id="try-webos">
-  <div class="try-heading">Three ways to try webOS <span style="white-space: nowrap">in <?php echo date("Y"); ?></span></div>
+  <div class="try-heading">webOS Lives! 3 Ways to Explore webOS in <span style="white-space: nowrap">in <?php echo date("Y"); ?></span></div>
   <div class="try-tiles">
     <a class="try-tile" href="https://www.webosarchive.org/pivot/2026/09/08/webos-3.1.0-community-edition-is-here/">
       <img class="try-icon try-icon-round" src="assets/try-webos-ce.png" alt="" width="128" height="128"/>
@@ -69,7 +69,7 @@ $showBillboard = false;
   <div class="row">
     <div class="column left">
         <div id="billboard-text">
-            <div id="billboard-name" class="prod-name">webOS 3.1.0</div>
+            <div id="billboard-name" class="prod-name">webOS 3.2.0</div>
             <div id="billboard-short" class="short-desc">Community Edition</div>
             <div id="billboard-long" class="long-desc">A modernized system image,<br/>created by and for the community in 2026.</div>
         </div>
