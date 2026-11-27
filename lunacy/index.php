@@ -127,14 +127,14 @@ footer.site a, footer.site a:visited { color: #fff; text-decoration: underline; 
             <tr><td>PDK native apps</td><td>Native games and apps, run as shipped on a glibc runtime.</td></tr>
             <tr><td>Hybrid apps</td><td>Web apps that interact with a PDK plug-in.</td></tr>
           </table>
-          <p>Apps come from the webOS Archive <a href="https://appcatalog.webosarchive.org">Museum</a>, through the TouchPad&rsquo;s own App Catalog, which Lunacy bundles and runs like any other card.</p>
+          <p>Install webOS apps through webOS Archive's <a href="https://appcatalog.webosarchive.org">App Museum</a>, using the TouchPad&rsquo;s own App Catalog, which Lunacy bundles and runs like any other card.</p>
 
           <h2>Getting it</h2>
-          <p>Lunacy is sideloaded: there is no store listing for now. It supports Android 5.0.1 through Android 17. Tablets are fully supported; phones are largely supported through light adaptation or zooming.</p>
+          <p>Lunacy is sideloaded: Google does not allow emulators with their own app installers in Google Play. It supports Android 5.0.1 through Android 17. Tablets are fully supported; phones are largely supported through light adaptation or zooming.</p>
           <div class="flow">
             <ol>
               <li><strong>Allow unknown sources.</strong> Settings &rarr; Security &rarr; Unknown sources. (On Android 8 and later this is asked for per app, when you open the APK.)</li>
-              <li><strong>Install the APK for your device</strong> from the <a href="https://github.com/webOSArchive/Lunacy/releases">releases page</a>: <code>AndroidLuna-arm64.apk</code> for a 64-bit device, <code>AndroidLuna-arm32.apk</code> for a 32-bit one. If unsure, try the 64-bit one first.</li>
+              <li><strong>Install the APK for your device</strong> from <a href="https://stacks.webosarchive.org/feeds/fdroid/repo/">F-Droid</a>, or the <a href="https://github.com/webOSArchive/Lunacy/releases">releases page</a>: <code>AndroidLuna-arm64.apk</code> for a 64-bit device, <code>AndroidLuna-arm32.apk</code> for a 32-bit one. If unsure, try the 64-bit one first.</li>
               <li><strong>Open Lunacy</strong> from the Android launcher. The App Catalog is on the launcher&rsquo;s Downloads tab.</li>
               <li><strong>Optional:</strong> install <code>LunaKeyboard.apk</code> for a TouchPad-style keyboard, and choose <em>Lunacy Exhibition</em> as your Android screen saver.</li>
             </ol>
