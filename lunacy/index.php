@@ -109,7 +109,7 @@ footer.site a, footer.site a:visited { color: #fff; text-decoration: underline; 
 
           <a href="LunacyScreenshot.jpg"><img src="LunacyScreenshot.jpg" height="270" width="338" style="height:270px;width:338px;border-radius:6px;"></a>
 
-          <div class="callout">Fidelity is the project&rsquo;s first rule, ahead of speed or simplicity. The look and feel of the TouchPad (or Pre3) is measured on an original device: how a card opens, how the launcher moves, where every pixel of the shell sits.</div>
+          <div class="callout">Fidelity is the project&rsquo;s first rule, ahead of speed or simplicity. The look and feel of the TouchPad (or Pre3) is measured on an original device: pixel-perfect rendering, animations, and Palm's original multitasking innovations.</div>
 
           <h2>What it is not</h2>
           <ul>
