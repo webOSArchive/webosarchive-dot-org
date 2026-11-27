@@ -81,7 +81,7 @@ footer.site a, footer.site a:visited { color: #fff; text-decoration: underline; 
   <div class="shell">
     <div class="crumbs"><a href="https://www.webosarchive.org">webOS Archive</a><span class="sep">›</span>Lunacy</div>
     <h1><img src="icon.png" alt="" width="42" height="46" style="width:42px">Lunacy</h1>
-    <p class="tagline">webOS apps on the Android you already have</p>
+    <p class="tagline">A faithfully recreated webOS environment on the Android device you already have</p>
   </div>
 </div>
 
