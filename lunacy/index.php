@@ -95,7 +95,7 @@ footer.site a, footer.site a:visited { color: #fff; text-decoration: underline; 
 
           <h2>What is Lunacy?</h2>
           <p><img src="icon.png" alt="Lunacy's icon: the Android robot with a door open on the night sky and the moon" width="117" height="128" style="float:right; margin: 0 0 10px 16px"><strong>Lunacy</strong> runs legacy webOS apps on modern Android phones and tablets, inside a shell that looks and feels like webOS. It is developed by the <a href="https://www.webosarchive.org">webOS Archive</a>, a volunteer, non-profit preservation project.</p>
-          <p>webOS apps were HTML and JavaScript. They loaded their framework (Enyo or Mojo) from the OS, ran as cards in the Luna system shell, and talked to the system over the Luna service bus. The devices are more than a decade old, but the apps are still good. Palm's platform was truly open, all the apps needed was Palm&rsquo;s <em>contract</em>. Lunacy provides that contract on Android.</p>
+          <p>webOS apps were HTML and JavaScript. They loaded their framework (Enyo or Mojo) from the OS, ran as cards in the Luna system shell, and talked to the system over the Luna service bus. The devices are more than a decade old, but the apps are still delightful. Palm's platform was truly open, all the apps needed was Palm&rsquo;s <em>contract</em>. Lunacy provides that contract on Android.</p>
 
           <h2>How it works</h2>
           <p>Lunacy re-implements the contract, not the OS:</p>
