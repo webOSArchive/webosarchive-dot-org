@@ -130,7 +130,7 @@ footer.site a, footer.site a:visited { color: #fff; text-decoration: underline; 
           <p>Install webOS apps through webOS Archive's <a href="https://appcatalog.webosarchive.org">App Museum</a>, using the TouchPad&rsquo;s own App Catalog, which Lunacy bundles and runs like any other card.</p>
 
           <h2>Getting it</h2>
-          <p>Lunacy is sideloaded: Google does not allow emulators with their own app installers in Google Play. It supports Android 5.0.1 through Android 17. Tablets are fully supported; phones are largely supported through light adaptation or zooming.</p>
+          <p>Lunacy is sideloaded: Google does not allow environments with their own app installers in Google Play. It supports Android 5.0.1 through Android 17. Tablets are fully supported; phones are largely supported through light adaptation or zooming.</p>
           <div class="flow">
             <ol>
               <li><strong>Allow unknown sources.</strong> Settings &rarr; Security &rarr; Unknown sources. (On Android 8 and later this is asked for per app, when you open the APK.)</li>
