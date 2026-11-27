@@ -184,11 +184,9 @@ footer.site a, footer.site a:visited { color: #fff; text-decoration: underline; 
       <div class="side-block">
         <h2>Links</h2>
         <ul>
-          <li><a href="https://github.com/webOSArchive/Lunacy">Source code</a></li>
+          <li><a href="https://github.com/webOSArchive/Lunacy">GitHub Repo</a></li>
           <li><a href="https://www.webosarchive.org/pivot/2026/09/20/lunacy-a-new-child-of-webos/">Announcement</a></li>
           <li><a href="https://www.webosarchive.org/pivot/">Latest News</a></li>
-          <li><a href="https://www.webosarchive.org">webOS Archive</a></li>
-          <li><a href="mailto:webosarchive@gmail.com">Contact us</a></li>
         </ul>
       </div>
     </div>
